@@ -9,11 +9,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 import ru.dostaevsky.enums.CityLinks;
 import ru.dostaevsky.enums.CityName;
 
-import java.util.AbstractMap;
-import java.util.Map;
-import java.util.Objects;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+import java.util.*;
 
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverConditions.url;
@@ -63,30 +59,22 @@ public class DostaevskyTest extends TestBase {
         step("Переходим к завтракам", () -> {
             $$(".main-nav__link").findBy(Condition.text("Завтраки")).click();
         });
-        step("Проверяем, что цена для каждой позиции завтрака соответствует заявленной в выбранном городе", () -> {
+        step("Проверяем наличие всех позиций завтрака и соответствие цен в выбранном городе", () -> {
             executeJavaScript("$('.info').remove()");
 
-            SelenideElement item = $$(".catalog-list__item").first();
+            List<SelenideElement> items = $$(".catalog-list__item");
 
-            String itemName = item.getAttribute("data-name");
-            Integer itemPrice = Integer.valueOf(Objects.requireNonNull(item.getAttribute("data-price")));
+            assertThat(items).hasSize(expectedPrices.size());
 
-            Map<String, Integer> actualPrices = Stream.of(new AbstractMap.SimpleEntry<>(itemName, itemPrice))
-                    .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+            Map<String, Integer> actualPrices = new HashMap<>();
+            for (SelenideElement item : items) {
+                String itemName = item.getAttribute("data-name");
+                Integer itemPrice = Integer.valueOf(Objects.requireNonNull(item.getAttribute("data-price")));
+                actualPrices.put(itemName, itemPrice);
+            }
 
             assertThat(expectedPrices).containsAllEntriesOf(actualPrices);
         });
-
-
-//        TODO:
-//        1. Добавить проверку количества позиций завтрака. В текущей реализации тест проверяет только первую позицию,
-//        но может быть ситуация, когда количество позиций завтрака разное в разных городах. Для этого можно использовать метод `size()` у коллекции `.catalog-list__item`.
-//
-//        2. Добавить проверку названия города на странице завтраков.
-//        Таким образом, можно будет убедиться, что выбранный город действительно отображается на странице.
-//
-//        3. Добавить проверку наличия всех позиций завтрака в списке.
-//        В текущей реализации тест проверяет только заявленные позиции, но может быть ситуация, когда на странице завтраков отображается не все меню.
-//        Для этого можно использовать метод `containsAll()` у коллекции `.catalog-list__item`.
     }
+
 }
