@@ -12,9 +12,10 @@ import static io.qameta.allure.Allure.step;
 @DisplayName("Web Tests")
 public class DostaevskyTest extends TestBase {
 
+
+    @DisplayName("Взаимодействие с городом из списка доступных для выбора")
+    @ParameterizedTest(name = "{1}")
     @CsvFileSource(resources = "/csv/city.csv")
-    @ParameterizedTest(name = "Взаимодействие с городом {1} из списка доступных для выбора")
-    @DisplayName("UI тест: ")
     void selectingCityFromTheListAvailableAndCheckingDisplayTest(String link, String city) {
         step("Переходим на главную страницу", () -> {
             open("https://dostaevsky.ru/");
