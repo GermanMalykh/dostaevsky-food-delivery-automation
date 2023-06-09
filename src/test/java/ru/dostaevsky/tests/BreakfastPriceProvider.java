@@ -13,15 +13,15 @@ import java.util.stream.Stream;
 public class BreakfastPriceProvider {
     public static Stream<Arguments> provide() {
         return Stream.of(
-                Arguments.of(CityName.SPB, CityLinks.SPB_LINK, getPricesMap(CityName.SPB)),
-                Arguments.of(CityName.MSK, CityLinks.MSK_LINK, getPricesMap(CityName.MSK)),
-                Arguments.of(CityName.SOCHI, CityLinks.SOCHI_LINK, getPricesMap(CityName.SOCHI)),
-                Arguments.of(CityName.KRD, CityLinks.KRD_LINK, getPricesMap(CityName.KRD)),
-                Arguments.of(CityName.NSK, CityLinks.NSK_LINK, getPricesMap(CityName.NSK))
+                Arguments.of(CityName.SPB, CityLinks.SPB_LINK, getPriceMapForCity(CityName.SPB)),
+                Arguments.of(CityName.MSK, CityLinks.MSK_LINK, getPriceMapForCity(CityName.MSK)),
+                Arguments.of(CityName.SOCHI, CityLinks.SOCHI_LINK, getPriceMapForCity(CityName.SOCHI)),
+                Arguments.of(CityName.KRD, CityLinks.KRD_LINK, getPriceMapForCity(CityName.KRD)),
+                Arguments.of(CityName.NSK, CityLinks.NSK_LINK, getPriceMapForCity(CityName.NSK))
         );
     }
 
-    private static Map<String, Integer> getPricesMap(CityName cityName) {
+    private static Map<String, Integer> getPriceMapForCity(CityName cityName) {
         Map<String, Integer> prices = new HashMap<>();
         for (Breakfast breakfast : Breakfast.values()) {
             prices.put(breakfast.getName(), breakfast.getPrice(cityName));
