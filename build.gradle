@@ -1,6 +1,7 @@
 plugins {
     id 'java-library'
     id 'io.qameta.allure' version '2.11.2'
+    id "io.freefair.lombok" version "8.0.1"
 }
 
 group 'guru.qa'
@@ -10,8 +11,7 @@ def junit5Version = '5.9.3'
 def selenideVersion = '6.13.0'
 def slf4jVersion = '2.0.7'
 def allureSelenideVersion = '2.21.0'
-//def javaFakerVersion = '1.0.2'
-//def ownerVersion = '1.0.12'
+def assertjVersion = '3.24.2'
 
 repositories {
     mavenCentral()
@@ -22,15 +22,14 @@ dependencies {
             "org.junit.jupiter:junit-jupiter:${junit5Version}",
             "com.codeborne:selenide:${selenideVersion}",
             "io.qameta.allure:allure-selenide:${allureSelenideVersion}",
-            "org.slf4j:slf4j-simple:${slf4jVersion}"
-//            "com.github.javafaker:javafaker:${javaFakerVersion}",
-//            "org.aeonbits.owner:owner:${ownerVersion}"
+            "org.slf4j:slf4j-simple:${slf4jVersion}",
+            "org.assertj:assertj-core:${assertjVersion}"
     )
 }
 
 allure {
     report {
-        version.set("2.19.0")
+        version.set("2.21.0")
     }
     adapter {
         aspectjWeaver.set(true)
