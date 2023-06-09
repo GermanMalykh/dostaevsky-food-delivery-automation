@@ -23,9 +23,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 @DisplayName("Web Tests")
 public class DostaevskyTest extends TestBase {
 
-
-    @DisplayName("Взаимодействие с городом из списка доступных для выбора")
-    @ParameterizedTest(name = "{1}")
+    @DisplayName("Выбор и отображение информации города. ")
+    @ParameterizedTest(name = "Для города {1} отображается информация по ссылке {0} с контактным номером телефона {2}")
     @CsvFileSource(resources = "/csv/city.csv")
     void selectingCityFromTheListAvailableAndCheckingDisplayInfoTest(String link, String city, String phone) {
         step("Переходим на главную страницу", () -> {
@@ -49,15 +48,15 @@ public class DostaevskyTest extends TestBase {
         });
     }
 
-    @DisplayName("Отображение соответствующих цен на завтрак в выбранном городе")
-    @ParameterizedTest(name = "Для города {0} цены на для указанных позиций {2} равны ценам из словаря")
+    @DisplayName("Отображение цен на завтрак. ")
+    @ParameterizedTest(name = "В городе {0} отображаемые на странице цены на завтрак равны ценам из словаря")
     @MethodSource("ru.dostaevsky.tests.BreakfastPriceProvider#provide")
     void breakfastPriceComparisonInSelectedCityTest(CityName name, CityLinks link, Map<String, Integer> expectedPrices) {
         step("Переходим на главную страницу", () -> {
             open("https://dostaevsky.ru/");
             executeJavaScript("arguments[0].setAttribute('hidden', 'true')", $(".city-confirm"));
         });
-        step("Выбираем в списке город", () -> {
+        step("Выбираем город", () -> {
             $(".main-nav__city").hover()
                     .$("a[href*='" + link.getValue() + "']").click();
         });
