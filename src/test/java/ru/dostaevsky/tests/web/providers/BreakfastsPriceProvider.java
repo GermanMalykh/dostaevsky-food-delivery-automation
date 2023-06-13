@@ -1,7 +1,7 @@
 package ru.dostaevsky.tests.web.providers;
 
 import org.junit.jupiter.params.provider.Arguments;
-import ru.dostaevsky.tests.web.enums.Breakfast;
+import ru.dostaevsky.tests.web.enums.Breakfasts;
 import ru.dostaevsky.tests.web.enums.CityLinks;
 import ru.dostaevsky.tests.web.enums.CityName;
 
@@ -10,7 +10,7 @@ import java.util.Map;
 import java.util.stream.Stream;
 
 @SuppressWarnings("unused")
-public class BreakfastPriceProvider {
+public class BreakfastsPriceProvider {
     public static Stream<Arguments> provide() {
         return Stream.of(
                 Arguments.of(CityName.SPB, CityLinks.SPB_LINK, getPriceMapForCity(CityName.SPB)),
@@ -23,8 +23,8 @@ public class BreakfastPriceProvider {
 
     private static Map<String, Integer> getPriceMapForCity(CityName cityName) {
         Map<String, Integer> prices = new HashMap<>();
-        for (Breakfast breakfast : Breakfast.values()) {
-            prices.put(breakfast.getName(), breakfast.getPrice(cityName));
+        for (Breakfasts breakfasts : Breakfasts.values()) {
+            prices.put(breakfasts.getName(), breakfasts.getPrice(cityName));
         }
         return prices;
     }

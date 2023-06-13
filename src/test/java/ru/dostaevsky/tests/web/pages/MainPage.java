@@ -1,35 +1,33 @@
 package ru.dostaevsky.tests.web.pages;
 
-import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
+import ru.dostaevsky.tests.web.enums.Categories;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
-
+import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverConditions.url;
-import static org.assertj.core.api.Assertions.assertThat;
+import static ru.dostaevsky.tests.web.data.AttributeData.*;
+import static ru.dostaevsky.tests.web.enums.CityLinks.*;
 
 public class MainPage {
-
-    private final static String
-            MAIN_URL = "https://dostaevsky.ru/";
+    private final static ElementsCollection navigationMenu = $$(".main-nav__link");
+    private final static SelenideElement
+            cityList = $(".main-nav__city"),
+            confirmCityMessage = $(".city-confirm");
 
     @Step("Переходим на главную страницу")
     public MainPage openMainPage() {
-        open(MAIN_URL);
-        executeJavaScript("arguments[0].setAttribute('hidden', 'true')", $(".city-confirm"));
+        open(SPB_LINK.getValue());
         return this;
     }
 
     @Step("Выбираем город")
     public MainPage selectCityFromList(String link, String city) {
-        $(".main-nav__city").hover()
+        cityList.hover()
                 .$("a[href*='" + link + "']")
-                .shouldHave(Condition.text(city)).click();
+                .shouldHave(text(city)).click();
         return this;
     }
 
@@ -39,29 +37,29 @@ public class MainPage {
         return this;
     }
 
-    @Step("Проверяем, что наименование выбранного города отображается на странице")
-    public MainPage checkCityNameOnPage(String link) {
-        executeJavaScript("arguments[0].setAttribute('hidden', 'true')", $(".city-confirm"));
-        $("a[href*='" + link + "']").shouldHave(Condition.attribute("data-city", "selected"));
+    @Step("Проверяем, что у выбранного города отображается аттрибут выбора")
+    public MainPage checkSelectedAttributeInCity(String link) {
+        $("a[href*='" + link + "']")
+                .shouldHave(attribute(ATTRIBUTE_CITY, ATTRIBUTE_CITY_VALUE));
         return this;
     }
 
-    @Step("Проверяем, что для выбранного города отображается правильный номер для связи")
-    public MainPage checkCityPhoneOnPage(String phone) {
-        $(".header__phone").shouldHave(Condition.text(phone));
-        return this;
-    }
-
-    // TODO: Добавить словарь по категориям
     @Step("Переходим в выбранную в меню категорию")
-    public MainPage navigateTo(String category) {
-        $$(".main-nav__link").findBy(Condition.text(category)).click();
+    public MainPage navigateToCategory(Categories category) {
+        navigationMenu
+                .findBy(text(category.getValue())).click();
         return this;
     }
 
     @Step("Удаляем информационную панель со страницы")
     public MainPage removeInfoFromPage() {
         executeJavaScript("$('.info').remove()");
+        return this;
+    }
+
+    @Step("Скрываем сообщение подтверждения города")
+    public MainPage hideConfirmCityMessage() {
+        executeJavaScript("arguments[0].setAttribute('hidden', 'true')", confirmCityMessage);
         return this;
     }
 

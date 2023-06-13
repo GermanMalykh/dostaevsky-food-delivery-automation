@@ -1,4 +1,4 @@
-package ru.dostaevsky.tests.web;
+package ru.dostaevsky.tests.web.config;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
@@ -19,6 +19,7 @@ public class TestBaseWeb {
         Configuration.browser = "chrome";
         Configuration.browserSize = "1920x1080";
         Configuration.browserVersion = "91.0";
+        Configuration.pageLoadTimeout = 60000;
         Configuration.remote = "http://localhost:4444/wd/hub";
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
