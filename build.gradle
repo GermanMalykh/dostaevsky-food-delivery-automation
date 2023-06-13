@@ -7,11 +7,21 @@ plugins {
 group 'guru.qa'
 version '1.0-SNAPSHOT'
 
+compileJava.options.encoding = "UTF-8"
+compileTestJava.options.encoding = "UTF-8"
+
+java.sourceCompatibility = JavaVersion.VERSION_11
+java.targetCompatibility = JavaVersion.VERSION_11
+
 def junit5Version = '5.9.3'
 def selenideVersion = '6.13.0'
+def selenideAppiumVersion = '2.7.1'
+def appiumVersion = '8.3.0'
 def slf4jVersion = '2.0.7'
-def allureSelenideVersion = '2.21.0'
+def allureVersion = '2.21.0'
 def assertjVersion = '3.24.2'
+def restAssuredVersion = '5.3.0'
+def ownerVersion = '2.12.0'
 
 repositories {
     mavenCentral()
@@ -21,21 +31,26 @@ dependencies {
     testImplementation(
             "org.junit.jupiter:junit-jupiter:${junit5Version}",
             "com.codeborne:selenide:${selenideVersion}",
-            "io.qameta.allure:allure-selenide:${allureSelenideVersion}",
+            "io.qameta.allure:allure-selenide:${allureVersion}",
             "org.slf4j:slf4j-simple:${slf4jVersion}",
-            "org.assertj:assertj-core:${assertjVersion}"
+            "org.assertj:assertj-core:${assertjVersion}",
+            "io.rest-assured:rest-assured:${restAssuredVersion}",
+            "com.codeborne:selenide-appium:${selenideAppiumVersion}",
+            "io.appium:java-client:${appiumVersion}",
+            "io.qameta.allure:allure-rest-assured:${allureVersion}",
+            "commons-io:commons-io:${ownerVersion}"
     )
 }
 
 allure {
     report {
-        version.set("2.21.0")
+        version.set(allureVersion)
     }
     adapter {
         aspectjWeaver.set(true)
         frameworks {
             junit5 {
-                adapterVersion.set(allureSelenideVersion)
+                adapterVersion.set(allureVersion)
             }
         }
     }
