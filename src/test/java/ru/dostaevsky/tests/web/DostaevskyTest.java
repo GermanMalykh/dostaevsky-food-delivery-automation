@@ -56,6 +56,19 @@ public class DostaevskyTest extends TestBaseWeb {
                 .assertPrices(expectedPrices, catalogItemComponents.getActualPrices());
     }
 
+    @Severity(CRITICAL)
+    @DisplayName("Отображение цен на боулы за пределами СПБ. ")
+    @ParameterizedTest(name = "В городе \"{0}\" отображаемые на странице цены на боулы равны ценам из словаря")
+    @MethodSource("ru.dostaevsky.tests.web.providers.BowlsPriceProvider#provide")
+    void bowlsPriceComparisonInSelectedCityTest(CityName name, CityLinks link, Map<String, Integer> expectedPrices) {
+        mainPage.openMainPage()
+                .selectCityFromList(link.getValue(), name.getDisplayName())
+                .navigateTo("Боулы");
+
+        catalogItemComponents.checkSize(expectedPrices)
+                .assertPrices(expectedPrices, catalogItemComponents.getActualPrices());
+    }
+
     @Severity(BLOCKER)
     @DisplayName("Добавление позиции в корзину и проверка отображения цены, количества и наименования товара")
     @Test
