@@ -20,7 +20,7 @@ public class FavoriteInfoTests extends TestBaseMobile {
     NavigationComponents navigation = new NavigationComponents();
     ItemComponents item = new ItemComponents();
     FavoritePage favorite = new FavoritePage();
-
+    //TODO: Вынести текстовые значения в переменные
     @Severity(NORMAL)
     @DisplayName("Добавление товара в избранное и проверка отображения товара в списке избранных")
     @Test

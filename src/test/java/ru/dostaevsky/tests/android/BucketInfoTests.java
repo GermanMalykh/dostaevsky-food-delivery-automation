@@ -20,7 +20,7 @@ public class BucketInfoTests extends TestBaseMobile {
     MainPage main = new MainPage();
     NavigationComponents navigation = new NavigationComponents();
     ItemComponents item = new ItemComponents();
-
+//TODO: Вынести текстовые значения в переменные
     @Severity(MINOR)
     @DisplayName("Отображение информации в пустой корзине")
     @Test

@@ -21,7 +21,7 @@ public class CityInfoTests extends TestBaseMobile {
     SearchComponents search = new SearchComponents();
     NavigationComponents navigation = new NavigationComponents();
     AdditionalInfoPage infoPage = new AdditionalInfoPage();
-
+    //TODO: Вынести текстовые значения в переменные
     @Severity(CRITICAL)
     @CsvSource({"Санкт-Петербург, пицца", "Москва, пицца", "Сочи, пицца", "Краснодар, пицца", "Новосибирск, пицца"})
     @DisplayName("Результаты поиска. ")
