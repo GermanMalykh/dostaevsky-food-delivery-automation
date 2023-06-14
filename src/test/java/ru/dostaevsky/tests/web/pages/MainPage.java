@@ -3,13 +3,13 @@ package ru.dostaevsky.tests.web.pages;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
-import ru.dostaevsky.tests.web.enums.Categories;
+import ru.dostaevsky.enums.Categories;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverConditions.url;
-import static ru.dostaevsky.tests.web.data.AttributeData.*;
-import static ru.dostaevsky.tests.web.enums.CityLinks.*;
+import static ru.dostaevsky.data.AttributeData.*;
+import static ru.dostaevsky.enums.CityLinks.*;
 
 public class MainPage {
     private final static ElementsCollection navigationMenu = $$(".main-nav__link");

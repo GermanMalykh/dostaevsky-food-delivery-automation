@@ -5,8 +5,8 @@ import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
-import static ru.dostaevsky.tests.web.data.AttributeData.*;
-import static ru.dostaevsky.tests.web.data.BucketData.*;
+import static ru.dostaevsky.data.AttributeData.*;
+import static ru.dostaevsky.data.BucketData.*;
 
 public class BucketPage {
     private final static SelenideElement
@@ -36,7 +36,7 @@ public class BucketPage {
     public BucketPage checkMinimalPriceTitle() {
         minimalPriceToDelivery
                 .shouldBe(visible)
-                .shouldHave(text(MINIMAL_PRICE_TEXT));
+                .shouldHave(text(MINIMAL_PRICE_TEXT_WEB));
         return this;
     }
 

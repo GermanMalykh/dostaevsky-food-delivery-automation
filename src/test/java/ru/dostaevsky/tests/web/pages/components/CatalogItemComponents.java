@@ -11,14 +11,14 @@ import java.util.Objects;
 
 import static com.codeborne.selenide.Selenide.$$;
 import static org.assertj.core.api.Assertions.assertThat;
-import static ru.dostaevsky.tests.web.data.AttributeData.*;
+import static ru.dostaevsky.data.AttributeData.*;
 
 public class CatalogItemComponents {
     private static final ElementsCollection items = $$(".catalog-list__item");
     private static final List<SelenideElement> itemsList = items;
 
     @Step("Добавляем позицию в корзину")
-    public CatalogItemComponents addItemToCart() {
+    public CatalogItemComponents addItemToBucket() {
         items.first().$("[type='button']").click();
         return this;
     }

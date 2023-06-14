@@ -2,6 +2,7 @@ package ru.dostaevsky.tests.web;
 
 import io.qameta.allure.Severity;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import ru.dostaevsky.tests.web.config.TestBaseWeb;
 import ru.dostaevsky.tests.web.pages.BucketPage;
@@ -10,9 +11,10 @@ import ru.dostaevsky.tests.web.pages.components.CatalogItemComponents;
 import ru.dostaevsky.tests.web.pages.components.HeaderComponents;
 
 import static io.qameta.allure.SeverityLevel.*;
-import static ru.dostaevsky.tests.web.data.AttributeData.*;
-import static ru.dostaevsky.tests.web.enums.Categories.*;
+import static ru.dostaevsky.data.AttributeData.*;
+import static ru.dostaevsky.enums.Categories.*;
 
+@Tag("web")
 @DisplayName("Web Tests")
 public class BucketInfoTests extends TestBaseWeb {
     MainPage mainPage = new MainPage();
@@ -27,7 +29,7 @@ public class BucketInfoTests extends TestBaseWeb {
         mainPage.openMainPage()
                 .navigateToCategory(BOWLS);
 
-        catalogItemComponents.addItemToCart();
+        catalogItemComponents.addItemToBucket();
         String price = catalogItemComponents.getAttributeValue(ATTRIBUTE_ITEM_PRICE);
         String name = catalogItemComponents.getAttributeValue(ATTRIBUTE_ITEM_NAME);
 
@@ -56,7 +58,7 @@ public class BucketInfoTests extends TestBaseWeb {
     void addItemToCartAndCheckMinimalPriceToDeliveryInfo() {
         mainPage.openMainPage()
                 .navigateToCategory(WOKS);
-        catalogItemComponents.addItemToCart();
+        catalogItemComponents.addItemToBucket();
         headerComponents.navigateToBucket();
         bucketPage.checkMinimalPriceTitle();
     }

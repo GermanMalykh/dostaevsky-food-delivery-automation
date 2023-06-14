@@ -2,19 +2,21 @@ package ru.dostaevsky.tests.web;
 
 import io.qameta.allure.Severity;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 import ru.dostaevsky.tests.web.config.TestBaseWeb;
-import ru.dostaevsky.tests.web.enums.CityLinks;
-import ru.dostaevsky.tests.web.enums.CityName;
+import ru.dostaevsky.enums.CityLinks;
+import ru.dostaevsky.enums.CityName;
 import ru.dostaevsky.tests.web.pages.MainPage;
 import ru.dostaevsky.tests.web.pages.components.CatalogItemComponents;
 
 import java.util.*;
 
 import static io.qameta.allure.SeverityLevel.*;
-import static ru.dostaevsky.tests.web.enums.Categories.*;
+import static ru.dostaevsky.enums.Categories.*;
 
+@Tag("web")
 @DisplayName("Web Tests")
 public class ProductsInfoTests extends TestBaseWeb {
     MainPage mainPage = new MainPage();

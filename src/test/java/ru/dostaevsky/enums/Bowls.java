@@ -1,4 +1,4 @@
-package ru.dostaevsky.tests.web.enums;
+package ru.dostaevsky.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

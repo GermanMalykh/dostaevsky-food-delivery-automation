@@ -1,4 +1,4 @@
-package ru.dostaevsky.tests.android;
+package ru.dostaevsky.tests.android.config;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;

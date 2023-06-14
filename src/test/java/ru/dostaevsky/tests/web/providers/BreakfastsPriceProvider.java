@@ -1,9 +1,9 @@
 package ru.dostaevsky.tests.web.providers;
 
 import org.junit.jupiter.params.provider.Arguments;
-import ru.dostaevsky.tests.web.enums.Breakfasts;
-import ru.dostaevsky.tests.web.enums.CityLinks;
-import ru.dostaevsky.tests.web.enums.CityName;
+import ru.dostaevsky.enums.Breakfasts;
+import ru.dostaevsky.enums.CityLinks;
+import ru.dostaevsky.enums.CityName;
 
 import java.util.HashMap;
 import java.util.Map;

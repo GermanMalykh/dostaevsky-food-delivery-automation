@@ -1,4 +1,4 @@
-package ru.dostaevsky.tests.web.data;
+package ru.dostaevsky.data;
 
 public class AttributeData {
     public static final String
