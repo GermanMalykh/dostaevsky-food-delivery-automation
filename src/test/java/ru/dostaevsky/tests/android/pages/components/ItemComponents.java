@@ -16,17 +16,17 @@ public class ItemComponents {
             productPrice = $(id("ru.dostaevsky.android:id/textCardProductPrice")),
             productName = $(id("ru.dostaevsky.android:id/textProductName")),
             productCount = $(id("ru.dostaevsky.android:id/textViewCount")),
-            bottomBucket = $(id("ru.dostaevsky.android:id/bottomNavigationCartMenuId")),
+            bottomCart = $(id("ru.dostaevsky.android:id/bottomNavigationCartMenuId")),
             addToFavorite = $(id(("ru.dostaevsky.android:id/imageFavorite")));
 
     @Step("Добавляем позицию в корзину")
-    public ItemComponents addProductToBucket() {
+    public ItemComponents addProductToCart() {
         addProductButton.click();
         return this;
     }
 
     @Step("Добавляем дополнительную позицию в корзину")
-    public ItemComponents addMoreProductsToBucket() {
+    public ItemComponents addMoreProductsToCart() {
         addMoreProductButton.click();
         return this;
     }
@@ -55,8 +55,8 @@ public class ItemComponents {
     }
 
     @Step("Проверяем количество добавленных в корзину товаров в уведомлении")
-    public ItemComponents checkTotalItemsInBucketNotification(String itemCount) {
-        bottomBucket
+    public ItemComponents checkTotalItemsInCartNotification(String itemCount) {
+        bottomCart
                 .$(accessibilityId("Корзина, " + itemCount + " new notifications"))
                 .shouldBe(visible);
         return this;

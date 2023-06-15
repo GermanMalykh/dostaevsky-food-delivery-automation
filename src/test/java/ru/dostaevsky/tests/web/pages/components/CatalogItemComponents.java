@@ -18,7 +18,7 @@ public class CatalogItemComponents {
     private static final List<SelenideElement> itemsList = items;
 
     @Step("Добавляем позицию в корзину")
-    public CatalogItemComponents addItemToBucket() {
+    public CatalogItemComponents addItemToCart() {
         items.first().$("[type='button']").click();
         return this;
     }
@@ -36,7 +36,7 @@ public class CatalogItemComponents {
         return this;
     }
 
-    @Step("Извлекаем и сохраняем значения наименования/цены позиций")
+    @Step("Извлекаем и сохраняем значения наименования, цены позиций")
     public Map<String, Integer> getActualPrices() {
         Map<String, Integer> actualPrices = new HashMap<>();
         for (SelenideElement item : itemsList) {

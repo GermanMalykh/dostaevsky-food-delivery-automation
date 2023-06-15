@@ -8,7 +8,10 @@ import lombok.Getter;
 public enum Categories {
     BREAKFASTS("Завтраки"),
     BOWLS("Боулы"),
-    WOKS("Wok");
+    WOKS("Wok"),
+    FAST_FOOD("Фастфуд"),
+    NEW("Новинки"),
+    ONIGIRI("Онигири");
 
     private final String value;
 }

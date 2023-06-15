@@ -13,6 +13,7 @@ import ru.dostaevsky.tests.android.pages.components.NavigationComponents;
 import ru.dostaevsky.tests.android.pages.components.SearchComponents;
 
 import static io.qameta.allure.SeverityLevel.*;
+import static ru.dostaevsky.data.MenuItemsData.ADDITIONAL_INFO;
 
 @Tag("android")
 @DisplayName("Android Tests")
@@ -21,11 +22,11 @@ public class CityInfoTests extends TestBaseMobile {
     SearchComponents search = new SearchComponents();
     NavigationComponents navigation = new NavigationComponents();
     AdditionalInfoPage infoPage = new AdditionalInfoPage();
-    //TODO: Вынести текстовые значения в переменные
+
     @Severity(CRITICAL)
+    @DisplayName("Проверка результатов поиска. ")
+    @ParameterizedTest(name = "Для города \"{0}\", результаты поиска по слову \"{1}\" не равны нулю")
     @CsvSource({"Санкт-Петербург, пицца", "Москва, пицца", "Сочи, пицца", "Краснодар, пицца", "Новосибирск, пицца"})
-    @DisplayName("Результаты поиска. ")
-    @ParameterizedTest(name = "Для города \"{0}\" по слову \"{1}\" не равны нулю")
     void successfulProductSearchTest(String city, String product) {
         main.selectByText(city);
         navigation.backNavigation();
@@ -41,7 +42,7 @@ public class CityInfoTests extends TestBaseMobile {
     void selectingCityFromTheListAvailableAndCheckingDisplayInfoTest(String city, String phoneWithPlus) {
         main.selectByText(city);
         navigation.backNavigation();
-        main.selectByText("Еще");
+        main.selectByText(ADDITIONAL_INFO);
         infoPage.checkCityName(city)
                 .checkCityPhoneNumber(phoneWithPlus);
     }

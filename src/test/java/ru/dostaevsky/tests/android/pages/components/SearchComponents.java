@@ -28,7 +28,7 @@ public class SearchComponents {
         return this;
     }
 
-    @Step("Проверяем, что результаты поиска не меньше требуемого")
+    @Step("Проверяем, что результаты поиска не меньше чем \"{size}\"")
     public SearchComponents inputSearchText(Integer size) {
         searchResults.shouldHave(sizeGreaterThan(size));
         return this;

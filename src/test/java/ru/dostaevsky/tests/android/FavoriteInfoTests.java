@@ -11,7 +11,11 @@ import ru.dostaevsky.tests.android.pages.components.ItemComponents;
 import ru.dostaevsky.tests.android.pages.components.NavigationComponents;
 
 import static io.qameta.allure.SeverityLevel.NORMAL;
+import static ru.dostaevsky.data.MenuItemsData.ADDITIONAL_INFO;
+import static ru.dostaevsky.data.MenuItemsData.FAVORITE;
+import static ru.dostaevsky.enums.Categories.ONIGIRI;
 import static ru.dostaevsky.enums.CityName.SPB;
+import static ru.dostaevsky.enums.Onigiri.SNOW_CRAB_ONIGIRI;
 
 @Tag("android")
 @DisplayName("Android Tests")
@@ -20,20 +24,20 @@ public class FavoriteInfoTests extends TestBaseMobile {
     NavigationComponents navigation = new NavigationComponents();
     ItemComponents item = new ItemComponents();
     FavoritePage favorite = new FavoritePage();
-    //TODO: Вынести текстовые значения в переменные
+
     @Severity(NORMAL)
     @DisplayName("Добавление товара в избранное и проверка отображения товара в списке избранных")
     @Test
     void addItemToFavoriteListAndCheckIt() {
         main.selectByText(SPB.getDisplayName());
         navigation.backNavigation()
-                .scrollToElement("Онигири")
-                .scrollToElement("Онигири со снежным крабом");
+                .scrollToElement(ONIGIRI.getValue())
+                .scrollToElement(SNOW_CRAB_ONIGIRI.getValue());
         item.addItemToFavorite();
         navigation.backNavigation();
-        main.selectByText("Еще");
-        main.selectByText("Избранное");
+        main.selectByText(ADDITIONAL_INFO);
+        main.selectByText(FAVORITE);
         favorite.checkFavoriteTitle();
-        item.checkProductName("Онигири со снежным крабом");
+        item.checkProductName(SNOW_CRAB_ONIGIRI.getValue());
     }
 }

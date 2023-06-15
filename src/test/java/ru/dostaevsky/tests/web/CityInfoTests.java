@@ -3,7 +3,6 @@ package ru.dostaevsky.tests.web;
 import io.qameta.allure.Severity;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import ru.dostaevsky.tests.web.config.TestBaseWeb;
@@ -22,7 +21,7 @@ public class CityInfoTests extends TestBaseWeb {
     @DisplayName("Выбор и отображение информации города. ")
     @ParameterizedTest(name = "Для города \"{1}\" отображается информация по ссылке \"{0}\" с контактным номером телефона \"{2}\"")
     @CsvFileSource(resources = "/csv/cityWebInfo.csv")
-    void selectingCityFromTheListAvailableAndCheckingDisplayInfoTest(String link, String city, String phone) {
+    void selectCityFromTheListAvailableAndCheckDisplayInfoTest(String link, String city, String phone) {
         mainPage.openMainPage()
                 .hideConfirmCityMessage()
                 .selectCityFromList(link, city)
