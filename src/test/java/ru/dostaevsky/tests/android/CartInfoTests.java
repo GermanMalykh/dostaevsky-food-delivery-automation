@@ -4,6 +4,8 @@ import io.qameta.allure.Severity;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
 import ru.dostaevsky.tests.android.config.TestBaseMobile;
 import ru.dostaevsky.tests.android.pages.CartPage;
 import ru.dostaevsky.tests.android.pages.MainPage;
@@ -35,15 +37,16 @@ public class CartInfoTests extends TestBaseMobile {
     }
 
     @Severity(NORMAL)
-    @DisplayName("Отображение информации о минимальной сумме заказа")
-    @Test
-    void checkMinimalPriceToDeliveryInfo() {
-        main.selectByText(SPB.getDisplayName());
+    @DisplayName("Проверка минимальной цены доставки. ")
+    @ParameterizedTest(name = "Минимальная цена доставки в городе \"{1}\" равна \"{3}\" ₽")
+    @CsvFileSource(resources = "/csv/cityWebInfo.csv")
+    void checkMinimalPriceToDeliveryInfo(String link, String city, String phone, String minimalPrice) {
+        main.selectByText(city);
         navigation.backNavigation();
         main.selectByText(FAST_FOOD.getValue());
         item.addProductToCart();
-        main.selectByText("Корзина");
-        cart.checkMinimalPriceTitle();
+        main.selectByText(CART);
+        cart.checkMinimalPriceTitle(minimalPrice);
     }
 
     // TODO: Добавить в дальнейшем добавление товара через API

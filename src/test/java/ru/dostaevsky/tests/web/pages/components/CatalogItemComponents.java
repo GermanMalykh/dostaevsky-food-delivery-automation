@@ -1,6 +1,7 @@
 package ru.dostaevsky.tests.web.pages.components;
 
 import com.codeborne.selenide.ElementsCollection;
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 
@@ -9,17 +10,26 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
+import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 import static org.assertj.core.api.Assertions.assertThat;
 import static ru.dostaevsky.data.AttributeData.*;
 
 public class CatalogItemComponents {
     private static final ElementsCollection items = $$(".catalog-list__item");
+    private static final SelenideElement itemCount = $(".counter-buttons__wrap[style*=flex]");
     private static final List<SelenideElement> itemsList = items;
 
     @Step("Добавляем позицию в корзину")
     public CatalogItemComponents addItemToCart() {
         items.first().$("[type='button']").click();
+        return this;
+    }
+
+    @Step("Добавляем дополнительную позицию в корзину")
+    public CatalogItemComponents addMoreProductsToCart() {
+        itemCount.$(".counter-buttons__pl").click();
+        Selenide.sleep(1000);
         return this;
     }
 
@@ -52,6 +62,11 @@ public class CatalogItemComponents {
     public CatalogItemComponents assertPrices(Map<String, Integer> expectedPrices, Map<String, Integer> actualPrices) {
         assertThat(expectedPrices).containsAllEntriesOf(actualPrices);
         return this;
+    }
+
+    @Step("Извлекаем значение количества добавленного в корзину товара")
+    public String getItemCount() {
+        return itemCount.$(".counter-buttons__count").getText();
     }
 
 }

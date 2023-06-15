@@ -6,6 +6,7 @@ import io.qameta.allure.Step;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$;
 import static io.appium.java_client.AppiumBy.id;
+import static java.time.Duration.*;
 import static ru.dostaevsky.data.CartData.*;
 
 public class CartPage {
@@ -31,12 +32,12 @@ public class CartPage {
         return this;
     }
 
-    //    TODO: Перевести в параметризованный тест с проверкой суммы по городам
     @Step("Проверяем наличие сообщения с текстом минимальной суммы заказа")
-    public CartPage checkMinimalPriceTitle() {
+    public CartPage checkMinimalPriceTitle(String minimalPrice) {
         minimalPriceErrorLayout
                 .$(id("ru.dostaevsky.android:id/min_price_error_title"))
-                .shouldHave(text(MINIMAL_PRICE_TEXT_MOBILE));
+                .shouldBe(visible, ofSeconds(10))
+                .shouldHave(text("Минимальная сумма заказа — " + minimalPrice + " ₽."));
         return this;
     }
 

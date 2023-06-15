@@ -32,7 +32,6 @@ public class ProductsInfoTests extends TestBaseWeb {
                 .selectCityFromList(link.getValue(), name.getDisplayName())
                 .navigateToCategory(BREAKFASTS)
                 .removeInfoFromPage();
-
         catalogItemComponents.checkSizeComponentsOnPage(expectedPrices)
                 .assertPrices(expectedPrices, catalogItemComponents.getActualPrices());
     }
@@ -47,7 +46,6 @@ public class ProductsInfoTests extends TestBaseWeb {
                 .selectCityFromList(link.getValue(), name.getDisplayName())
                 .navigateToCategory(BOWLS)
                 .removeInfoFromPage();
-
         catalogItemComponents.checkSizeComponentsOnPage(expectedPrices)
                 .assertPrices(expectedPrices, catalogItemComponents.getActualPrices());
     }

@@ -8,9 +8,9 @@ import lombok.Getter;
 public enum Bowls {
     SALMON_BOWL("Боул с лососем", 469, 499, 499, 499),
     VEGGIE_BOWL("Боул вегетарианский", 379, 399, 389, 369),
-    BEEF_BOWL("Боул с говядиной", 429, 439, 465, 439),
+    BEEF_BOWL("Боул с говядиной", 429, 449, 465, 439),
     TUNA_BOWL("Боул с тунцом", 449, 489, 499, 469),
-    SHAWARMA_BOWL("Шаурма-боул", 379, 349, 329, 409);
+    SHAWARMA_BOWL("Шаурма-боул", 379, 359, 329, 409);
 
     private final String name;
     private final int mskPrice;

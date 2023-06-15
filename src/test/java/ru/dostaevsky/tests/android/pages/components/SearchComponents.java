@@ -5,9 +5,11 @@ import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
+import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 import static io.appium.java_client.AppiumBy.id;
+import static java.time.Duration.*;
 
 public class SearchComponents {
     private static final ElementsCollection
@@ -18,7 +20,9 @@ public class SearchComponents {
 
     @Step("Переходим к поиску")
     public SearchComponents navigateToSearch() {
-        searchField.click();
+        searchField
+                .shouldBe(visible, ofSeconds(10))
+                .click();
         return this;
     }
 

@@ -4,6 +4,8 @@ import io.qameta.allure.Severity;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
 import ru.dostaevsky.tests.web.config.TestBaseWeb;
 import ru.dostaevsky.tests.web.pages.CartPage;
 import ru.dostaevsky.tests.web.pages.MainPage;
@@ -23,20 +25,19 @@ public class CartInfoTests extends TestBaseWeb {
     HeaderComponents header = new HeaderComponents();
 
     // TODO: Добавить в дальнейшем добавление товара через API
-    // TODO: Вытаскивать значение count со страницы и убрать хардкод
     @Severity(NORMAL)
     @DisplayName("Добавление позиции в корзину и проверка отображения цены и количества товара в шапке страницы")
     @Test
     void addItemToCartAndCheckValueTestInHeader() {
         main.openMainPage()
                 .navigateToCategory(BOWLS);
-
         item.addItemToCart();
-        String price = item.getAttributeValue(ATTRIBUTE_ITEM_PRICE);
+
+        String price = item.getAttributeValue(ATTRIBUTE_ITEM_PRICE),
+                count = item.getItemCount();
 
         header.checkItemPriceInHeaderCart(price)
-                .checkItemCountInHeaderCart(ITEM_COUNT)
-                .navigateToCart();
+                .checkItemCountInHeaderCart(count);
     }
 
     @Severity(BLOCKER)
@@ -45,14 +46,16 @@ public class CartInfoTests extends TestBaseWeb {
     void addItemToCartAndCheckValueTestInCart() {
         main.openMainPage()
                 .navigateToCategory(BOWLS);
-
         item.addItemToCart();
-        String price = item.getAttributeValue(ATTRIBUTE_ITEM_PRICE);
-        String name = item.getAttributeValue(ATTRIBUTE_ITEM_NAME);
 
+        String price = item.getAttributeValue(ATTRIBUTE_ITEM_PRICE),
+                name = item.getAttributeValue(ATTRIBUTE_ITEM_NAME),
+                count = item.getItemCount();
+
+        header.navigateToCart();
         cart.checkItemPriceInTheCart(price)
                 .checkItemNameInTheCart(name)
-                .checkItemCountInTheCart(ITEM_COUNT);
+                .checkItemCountInTheCart(count);
     }
 
     @Severity(MINOR)
@@ -66,14 +69,17 @@ public class CartInfoTests extends TestBaseWeb {
     }
 
     @Severity(NORMAL)
-    @DisplayName("Отображение информации о минимальной сумме заказа")
-    @Test
-    void addItemToCartAndCheckMinimalPriceToDeliveryInfo() {
+    @DisplayName("Проверка минимальной цены доставки. ")
+    @ParameterizedTest(name = "Минимальная цена доставки в городе \"{1}\" равна \"{3}\" ₽")
+    @CsvFileSource(resources = "/csv/cityWebInfo.csv")
+    void addItemToCartAndCheckMinimalPriceToDeliveryInfo(String link, String city, String phone, String minimalPrice) {
         main.openMainPage()
+                .hideConfirmCityMessage()
+                .selectCityFromList(link, city)
                 .navigateToCategory(WOKS);
         item.addItemToCart();
         header.navigateToCart();
-        cart.checkMinimalPriceTitle();
+        cart.checkMinimalPriceTitle(minimalPrice);
     }
 
 }

@@ -6,6 +6,7 @@ import io.qameta.allure.Step;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.appium.SelenideAppium.$;
 import static io.appium.java_client.AppiumBy.className;
+import static ru.dostaevsky.data.MenuItemsData.FAVORITE;
 
 public class FavoritePage {
 
@@ -15,7 +16,7 @@ public class FavoritePage {
     @Step("Проверяем наименование вкладки \"Избранное\"")
     public FavoritePage checkFavoriteTitle() {
         favoriteTitle
-                .shouldHave(text("Избранное"));
+                .shouldHave(text(FAVORITE));
         return this;
     }
 }

@@ -5,6 +5,7 @@ import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
+import static java.time.Duration.ofSeconds;
 import static ru.dostaevsky.data.AttributeData.*;
 import static ru.dostaevsky.data.CartData.*;
 
@@ -14,7 +15,7 @@ public class CartPage {
             emptyCartImage = $(".basket-empty-blank__img"),
             minimalPriceToDelivery = $(".basket-blank-limit__title"),
             productPrice = $(".basket__product-price__value"),
-            productCount = $(".counter-buttons__count"),
+            productCount = $(".counter-buttons .counter-buttons__count"),
             productName = $(".basket__product-title");
 
     @Step("Проверяем наличие сообщения с предложением добавления позиций в корзину")
@@ -31,12 +32,11 @@ public class CartPage {
         return this;
     }
 
-    //TODO: Добавить параметризацию на тест с проверкой по городам
     @Step("Проверяем наличие сообщения с текстом минимальной суммы заказа")
-    public CartPage checkMinimalPriceTitle() {
+    public CartPage checkMinimalPriceTitle(String minimalPrice) {
         minimalPriceToDelivery
-                .shouldBe(visible)
-                .shouldHave(text(MINIMAL_PRICE_TEXT_WEB));
+                .shouldBe(visible, ofSeconds(10))
+                .shouldHave(text("Минимальная сумма заказа " + minimalPrice + " ₽"));
         return this;
     }
 
@@ -48,7 +48,6 @@ public class CartPage {
         return this;
     }
 
-    //TODO: Доработать поиск элемента
     @Step("Проверяем отображение количества товара в корзине")
     public CartPage checkItemCountInTheCart(String itemCount) {
         productCount
