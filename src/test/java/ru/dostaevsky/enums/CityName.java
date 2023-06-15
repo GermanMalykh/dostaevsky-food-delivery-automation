@@ -1,8 +1,10 @@
 package ru.dostaevsky.enums;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @Getter
+@AllArgsConstructor
 public enum CityName {
     SPB("Санкт-Петербург"),
     MSK("Москва"),
@@ -11,10 +13,6 @@ public enum CityName {
     NSK("Новосибирск");
 
     private final String displayName;
-
-    CityName(String displayName) {
-        this.displayName = displayName;
-    }
 
     @Override
     public String toString() {
