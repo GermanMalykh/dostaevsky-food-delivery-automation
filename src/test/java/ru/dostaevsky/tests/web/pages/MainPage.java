@@ -3,12 +3,16 @@ package ru.dostaevsky.tests.web.pages;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
+import org.openqa.selenium.Cookie;
 import ru.dostaevsky.enums.Categories;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverConditions.url;
+import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static ru.dostaevsky.data.AttributeData.*;
+import static ru.dostaevsky.data.CookieData.WEB_SPB_UNREGISTERED_USER_COOKIE;
+import static ru.dostaevsky.data.CookieData.SPB_URL_FOR_ADDING_COOKIE;
 import static ru.dostaevsky.enums.CityLinks.*;
 
 public class MainPage {
@@ -60,6 +64,19 @@ public class MainPage {
     @Step("Скрываем сообщение подтверждения города")
     public MainPage hideConfirmCityMessage() {
         executeJavaScript("arguments[0].setAttribute('hidden', 'true')", confirmCityMessage);
+        return this;
+    }
+
+    @Step("Добавляем куку пользователя")
+    public MainPage addingUserCookie() {
+        open(SPB_URL_FOR_ADDING_COOKIE);
+        getWebDriver().manage().addCookie(new Cookie("user_basket_sessid", WEB_SPB_UNREGISTERED_USER_COOKIE));
+        return this;
+    }
+
+    @Step("Переходим на \"{url}\"")
+    public MainPage openDesiredPage(String url) {
+        open(url);
         return this;
     }
 

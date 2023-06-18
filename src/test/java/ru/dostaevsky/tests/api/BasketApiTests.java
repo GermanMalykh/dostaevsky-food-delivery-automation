@@ -12,7 +12,7 @@ import ru.dostaevsky.tests.api.models.BasketInfoResponse;
 
 import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
-import static ru.dostaevsky.data.CookieData.UNREGISTERED_USER_COOKIE;
+import static ru.dostaevsky.data.CookieData.API_SPB_UNREGISTERED_USER_COOKIE;
 import static ru.dostaevsky.enums.BurgerIds.DOR_BLUE_BURGER_ID;
 import static ru.dostaevsky.tests.api.constants.ResponseData.*;
 
@@ -28,12 +28,12 @@ public class BasketApiTests extends TestBaseApi {
     void gettingFilledBasketInfo() {
         step("Делаем запрос на добавление товара в корзину", () -> {
             response = apiClient.addingItemToBasket(
-                            UNREGISTERED_USER_COOKIE,
+                            API_SPB_UNREGISTERED_USER_COOKIE,
                             DOR_BLUE_BURGER_ID.getValue())
                     .statusCode(200);
         });
         step("Делаем запрос на получение информации о товарах в корзине", () -> {
-            response = apiClient.gettingBasketInfo(UNREGISTERED_USER_COOKIE);
+            response = apiClient.gettingBasketInfo(API_SPB_UNREGISTERED_USER_COOKIE);
         });
         step("Проверяем, что статус код равен 200", () -> {
             response.statusCode(200);
@@ -47,7 +47,7 @@ public class BasketApiTests extends TestBaseApi {
             String data = response.extract().asString();
             String itemUid = responseExtractor.getItemUidAfterGettingBasketInfo(data);
             response = apiClient.removeItemFromBasket(
-                            UNREGISTERED_USER_COOKIE,
+                            API_SPB_UNREGISTERED_USER_COOKIE,
                             DOR_BLUE_BURGER_ID.getValue(),
                             itemUid)
                     .statusCode(200);
@@ -75,7 +75,7 @@ public class BasketApiTests extends TestBaseApi {
     void addingItemToBasketWithCookies() {
         step("Делаем запрос на добавление товара в корзину", () -> {
             response = apiClient.addingItemToBasket(
-                    UNREGISTERED_USER_COOKIE,
+                    API_SPB_UNREGISTERED_USER_COOKIE,
                     DOR_BLUE_BURGER_ID.getValue());
         });
         step("Проверяем, что статус код равен 200", () -> {
@@ -89,7 +89,7 @@ public class BasketApiTests extends TestBaseApi {
             String data = response.extract().asString();
             String itemUid = responseExtractor.getItemUidAfterAddToBasket(data);
             response = apiClient.removeItemFromBasket(
-                    UNREGISTERED_USER_COOKIE,
+                    API_SPB_UNREGISTERED_USER_COOKIE,
                     DOR_BLUE_BURGER_ID.getValue(),
                     itemUid);
         });
@@ -117,7 +117,7 @@ public class BasketApiTests extends TestBaseApi {
     void removedItemFromBasket() {
         step("Делаем запрос на добавление товара в корзину", () -> {
             response = apiClient.addingItemToBasket(
-                            UNREGISTERED_USER_COOKIE,
+                            API_SPB_UNREGISTERED_USER_COOKIE,
                             DOR_BLUE_BURGER_ID.getValue())
                     .statusCode(200);
         });
@@ -125,7 +125,7 @@ public class BasketApiTests extends TestBaseApi {
             String data = response.extract().asString();
             String itemUid = responseExtractor.getItemUidAfterAddToBasket(data);
             response = apiClient.removeItemFromBasket(
-                    UNREGISTERED_USER_COOKIE,
+                    API_SPB_UNREGISTERED_USER_COOKIE,
                     DOR_BLUE_BURGER_ID.getValue(),
                     itemUid);
         });
@@ -137,7 +137,7 @@ public class BasketApiTests extends TestBaseApi {
                     .contains(SUCCESS_RESPONSE_WITHOUT_ITEM);
         });
         step("Делаем запрос на получение информации о товарах в корзине", () -> {
-            response = apiClient.gettingBasketInfo(UNREGISTERED_USER_COOKIE).statusCode(200);
+            response = apiClient.gettingBasketInfo(API_SPB_UNREGISTERED_USER_COOKIE).statusCode(200);
         });
         step("Проверяем ответ (потом придумаю текст)", () -> {
             BasketInfoResponse basketInfoResponse = response.extract().as(BasketInfoResponse.class);
