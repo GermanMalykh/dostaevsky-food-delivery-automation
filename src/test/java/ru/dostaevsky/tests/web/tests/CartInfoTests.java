@@ -1,4 +1,4 @@
-package ru.dostaevsky.tests.web;
+package ru.dostaevsky.tests.web.tests;
 
 import io.qameta.allure.Severity;
 import io.restassured.RestAssured;
@@ -22,7 +22,7 @@ import static io.qameta.allure.Allure.step;
 import static io.qameta.allure.SeverityLevel.*;
 import static ru.dostaevsky.data.AttributeData.*;
 import static ru.dostaevsky.data.CartData.SPB_CART_URL;
-import static ru.dostaevsky.data.CookieData.API_SPB_UNREGISTERED_USER_COOKIE;
+import static ru.dostaevsky.data.AuthData.API_SPB_UNREGISTERED_USER_COOKIE;
 import static ru.dostaevsky.enums.BurgerIds.DOR_BLUE_BURGER_ID;
 import static ru.dostaevsky.enums.Categories.*;
 

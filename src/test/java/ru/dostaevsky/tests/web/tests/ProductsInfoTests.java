@@ -1,4 +1,4 @@
-package ru.dostaevsky.tests.web;
+package ru.dostaevsky.tests.web.tests;
 
 import io.qameta.allure.Severity;
 import org.junit.jupiter.api.DisplayName;

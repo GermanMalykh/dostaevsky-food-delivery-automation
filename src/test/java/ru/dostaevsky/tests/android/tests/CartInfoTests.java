@@ -1,4 +1,4 @@
-package ru.dostaevsky.tests.android;
+package ru.dostaevsky.tests.android.tests;
 
 import io.qameta.allure.Severity;
 import org.junit.jupiter.api.DisplayName;
@@ -49,7 +49,6 @@ public class CartInfoTests extends TestBaseMobile {
         cart.checkMinimalPriceTitle(minimalPrice);
     }
 
-    // TODO: Добавить в дальнейшем добавление товара через API
     @Severity(BLOCKER)
     @DisplayName("Добавление позиции в корзину и проверка отображения цены, количества и наименования товара в корзине")
     @Test

@@ -13,10 +13,10 @@ public class BasketInfoResponse {
     private int priceWoSale;
 
     @JsonProperty("items")
-    private BasketInfoItemsResponse[] items;
+    private BasketInfoItemsDetails[] items;
 
     @JsonProperty("shares")
-    private BasketInfoSharesResponse[] shares;
+    private BasketInfoSharesDetails[] shares;
 
     @JsonProperty("is_order_possible")
     private boolean isOrderPossible;
@@ -29,5 +29,8 @@ public class BasketInfoResponse {
 
     @JsonProperty("min_cart_price")
     private int minCartPrice;
+
+    @JsonProperty("status")
+    private String status;
 
 }

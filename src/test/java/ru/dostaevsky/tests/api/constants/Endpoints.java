@@ -13,17 +13,11 @@ public class Endpoints {
     /**
      * Reviews Endpoint
      */
-    public static final String GETTING_REVIEWS = "/api/v4/reviews?limit=%s";
+    public static final String GETTING_REVIEWS = "/api/v4/reviews";
 
     /**
-     * Recommendations Endpoint
+     * Auth Endpoint
      */
-    public static final String GETTING_RECOMMENDATIONS = "/api/v4/recommendations";
-
-    /**
-     * Auth Endpoints
-     */
-    public static final String SEND_SMS = "/auth/send-sms";
     public static final String LOGIN = "/auth/login";
 
 }

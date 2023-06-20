@@ -11,8 +11,8 @@ import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverConditions.url;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static ru.dostaevsky.data.AttributeData.*;
-import static ru.dostaevsky.data.CookieData.WEB_SPB_UNREGISTERED_USER_COOKIE;
-import static ru.dostaevsky.data.CookieData.SPB_URL_FOR_ADDING_COOKIE;
+import static ru.dostaevsky.data.AuthData.WEB_SPB_UNREGISTERED_USER_COOKIE;
+import static ru.dostaevsky.data.AuthData.SPB_URL_FOR_ADDING_COOKIE;
 import static ru.dostaevsky.enums.CityLinks.*;
 
 public class MainPage {

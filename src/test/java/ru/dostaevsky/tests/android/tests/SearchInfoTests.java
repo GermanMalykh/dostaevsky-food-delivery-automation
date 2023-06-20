@@ -1,4 +1,4 @@
-package ru.dostaevsky.tests.android;
+package ru.dostaevsky.tests.android.tests;
 
 import io.qameta.allure.Severity;
 import org.junit.jupiter.api.DisplayName;
