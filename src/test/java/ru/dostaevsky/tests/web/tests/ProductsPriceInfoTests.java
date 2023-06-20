@@ -18,7 +18,7 @@ import static ru.dostaevsky.enums.Categories.*;
 
 @Tag("web")
 @DisplayName("Web Tests")
-public class ProductsInfoTests extends TestBaseWeb {
+public class ProductsPriceInfoTests extends TestBaseWeb {
     MainPage mainPage = new MainPage();
     CatalogItemComponents catalogItemComponents = new CatalogItemComponents();
 

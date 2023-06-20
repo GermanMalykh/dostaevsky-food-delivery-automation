@@ -1,5 +1,6 @@
 package ru.dostaevsky.tests.api.tests.reviews;
 
+import io.qameta.allure.Severity;
 import io.restassured.response.ValidatableResponse;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -10,8 +11,11 @@ import ru.dostaevsky.tests.api.models.ErrorResponse;
 import ru.dostaevsky.tests.api.models.ReviewsResponse;
 
 import static io.qameta.allure.Allure.step;
+import static io.qameta.allure.SeverityLevel.MINOR;
+import static io.qameta.allure.SeverityLevel.NORMAL;
 import static org.assertj.core.api.Assertions.assertThat;
 import static ru.dostaevsky.data.AuthData.AUTH_TOKEN;
+import static ru.dostaevsky.tests.api.constants.ResponseData.*;
 
 @Tag("api")
 @DisplayName("Тесты на получение отзывов о компании")
@@ -19,6 +23,7 @@ public class GettingReviewsTests extends TestBaseApi {
     protected ValidatableResponse response;
     DostaevskyApiClient apiClient = new DostaevskyApiClient();
 
+    @Severity(NORMAL)
     @DisplayName("Получение отзывов о компании с передачей авторизационного токена")
     @Test
     void gettingReviewsWithToken() {
@@ -34,6 +39,7 @@ public class GettingReviewsTests extends TestBaseApi {
         });
     }
 
+    @Severity(MINOR)
     @DisplayName("Получение отзывов о компании без передачи авторизационного токена")
     @Test
     void gettingReviewsWithoutToken() {
@@ -45,10 +51,11 @@ public class GettingReviewsTests extends TestBaseApi {
         });
         step("Ответ содержит сообщение об ошибке", () -> {
             ErrorResponse error = response.extract().as(ErrorResponse.class);
-            assertThat(error.getMessage()).isEqualTo("Токен не существует");
+            assertThat(error.getMessage()).isEqualTo(NOT_EXIST_TOKEN_MESSAGE);
         });
     }
 
+    @Severity(MINOR)
     @DisplayName("Получение отзывов о компании с превышением лимита по отзывам в запросе")
     @Test
     void gettingReviewsWithExceedingLimit() {
@@ -60,14 +67,15 @@ public class GettingReviewsTests extends TestBaseApi {
         });
         step("Ответ содержит сообщение об ошибке", () -> {
             ErrorResponse error = response.extract().as(ErrorResponse.class);
-            assertThat(error.getMessage()).isEqualTo("Некорректный запрос, попробуйте изменить отправляемые данные.");
-            assertThat(error.getErrors().toString()).contains("The limit may not be greater than 100.");
+            assertThat(error.getMessage()).isEqualTo(INVALID_REQUEST_ERROR);
+            assertThat(error.getErrors().toString()).contains(EXCEEDING_LIMIT_MESSAGE);
         });
     }
 
+    @Severity(MINOR)
     @DisplayName("Получение отзывов о компании без передачи значения количества возвращаемых отзывов")
     @Test
-    void gettingReviewsWithExceedingLimit1() {
+    void gettingReviewsWithoutLimitValue() {
         step("Делаем запрос на получение отзывов о компании", () -> {
             response = apiClient.gettingReviews(AUTH_TOKEN, null);
         });
@@ -76,8 +84,8 @@ public class GettingReviewsTests extends TestBaseApi {
         });
         step("Ответ содержит сообщение об ошибке", () -> {
             ErrorResponse error = response.extract().as(ErrorResponse.class);
-            assertThat(error.getMessage()).isEqualTo("Некорректный запрос, попробуйте изменить отправляемые данные.");
-            assertThat(error.getErrors().toString()).contains("The limit must be an integer.");
+            assertThat(error.getMessage()).isEqualTo(INVALID_REQUEST_ERROR);
+            assertThat(error.getErrors().toString()).contains(INVALID_LIMIT_FIELD_TYPE_MESSAGE);
         });
     }
 }

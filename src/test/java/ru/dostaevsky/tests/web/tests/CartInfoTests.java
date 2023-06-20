@@ -58,10 +58,8 @@ public class CartInfoTests extends TestBaseWeb {
     void checkAddedItemValueInCart() {
         RestAssured.baseURI = CityLinks.SPB_LINK.getValue();
         step("Делаем запрос на добавление товара в корзину", () -> {
-            response = apiClient.addingItemToBasket(
-                            API_SPB_UNREGISTERED_USER_COOKIE,
-                            DOR_BLUE_BURGER_ID.getValue())
-                    .statusCode(200);
+            response = apiClient.addingItemToBasket(API_SPB_UNREGISTERED_USER_COOKIE,
+                    DOR_BLUE_BURGER_ID.getValue()).statusCode(200);
         });
         step("Делаем запрос на получение информации о товарах в корзине", () -> {
             response = apiClient.gettingBasketInfo(API_SPB_UNREGISTERED_USER_COOKIE).statusCode(200);
@@ -78,13 +76,11 @@ public class CartInfoTests extends TestBaseWeb {
                 .checkItemNameInTheCart(name)
                 .checkItemCountInTheCart(count);
 
-        step("Очищаем корзину", () -> {
+        step("Делаем запрос на удаление товара из корзины", () -> {
             String data = response.extract().asString();
             String itemUid = responseExtractor.getItemUidAfterGettingBasketInfo(data);
-            response = apiClient.removeItemFromBasket(
-                    API_SPB_UNREGISTERED_USER_COOKIE,
-                    DOR_BLUE_BURGER_ID.getValue(),
-                    itemUid);
+            response = apiClient.removeItemFromBasket(API_SPB_UNREGISTERED_USER_COOKIE,
+                    DOR_BLUE_BURGER_ID.getValue(), itemUid).statusCode(200);
         });
     }
 
