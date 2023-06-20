@@ -12,7 +12,7 @@ import ru.dostaevsky.helpers.Attach;
 
 import java.util.Map;
 
-public class TestBaseWeb {
+public class WebConfig {
 
     @BeforeAll
     static void beforeAll() {

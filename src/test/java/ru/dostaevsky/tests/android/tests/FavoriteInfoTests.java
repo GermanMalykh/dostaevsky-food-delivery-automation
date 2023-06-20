@@ -1,10 +1,10 @@
-package ru.dostaevsky.tests.android;
+package ru.dostaevsky.tests.android.tests;
 
 import io.qameta.allure.Severity;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import ru.dostaevsky.tests.android.config.TestBaseMobile;
+import ru.dostaevsky.tests.android.config.MobileConfig;
 import ru.dostaevsky.tests.android.pages.FavoritePage;
 import ru.dostaevsky.tests.android.pages.MainPage;
 import ru.dostaevsky.tests.android.pages.components.ItemComponents;
@@ -19,7 +19,7 @@ import static ru.dostaevsky.enums.Onigiri.SNOW_CRAB_ONIGIRI;
 
 @Tag("android")
 @DisplayName("Android Tests")
-public class FavoriteInfoTests extends TestBaseMobile {
+public class FavoriteInfoTests extends MobileConfig {
     MainPage main = new MainPage();
     NavigationComponents navigation = new NavigationComponents();
     ItemComponents item = new ItemComponents();

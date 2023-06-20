@@ -19,7 +19,6 @@ public class HeaderComponents {
         return this;
     }
 
-    //TODO: Доработать поиск элемента
     @Step("Проверяем, что количество товара в корзине равно количеству добавленного товара")
     public HeaderComponents checkItemCountInHeaderCart(String itemCount) {
         count.shouldHave(text(itemCount));

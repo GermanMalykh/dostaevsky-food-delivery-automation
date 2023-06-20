@@ -1,11 +1,11 @@
-package ru.dostaevsky.tests.android;
+package ru.dostaevsky.tests.android.tests;
 
 import io.qameta.allure.Severity;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
-import ru.dostaevsky.tests.android.config.TestBaseMobile;
+import ru.dostaevsky.tests.android.config.MobileConfig;
 import ru.dostaevsky.tests.android.pages.AdditionalInfoPage;
 import ru.dostaevsky.tests.android.pages.MainPage;
 import ru.dostaevsky.tests.android.pages.components.NavigationComponents;
@@ -15,7 +15,7 @@ import static ru.dostaevsky.data.MenuItemsData.ADDITIONAL_INFO;
 
 @Tag("android")
 @DisplayName("Android Tests")
-public class CityInfoTests extends TestBaseMobile {
+public class CityInfoTests extends MobileConfig {
     MainPage main = new MainPage();
     NavigationComponents navigation = new NavigationComponents();
     AdditionalInfoPage infoPage = new AdditionalInfoPage();

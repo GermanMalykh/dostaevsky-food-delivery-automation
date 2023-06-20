@@ -1,4 +1,4 @@
-package ru.dostaevsky.tests.android;
+package ru.dostaevsky.tests.android.tests;
 
 import io.qameta.allure.Severity;
 import org.junit.jupiter.api.DisplayName;
@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
-import ru.dostaevsky.tests.android.config.TestBaseMobile;
+import ru.dostaevsky.tests.android.config.MobileConfig;
 import ru.dostaevsky.tests.android.pages.CartPage;
 import ru.dostaevsky.tests.android.pages.MainPage;
 import ru.dostaevsky.tests.android.pages.components.ItemComponents;
@@ -19,7 +19,7 @@ import static ru.dostaevsky.enums.CityName.SPB;
 
 @Tag("android")
 @DisplayName("Android Tests")
-public class CartInfoTests extends TestBaseMobile {
+public class CartInfoTests extends MobileConfig {
     CartPage cart = new CartPage();
     MainPage main = new MainPage();
     NavigationComponents navigation = new NavigationComponents();
@@ -49,7 +49,6 @@ public class CartInfoTests extends TestBaseMobile {
         cart.checkMinimalPriceTitle(minimalPrice);
     }
 
-    // TODO: Добавить в дальнейшем добавление товара через API
     @Severity(BLOCKER)
     @DisplayName("Добавление позиции в корзину и проверка отображения цены, количества и наименования товара в корзине")
     @Test
