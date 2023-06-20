@@ -6,7 +6,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import ru.dostaevsky.tests.api.client.DostaevskyApiClient;
-import ru.dostaevsky.tests.api.config.TestBaseApi;
+import ru.dostaevsky.tests.api.config.ApiConfig;
 import ru.dostaevsky.tests.api.helpers.ResponseValueExtractor;
 import ru.dostaevsky.tests.api.models.BasketInfoResponse;
 
@@ -19,7 +19,7 @@ import static ru.dostaevsky.tests.api.constants.ResponseData.SUCCESS_RESPONSE_BO
 
 @Tag("api")
 @DisplayName("Тесты на удаление товара из корзины")
-public class RemoveItemFromBasketTests extends TestBaseApi {
+public class RemoveItemFromBasketTests extends ApiConfig {
     protected ValidatableResponse response;
     DostaevskyApiClient apiClient = new DostaevskyApiClient();
     ResponseValueExtractor responseExtractor = new ResponseValueExtractor();

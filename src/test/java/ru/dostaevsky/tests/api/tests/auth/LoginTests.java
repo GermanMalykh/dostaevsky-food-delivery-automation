@@ -6,7 +6,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import ru.dostaevsky.tests.api.client.DostaevskyApiClient;
-import ru.dostaevsky.tests.api.config.TestBaseApi;
+import ru.dostaevsky.tests.api.config.ApiConfig;
 import ru.dostaevsky.tests.api.models.ErrorResponse;
 
 import static io.qameta.allure.Allure.step;
@@ -18,7 +18,7 @@ import static ru.dostaevsky.tests.api.constants.ResponseData.*;
 
 @Tag("api")
 @DisplayName("Тесты на авторизацию")
-public class LoginTests extends TestBaseApi {
+public class LoginTests extends ApiConfig {
     protected ValidatableResponse response;
     DostaevskyApiClient apiClient = new DostaevskyApiClient();
 

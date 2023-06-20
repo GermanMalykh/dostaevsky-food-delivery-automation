@@ -6,7 +6,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import ru.dostaevsky.tests.api.client.DostaevskyApiClient;
-import ru.dostaevsky.tests.api.config.TestBaseApi;
+import ru.dostaevsky.tests.api.config.ApiConfig;
 import ru.dostaevsky.tests.api.models.ErrorResponse;
 import ru.dostaevsky.tests.api.models.ReviewsResponse;
 
@@ -19,7 +19,7 @@ import static ru.dostaevsky.tests.api.constants.ResponseData.*;
 
 @Tag("api")
 @DisplayName("Тесты на получение отзывов о компании")
-public class GettingReviewsTests extends TestBaseApi {
+public class GettingReviewsTests extends ApiConfig {
     protected ValidatableResponse response;
     DostaevskyApiClient apiClient = new DostaevskyApiClient();
 

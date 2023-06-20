@@ -6,7 +6,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import ru.dostaevsky.tests.api.client.DostaevskyApiClient;
-import ru.dostaevsky.tests.api.config.TestBaseApi;
+import ru.dostaevsky.tests.api.config.ApiConfig;
 import ru.dostaevsky.tests.api.helpers.ResponseValueExtractor;
 import ru.dostaevsky.tests.api.models.BasketInfoResponse;
 
@@ -18,7 +18,7 @@ import static ru.dostaevsky.enums.BurgerIds.DOR_BLUE_BURGER_ID;
 
 @Tag("api")
 @DisplayName("Тесты на получение информации о корзине")
-public class BasketInfoTests extends TestBaseApi {
+public class BasketInfoTests extends ApiConfig {
     protected ValidatableResponse response;
     DostaevskyApiClient apiClient = new DostaevskyApiClient();
     ResponseValueExtractor responseExtractor = new ResponseValueExtractor();

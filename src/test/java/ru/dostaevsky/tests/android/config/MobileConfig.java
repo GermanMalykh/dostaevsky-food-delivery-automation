@@ -12,7 +12,7 @@ import ru.dostaevsky.helpers.Attach;
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.WebDriverRunner.closeWebDriver;
 
-public class TestBaseMobile {
+public class MobileConfig {
 
     @BeforeAll
     public static void setup() throws Exception {

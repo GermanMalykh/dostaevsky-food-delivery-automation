@@ -5,7 +5,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
-import ru.dostaevsky.tests.web.config.TestBaseWeb;
+import ru.dostaevsky.tests.web.config.WebConfig;
 import ru.dostaevsky.tests.web.pages.MainPage;
 import ru.dostaevsky.tests.web.pages.components.HeaderComponents;
 
@@ -13,7 +13,7 @@ import static io.qameta.allure.SeverityLevel.CRITICAL;
 
 @Tag("web")
 @DisplayName("Web Tests")
-public class CityInfoTests extends TestBaseWeb {
+public class CityInfoTests extends WebConfig {
     MainPage mainPage = new MainPage();
     HeaderComponents headerComponents = new HeaderComponents();
 
