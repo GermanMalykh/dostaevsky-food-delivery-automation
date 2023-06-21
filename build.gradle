@@ -21,9 +21,10 @@ def slf4jVersion = '2.0.7'
 def allureVersion = '2.21.0'
 def assertjVersion = '3.24.2'
 def restAssuredVersion = '5.3.0'
-def ownerVersion = '2.12.0'
+def ioVersion = '2.12.0'
 def jacksonVersion = '2.15.2'
 def javaJsonVersion = '20230227'
+def ownerVersion = '1.0.12'
 
 repositories {
     mavenCentral()
@@ -40,9 +41,10 @@ dependencies {
             "com.codeborne:selenide-appium:${selenideAppiumVersion}",
             "io.appium:java-client:${appiumVersion}",
             "io.qameta.allure:allure-rest-assured:${allureVersion}",
-            "commons-io:commons-io:${ownerVersion}",
+            "commons-io:commons-io:${ioVersion}",
             "com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}",
-            "org.json:json:${javaJsonVersion}"
+            "org.json:json:${javaJsonVersion}",
+            "org.aeonbits.owner:owner:${ownerVersion}"
     )
 }
 
@@ -76,4 +78,30 @@ task api(type: Test) {
     useJUnitPlatform {
         includeTags("api")
     }
+}
+
+task android(type: Test) {
+    useJUnitPlatform {
+        includeTags("android")
+    }
+}
+
+task web(type: Test) {
+    useJUnitPlatform {
+        includeTags("web")
+    }
+}
+
+task allRemoteTests(type: Test) {
+    useJUnitPlatform {
+        includeTags("api", "web", "android")
+    }
+    systemProperty "env", "remote"
+}
+
+task allLocalTests(type: Test) {
+    useJUnitPlatform {
+        includeTags("api", "web", "android")
+    }
+    systemProperty "env", "local"
 }

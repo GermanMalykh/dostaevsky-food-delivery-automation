@@ -5,7 +5,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import ru.dostaevsky.tests.android.config.MobileConfig;
+import ru.dostaevsky.tests.android.config.PreRunConfig;
 import ru.dostaevsky.tests.android.pages.MainPage;
 import ru.dostaevsky.tests.android.pages.components.NavigationComponents;
 import ru.dostaevsky.tests.android.pages.components.SearchComponents;
@@ -14,7 +14,7 @@ import static io.qameta.allure.SeverityLevel.CRITICAL;
 
 @Tag("android")
 @DisplayName("Android Tests")
-public class SearchInfoTests extends MobileConfig {
+public class SearchInfoTests extends PreRunConfig {
 
     MainPage main = new MainPage();
     SearchComponents search = new SearchComponents();
