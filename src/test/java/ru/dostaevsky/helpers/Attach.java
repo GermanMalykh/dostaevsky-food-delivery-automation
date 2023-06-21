@@ -5,6 +5,7 @@ import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import ru.dostaevsky.tests.android.helpers.BrowserstackVideoGetter;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -36,11 +37,17 @@ public class Attach {
         );
     }
 
-
     @Attachment(value = "Video", type = "text/html", fileExtension = ".html")
     public static String addVideo() {
         return "<html><body><video width='100%' height='100%' controls autoplay><source src='"
                 + getVideoUrl()
+                + "' type='video/mp4'></video></body></html>";
+    }
+
+    @Attachment(value = "Video", type = "text/html", fileExtension = ".html")
+    public static String getVideoBrowserstack(String sessionId) {
+        return "<html><body><video width='100%' height='100%' controls autoplay><source src='"
+                + BrowserstackVideoGetter.videoUrl(sessionId)
                 + "' type='video/mp4'></video></body></html>";
     }
 
@@ -55,7 +62,7 @@ public class Attach {
         return null;
     }
 
-    public static String getSessionId(){
+    public static String getSessionId() {
         return ((RemoteWebDriver) getWebDriver()).getSessionId().toString();
     }
 }

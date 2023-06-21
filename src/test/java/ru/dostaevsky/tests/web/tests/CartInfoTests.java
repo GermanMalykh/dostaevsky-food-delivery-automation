@@ -12,7 +12,7 @@ import ru.dostaevsky.enums.CityLinks;
 import ru.dostaevsky.tests.api.client.DostaevskyApiClient;
 import ru.dostaevsky.tests.api.helpers.ResponseValueExtractor;
 import ru.dostaevsky.tests.api.models.BasketInfoResponse;
-import ru.dostaevsky.tests.web.config.WebConfig;
+import ru.dostaevsky.tests.web.config.PreRunConfig;
 import ru.dostaevsky.tests.web.pages.CartPage;
 import ru.dostaevsky.tests.web.pages.MainPage;
 import ru.dostaevsky.tests.web.pages.components.CatalogItemComponents;
@@ -28,7 +28,7 @@ import static ru.dostaevsky.enums.Categories.*;
 
 @Tag("web")
 @DisplayName("Web Tests")
-public class CartInfoTests extends WebConfig {
+public class CartInfoTests extends PreRunConfig {
     MainPage main = new MainPage();
     CatalogItemComponents item = new CatalogItemComponents();
     CartPage cart = new CartPage();

@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
-import ru.dostaevsky.tests.android.config.MobileConfig;
+import ru.dostaevsky.tests.android.config.PreRunConfig;
 import ru.dostaevsky.tests.android.pages.CartPage;
 import ru.dostaevsky.tests.android.pages.MainPage;
 import ru.dostaevsky.tests.android.pages.components.ItemComponents;
@@ -19,7 +19,7 @@ import static ru.dostaevsky.enums.CityName.SPB;
 
 @Tag("android")
 @DisplayName("Android Tests")
-public class CartInfoTests extends MobileConfig {
+public class CartInfoTests extends PreRunConfig {
     CartPage cart = new CartPage();
     MainPage main = new MainPage();
     NavigationComponents navigation = new NavigationComponents();
