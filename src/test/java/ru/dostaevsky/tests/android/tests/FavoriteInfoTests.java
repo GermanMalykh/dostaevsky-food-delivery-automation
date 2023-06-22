@@ -1,6 +1,7 @@
 package ru.dostaevsky.tests.android.tests;
 
 import io.qameta.allure.Severity;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -13,12 +14,14 @@ import ru.dostaevsky.tests.android.pages.components.NavigationComponents;
 import static io.qameta.allure.SeverityLevel.NORMAL;
 import static ru.dostaevsky.data.MenuItemsData.ADDITIONAL_INFO;
 import static ru.dostaevsky.data.MenuItemsData.FAVORITE;
-import static ru.dostaevsky.enums.Categories.FAST_FOOD;
 import static ru.dostaevsky.enums.Categories.ONIGIRI;
 import static ru.dostaevsky.enums.CityName.SPB;
-import static ru.dostaevsky.enums.Onigiri.ONIGIRI_KOMBO;
 import static ru.dostaevsky.enums.Onigiri.SNOW_CRAB_ONIGIRI;
 
+@Disabled(
+        "Тест выключен из-за проблем со скроллом через эмулятор на BROWSERSTACK. " +
+        "Включить для локального запуска"
+)
 @Tag("android")
 @DisplayName("Android Tests")
 public class FavoriteInfoTests extends PreRunConfig {
@@ -33,8 +36,8 @@ public class FavoriteInfoTests extends PreRunConfig {
     void addItemToFavoriteListAndCheckIt() {
         main.selectByText(SPB.getDisplayName())
                 .closingTechInfo();
-        navigation.scrollToElementByCoordinates(FAST_FOOD.getValue(), ONIGIRI.getValue())
-                .scrollToElementByCoordinates(ONIGIRI_KOMBO.getValue(), SNOW_CRAB_ONIGIRI.getValue());
+        navigation.scrollToElement(ONIGIRI.getValue())
+                .scrollToElement(SNOW_CRAB_ONIGIRI.getValue());
         item.addItemToFavorite();
         navigation.backNavigation();
         main.selectByText(ADDITIONAL_INFO);

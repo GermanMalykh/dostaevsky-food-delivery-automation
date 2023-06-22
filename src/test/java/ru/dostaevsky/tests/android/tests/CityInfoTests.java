@@ -1,7 +1,7 @@
 package ru.dostaevsky.tests.android.tests;
 
 import io.qameta.allure.Severity;
-import org.junit.jupiter.api.Disabled;
+
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -13,7 +13,7 @@ import ru.dostaevsky.tests.android.pages.components.NavigationComponents;
 
 import static io.qameta.allure.SeverityLevel.*;
 import static ru.dostaevsky.data.MenuItemsData.ADDITIONAL_INFO;
-@Disabled
+
 @Tag("android")
 @DisplayName("Android Tests")
 public class CityInfoTests extends PreRunConfig {
