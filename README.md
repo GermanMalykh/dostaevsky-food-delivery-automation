@@ -95,3 +95,29 @@ selenoid_url=...
 <p  align="center">
 <img src="images/screens/IDEARunConfigurations.png" alt="IDEARunConfigurations" width="550">
 </p>
+
+
+## <a name="Запуск в Jenkins">Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/Students/job/14_gnmalykh_dostaevsky/)</a>
+Главная страница сборки:
+<p  align="center">
+<img src="images/screens/jenkinsMain.png" alt="jenkinsMain" width="1950">
+</p><br>
+
+Параметризованный запуск тестов в Jenkins можно запустить с указанной категорией тестов из списка ***CATEGORIES***:
+<p  align="center">
+<img src="images/screens/jenkins.gif" alt="jenkins">
+</p><br>
+
+После завершения сборки результаты тестирования доступны в:
+>- <code><strong>*Allure Report*</strong></code>
+>- <code><strong>*Allure TestOps*</strong></code> - результаты загружаются в `Allure TestOps` автоматические. Тест-кейсы могут обновляться в соответствии с последними изменениями в коде.
+
+<p  align="center">
+<img src="images/screens/jenkinsFinish.png" alt="jenkinsFinish" width="1950">
+</p>
+
+# <a name="Уведомления в Telegram">Уведомления в Telegram</a>
+Telegram-бот отправляет краткий отчет в указанный чат по результатам каждой сборки.
+<p  align="center">
+<img src="images/screens/tg.png" alt="TelegramNotification" width="650">
+</p>
