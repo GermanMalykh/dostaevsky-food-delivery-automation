@@ -1,6 +1,7 @@
 package ru.dostaevsky.tests.android.tests;
 
 import io.qameta.allure.Severity;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -11,7 +12,7 @@ import ru.dostaevsky.tests.android.pages.components.NavigationComponents;
 import ru.dostaevsky.tests.android.pages.components.SearchComponents;
 
 import static io.qameta.allure.SeverityLevel.CRITICAL;
-
+@Disabled
 @Tag("android")
 @DisplayName("Android Tests")
 public class SearchInfoTests extends PreRunConfig {

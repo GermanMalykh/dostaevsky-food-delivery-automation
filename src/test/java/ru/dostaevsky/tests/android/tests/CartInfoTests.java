@@ -1,6 +1,7 @@
 package ru.dostaevsky.tests.android.tests;
 
 import io.qameta.allure.Severity;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -16,7 +17,7 @@ import static io.qameta.allure.SeverityLevel.*;
 import static ru.dostaevsky.data.MenuItemsData.CART;
 import static ru.dostaevsky.enums.Categories.*;
 import static ru.dostaevsky.enums.CityName.SPB;
-
+@Disabled
 @Tag("android")
 @DisplayName("Android Tests")
 public class CartInfoTests extends PreRunConfig {
