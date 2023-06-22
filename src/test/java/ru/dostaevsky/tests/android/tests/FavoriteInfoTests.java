@@ -30,7 +30,8 @@ public class FavoriteInfoTests extends PreRunConfig {
     @Test
     void addItemToFavoriteListAndCheckIt() {
         main.selectByText(SPB.getDisplayName());
-        navigation.scrollToElement(ONIGIRI.getValue())
+        navigation.backNavigation()
+                .scrollToElement(ONIGIRI.getValue())
                 .scrollToElement(SNOW_CRAB_ONIGIRI.getValue());
         item.addItemToFavorite();
         navigation.backNavigation();
