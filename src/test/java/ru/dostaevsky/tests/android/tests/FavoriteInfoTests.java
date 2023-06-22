@@ -29,9 +29,9 @@ public class FavoriteInfoTests extends PreRunConfig {
     @DisplayName("Добавление товара в избранное и проверка отображения товара в списке избранных")
     @Test
     void addItemToFavoriteListAndCheckIt() {
-        main.selectByText(SPB.getDisplayName());
-        navigation.backNavigation()
-                .scrollToElement(ONIGIRI.getValue())
+        main.selectByText(SPB.getDisplayName())
+                .closeAttentionInfo();
+        navigation.scrollToElement(ONIGIRI.getValue())
                 .scrollToElement(SNOW_CRAB_ONIGIRI.getValue());
         item.addItemToFavorite();
         navigation.backNavigation();
