@@ -21,7 +21,7 @@ import static ru.dostaevsky.enums.BurgerIds.DOR_BLUE_BURGER_ID;
 import static ru.dostaevsky.tests.api.constants.ResponseData.*;
 
 @Tag("api")
-@DisplayName("Тесты на обновление количества товара в корзине")
+@DisplayName("REST API")
 public class UpdateItemCountInTheBasketTests extends ApiConfig {
     protected ValidatableResponse response;
     DostaevskyApiClient apiClient = new DostaevskyApiClient();

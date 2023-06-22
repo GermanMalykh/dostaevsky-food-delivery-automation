@@ -17,7 +17,7 @@ import static ru.dostaevsky.data.AuthData.API_SPB_UNREGISTERED_USER_COOKIE;
 import static ru.dostaevsky.enums.BurgerIds.DOR_BLUE_BURGER_ID;
 
 @Tag("api")
-@DisplayName("Тесты на получение информации о корзине")
+@DisplayName("REST API")
 public class BasketInfoTests extends ApiConfig {
     protected ValidatableResponse response;
     DostaevskyApiClient apiClient = new DostaevskyApiClient();

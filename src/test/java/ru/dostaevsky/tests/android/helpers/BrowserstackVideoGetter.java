@@ -8,8 +8,8 @@ import static java.lang.String.format;
 public class BrowserstackVideoGetter {
 
     private final static String
-            user = "germanmalykh_eCmyoJ",
-            key = "p5pfiQNqXsytd2TaqStP";
+            user = "germanmalykh_zTu5G3",
+            key = "4a5BzyTms8fsmu78zCUi";
 
     public static String videoUrl(String sessionId) {
         String url = format("https://api.browserstack.com/app-automate/sessions/%s.json", sessionId);

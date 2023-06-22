@@ -18,7 +18,7 @@ import static ru.dostaevsky.data.AuthData.AUTH_TOKEN;
 import static ru.dostaevsky.tests.api.constants.ResponseData.*;
 
 @Tag("api")
-@DisplayName("Тесты на получение отзывов о компании")
+@DisplayName("REST API")
 public class GettingReviewsTests extends ApiConfig {
     protected ValidatableResponse response;
     DostaevskyApiClient apiClient = new DostaevskyApiClient();
