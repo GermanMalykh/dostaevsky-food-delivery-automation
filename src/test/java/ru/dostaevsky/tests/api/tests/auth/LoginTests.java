@@ -17,7 +17,7 @@ import static ru.dostaevsky.tests.api.constants.RequestData.*;
 import static ru.dostaevsky.tests.api.constants.ResponseData.*;
 
 @Tag("api")
-@DisplayName("Тесты на авторизацию")
+@DisplayName("REST API")
 public class LoginTests extends ApiConfig {
     protected ValidatableResponse response;
     DostaevskyApiClient apiClient = new DostaevskyApiClient();
