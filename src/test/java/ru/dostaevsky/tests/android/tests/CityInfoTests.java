@@ -9,7 +9,6 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 import ru.dostaevsky.tests.android.config.PreRunConfig;
 import ru.dostaevsky.tests.android.pages.AdditionalInfoPage;
 import ru.dostaevsky.tests.android.pages.MainPage;
-import ru.dostaevsky.tests.android.pages.components.NavigationComponents;
 
 import static io.qameta.allure.SeverityLevel.*;
 import static ru.dostaevsky.data.MenuItemsData.ADDITIONAL_INFO;
@@ -18,7 +17,6 @@ import static ru.dostaevsky.data.MenuItemsData.ADDITIONAL_INFO;
 @DisplayName("Android Tests")
 public class CityInfoTests extends PreRunConfig {
     MainPage main = new MainPage();
-    NavigationComponents navigation = new NavigationComponents();
     AdditionalInfoPage infoPage = new AdditionalInfoPage();
 
     @Severity(CRITICAL)
@@ -26,8 +24,7 @@ public class CityInfoTests extends PreRunConfig {
     @ParameterizedTest(name = "Для города \"{0}\" отображается информация с контактным номером телефона \"{1}\"")
     @CsvFileSource(resources = "/csv/cityMobileInfo.csv")
     void selectingCityFromTheListAvailableAndCheckingDisplayInfoTest(String city, String phoneWithPlus) {
-        main.selectByText(city);
-        navigation.backNavigation();
+        main.selectByText(city).closingTechInfo();
         main.selectByText(ADDITIONAL_INFO);
         infoPage.checkCityName(city)
                 .checkCityPhoneNumber(phoneWithPlus);

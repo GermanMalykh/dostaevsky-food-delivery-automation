@@ -11,7 +11,6 @@ import ru.dostaevsky.tests.android.config.PreRunConfig;
 import ru.dostaevsky.tests.android.pages.CartPage;
 import ru.dostaevsky.tests.android.pages.MainPage;
 import ru.dostaevsky.tests.android.pages.components.ItemComponents;
-import ru.dostaevsky.tests.android.pages.components.NavigationComponents;
 
 import static io.qameta.allure.SeverityLevel.*;
 import static ru.dostaevsky.data.MenuItemsData.CART;
@@ -23,15 +22,14 @@ import static ru.dostaevsky.enums.CityName.SPB;
 public class CartInfoTests extends PreRunConfig {
     CartPage cart = new CartPage();
     MainPage main = new MainPage();
-    NavigationComponents navigation = new NavigationComponents();
     ItemComponents item = new ItemComponents();
 
     @Severity(MINOR)
     @DisplayName("Отображение информации в пустой корзине")
     @Test
     void checkInfoInEmptyCart() {
-        main.selectByText(SPB.getDisplayName());
-        navigation.backNavigation();
+        main.selectByText(SPB.getDisplayName())
+                .closingTechInfo();
         main.selectByText(CART);
         cart.checkCartEmptyInfo()
                 .checkCartEmptyImage();
@@ -42,8 +40,7 @@ public class CartInfoTests extends PreRunConfig {
     @ParameterizedTest(name = "Минимальная цена доставки в городе \"{1}\" равна \"{3}\" ₽")
     @CsvFileSource(resources = "/csv/cityWebInfo.csv")
     void checkMinimalPriceToDeliveryInfo(String link, String city, String phone, String minimalPrice) {
-        main.selectByText(city);
-        navigation.backNavigation();
+        main.selectByText(city).closingTechInfo();
         main.selectByText(FAST_FOOD.getValue());
         item.addProductToCart();
         main.selectByText(CART);
@@ -54,8 +51,8 @@ public class CartInfoTests extends PreRunConfig {
     @DisplayName("Добавление позиции в корзину и проверка отображения цены, количества и наименования товара в корзине")
     @Test
     void addItemToCartAndCheckValueInCartTest() {
-        main.selectByText(SPB.getDisplayName());
-        navigation.backNavigation();
+        main.selectByText(SPB.getDisplayName())
+                .closingTechInfo();
         main.selectByText(NEW.getValue());
         item.addProductToCart()
                 .addMoreProductsToCart();
@@ -74,8 +71,8 @@ public class CartInfoTests extends PreRunConfig {
     @DisplayName("Добавление позиции в корзину и проверка отображения цены, количества и наименования товара в уведомлении")
     @Test
     void addItemToCartAndCheckValueInNotificationTest() {
-        main.selectByText(SPB.getDisplayName());
-        navigation.backNavigation();
+        main.selectByText(SPB.getDisplayName())
+                .closingTechInfo();
         main.selectByText(NEW.getValue());
         item.addProductToCart()
                 .addMoreProductsToCart();
