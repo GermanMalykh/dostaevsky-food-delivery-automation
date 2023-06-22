@@ -13,7 +13,7 @@ import static io.appium.java_client.AppiumBy.id;
 public class MainPage {
 
     private final static SelenideElement
-            attentionInfoButton = $(id("ru.dostaevsky.android:id/tech_apply_btn"));
+            techInfoButton = $(id("ru.dostaevsky.android:id/tech_apply_btn"));
 
     @Step("Выбираем элемент с наименованием \"{value}\"")
     public MainPage selectByText(String value) {
@@ -24,8 +24,8 @@ public class MainPage {
     }
 
     @Step("Закрываем окно дополнительной информации")
-    public MainPage closeAttentionInfo() {
-        attentionInfoButton.shouldBe(visible, Duration.ofSeconds(90))
+    public MainPage closingTechInfo() {
+        techInfoButton.shouldBe(visible, Duration.ofSeconds(90))
                 .click();
         return this;
     }
