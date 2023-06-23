@@ -160,7 +160,7 @@ selenoid_url=...
 
 ### Запись теста для Android
 <p  align="center">
-<img src="images/screens/android.gif" alt="android" width="1575">
+<img src="images/screens/android.gif" alt="android" width="250">
 </p><br>
 
 # <a name="AllureTestOps">Интеграция с [Allure TestOps](https://allure.autotests.cloud/project/3433/dashboards)</a>
