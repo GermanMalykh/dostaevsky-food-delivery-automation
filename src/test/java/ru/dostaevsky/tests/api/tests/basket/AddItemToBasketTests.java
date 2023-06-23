@@ -18,7 +18,7 @@ import static ru.dostaevsky.tests.api.constants.ResponseData.ERROR_RESPONSE_BODY
 import static ru.dostaevsky.tests.api.constants.ResponseData.SUCCESS_RESPONSE_BODY_WITH_ITEM;
 
 @Tag("api")
-@DisplayName("REST API")
+@DisplayName("Rest API Tests")
 public class AddItemToBasketTests extends ApiConfig {
     protected ValidatableResponse response;
     DostaevskyApiClient apiClient = new DostaevskyApiClient();
