@@ -18,7 +18,7 @@ import static ru.dostaevsky.enums.BurgerIds.DOR_BLUE_BURGER_ID;
 import static ru.dostaevsky.tests.api.constants.ResponseData.SUCCESS_RESPONSE_BODY_WITHOUT_ITEM;
 
 @Tag("api")
-@DisplayName("REST API")
+@DisplayName("Rest API Tests")
 public class RemoveItemFromBasketTests extends ApiConfig {
     protected ValidatableResponse response;
     DostaevskyApiClient apiClient = new DostaevskyApiClient();
