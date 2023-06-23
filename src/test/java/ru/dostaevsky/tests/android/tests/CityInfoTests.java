@@ -20,7 +20,7 @@ public class CityInfoTests extends PreRunConfig {
     AdditionalInfoPage infoPage = new AdditionalInfoPage();
 
     @Severity(CRITICAL)
-    @DisplayName("Выбор и отображение информации города. ")
+    @DisplayName("[Android] Выбор и отображение информации города. ")
     @ParameterizedTest(name = "Для города \"{0}\" отображается информация с контактным номером телефона \"{1}\"")
     @CsvFileSource(resources = "/csv/cityMobileInfo.csv")
     void selectingCityFromTheListAvailableAndCheckingDisplayInfoTest(String city, String phoneWithPlus) {

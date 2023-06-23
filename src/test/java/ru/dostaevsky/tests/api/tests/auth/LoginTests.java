@@ -23,7 +23,7 @@ public class LoginTests extends ApiConfig {
     DostaevskyApiClient apiClient = new DostaevskyApiClient();
 
     @Severity(NORMAL)
-    @DisplayName("Авторизация незарегистрированного в системе пользователя")
+    @DisplayName("[API] Авторизация незарегистрированного в системе пользователя")
     @Test
     void unregisteredUserLogin() {
         step("Делаем запрос на авторизацию в системе", () -> {
@@ -40,7 +40,7 @@ public class LoginTests extends ApiConfig {
     }
 
     @Severity(NORMAL)
-    @DisplayName("Авторизация в системе с передачей некорректного номера телефона")
+    @DisplayName("[API] Авторизация в системе с передачей некорректного номера телефона")
     @Test
     void loginWithIncorrectPhoneNumber() {
         step("Делаем запрос на авторизацию в системе", () -> {
@@ -57,7 +57,7 @@ public class LoginTests extends ApiConfig {
     }
 
     @Severity(MINOR)
-    @DisplayName("Авторизация в системе без передачи смс кода")
+    @DisplayName("[API] Авторизация в системе без передачи смс кода")
     @Test
     void loginWithoutSmsCodeField() {
         step("Делаем запрос на авторизацию в системе", () -> {

@@ -25,7 +25,7 @@ public class CartInfoTests extends PreRunConfig {
     ItemComponents item = new ItemComponents();
 
     @Severity(MINOR)
-    @DisplayName("Отображение информации в пустой корзине")
+    @DisplayName("[Android] Отображение информации в пустой корзине")
     @Test
     void checkInfoInEmptyCart() {
         main.selectByText(SPB.getDisplayName())
@@ -36,7 +36,7 @@ public class CartInfoTests extends PreRunConfig {
     }
 
     @Severity(NORMAL)
-    @DisplayName("Проверка минимальной цены доставки. ")
+    @DisplayName("[Android] Проверка минимальной цены доставки. ")
     @ParameterizedTest(name = "Минимальная цена доставки в городе \"{1}\" равна \"{3}\" ₽")
     @CsvFileSource(resources = "/csv/cityWebInfo.csv")
     void checkMinimalPriceToDeliveryInfo(String link, String city, String phone, String minimalPrice) {
@@ -48,7 +48,7 @@ public class CartInfoTests extends PreRunConfig {
     }
 
     @Severity(BLOCKER)
-    @DisplayName("Добавление позиции в корзину и проверка отображения цены, количества и наименования товара в корзине")
+    @DisplayName("[Android] Добавление позиции в корзину и проверка отображения цены, количества и наименования товара в корзине")
     @Test
     void addItemToCartAndCheckValueInCartTest() {
         main.selectByText(SPB.getDisplayName())
@@ -68,7 +68,7 @@ public class CartInfoTests extends PreRunConfig {
     }
 
     @Severity(NORMAL)
-    @DisplayName("Добавление позиции в корзину и проверка отображения цены, количества и наименования товара в уведомлении")
+    @DisplayName("[Android] Добавление позиции в корзину и проверка отображения цены, количества и наименования товара в уведомлении")
     @Test
     void addItemToCartAndCheckValueInNotificationTest() {
         main.selectByText(SPB.getDisplayName())

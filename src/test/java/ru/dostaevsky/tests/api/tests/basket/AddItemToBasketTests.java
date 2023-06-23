@@ -25,7 +25,7 @@ public class AddItemToBasketTests extends ApiConfig {
     ResponseValueExtractor responseExtractor = new ResponseValueExtractor();
 
     @Severity(BLOCKER)
-    @DisplayName("Добавление товара в корзину для пользователя с куками")
+    @DisplayName("[API] Добавление товара в корзину для пользователя с куками")
     @Test
     void addingItemToBasketWithCookies() {
         step("Делаем запрос на добавление товара в корзину", () -> {
@@ -48,7 +48,7 @@ public class AddItemToBasketTests extends ApiConfig {
     }
 
     @Severity(MINOR)
-    @DisplayName("Добавление товара в корзину для пользователя без кук")
+    @DisplayName("[API] Добавление товара в корзину для пользователя без кук")
     @Test
     void addingItemToBasketWithoutCookies() {
         step("Делаем запрос на добавление товара в корзину", () -> {

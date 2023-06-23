@@ -31,7 +31,7 @@ public class FavoriteInfoTests extends PreRunConfig {
     FavoritePage favorite = new FavoritePage();
 
     @Severity(NORMAL)
-    @DisplayName("Добавление товара в избранное и проверка отображения товара в списке избранных")
+    @DisplayName("[Android] Добавление товара в избранное и проверка отображения товара в списке избранных")
     @Test
     void addItemToFavoriteListAndCheckIt() {
         main.selectByText(SPB.getDisplayName())

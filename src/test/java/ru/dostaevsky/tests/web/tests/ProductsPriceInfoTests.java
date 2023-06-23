@@ -23,7 +23,7 @@ public class ProductsPriceInfoTests extends PreRunConfig {
     CatalogItemComponents catalogItemComponents = new CatalogItemComponents();
 
     @Severity(CRITICAL)
-    @DisplayName("Отображение цен на завтрак. ")
+    @DisplayName("[WEB] Отображение цен на завтрак. ")
     @ParameterizedTest(name = "В городе \"{0}\" отображаемые на странице цены на завтрак равны ценам из словаря")
     @MethodSource("ru.dostaevsky.tests.web.providers.BreakfastsPriceProvider#provide")
     void breakfastPriceComparisonInSelectedCityTest(CityName name, CityLinks link, Map<String, Integer> expectedPrices) {
@@ -37,7 +37,7 @@ public class ProductsPriceInfoTests extends PreRunConfig {
     }
 
     @Severity(CRITICAL)
-    @DisplayName("Отображение цен на боулы за пределами СПБ. ")
+    @DisplayName("[WEB] Отображение цен на боулы за пределами СПБ. ")
     @ParameterizedTest(name = "В городе \"{0}\" отображаемые на странице цены на боулы равны ценам из словаря")
     @MethodSource("ru.dostaevsky.tests.web.providers.BowlsPriceProvider#provide")
     void bowlsPriceComparisonInSelectedCityTest(CityName name, CityLinks link, Map<String, Integer> expectedPrices) {

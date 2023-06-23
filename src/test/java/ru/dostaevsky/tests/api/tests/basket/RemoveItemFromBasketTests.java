@@ -25,7 +25,7 @@ public class RemoveItemFromBasketTests extends ApiConfig {
     ResponseValueExtractor responseExtractor = new ResponseValueExtractor();
 
     @Severity(BLOCKER)
-    @DisplayName("Удаление товара из корзины")
+    @DisplayName("[API] Удаление товара из корзины")
     @Test
     void removedItemFromBasket() {
         step("Делаем запрос на добавление товара в корзину", () -> {

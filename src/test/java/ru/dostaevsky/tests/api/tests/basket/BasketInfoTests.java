@@ -24,7 +24,7 @@ public class BasketInfoTests extends ApiConfig {
     ResponseValueExtractor responseExtractor = new ResponseValueExtractor();
 
     @Severity(BLOCKER)
-    @DisplayName("Получение информации о заполненной корзине")
+    @DisplayName("[API] Получение информации о заполненной корзине")
     @Test
     void gettingFilledBasketInfo() {
         step("Делаем запрос на добавление товара в корзину", () -> {
@@ -51,7 +51,7 @@ public class BasketInfoTests extends ApiConfig {
     }
 
     @Severity(BLOCKER)
-    @DisplayName("Получение информации о пустой корзине")
+    @DisplayName("[API] Получение информации о пустой корзине")
     @Test
     void gettingEmptyBasketInfo() {
         step("Делаем запрос на получение информации о товарах в корзине", () -> {
