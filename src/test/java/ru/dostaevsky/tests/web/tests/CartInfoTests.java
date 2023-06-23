@@ -3,6 +3,7 @@ package ru.dostaevsky.tests.web.tests;
 import io.qameta.allure.Severity;
 import io.restassured.RestAssured;
 import io.restassured.response.ValidatableResponse;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -37,6 +38,7 @@ public class CartInfoTests extends PreRunConfig {
     DostaevskyApiClient apiClient = new DostaevskyApiClient();
     ResponseValueExtractor responseExtractor = new ResponseValueExtractor();
 
+    @Disabled("Тест выключен из-за проблем с запуском на удаленном Selenoid-е")
     @Severity(NORMAL)
     @DisplayName("[WEB] Проверка отображения цены и количества товара в шапке страницы")
     @Test
