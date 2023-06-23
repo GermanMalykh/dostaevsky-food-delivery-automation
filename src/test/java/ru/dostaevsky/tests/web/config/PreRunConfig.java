@@ -27,13 +27,13 @@ public class PreRunConfig {
                         "enableVNC", true,
                         "enableVideo", true
                 ));
-                Configuration.remote = config.selenoid_url();
+                Configuration.remote = config.selenoid_url() + "/wd/hub";
                 break;
             case "local":
                 capabilities.setCapability("selenoid:options", Map.<String, Object>of(
                         "enableVNC", true
                 ));
-                Configuration.remote = config.selenoid_url();
+                Configuration.remote = config.selenoid_url() + "/wd/hub";
                 break;
             default:
                 throw new Exception("Unrecognised env");

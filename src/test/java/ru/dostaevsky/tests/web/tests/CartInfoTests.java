@@ -38,7 +38,6 @@ public class CartInfoTests extends PreRunConfig {
     DostaevskyApiClient apiClient = new DostaevskyApiClient();
     ResponseValueExtractor responseExtractor = new ResponseValueExtractor();
 
-    @Disabled("Тест выключен из-за проблем с запуском на удаленном Selenoid-е")
     @Severity(NORMAL)
     @DisplayName("[WEB] Проверка отображения цены и количества товара в шапке страницы")
     @Test
