@@ -24,7 +24,7 @@ public class GettingReviewsTests extends ApiConfig {
     DostaevskyApiClient apiClient = new DostaevskyApiClient();
 
     @Severity(NORMAL)
-    @DisplayName("Получение отзывов о компании с передачей авторизационного токена")
+    @DisplayName("[API] Получение отзывов о компании с передачей авторизационного токена")
     @Test
     void gettingReviewsWithToken() {
         step("Делаем запрос на получение отзывов о компании", () -> {
@@ -40,7 +40,7 @@ public class GettingReviewsTests extends ApiConfig {
     }
 
     @Severity(MINOR)
-    @DisplayName("Получение отзывов о компании без передачи авторизационного токена")
+    @DisplayName("[API] Получение отзывов о компании без передачи авторизационного токена")
     @Test
     void gettingReviewsWithoutToken() {
         step("Делаем запрос на получение отзывов о компании", () -> {
@@ -56,7 +56,7 @@ public class GettingReviewsTests extends ApiConfig {
     }
 
     @Severity(MINOR)
-    @DisplayName("Получение отзывов о компании с превышением лимита по отзывам в запросе")
+    @DisplayName("[API] Получение отзывов о компании с превышением лимита по отзывам в запросе")
     @Test
     void gettingReviewsWithExceedingLimit() {
         step("Делаем запрос на получение отзывов о компании", () -> {
@@ -73,7 +73,7 @@ public class GettingReviewsTests extends ApiConfig {
     }
 
     @Severity(MINOR)
-    @DisplayName("Получение отзывов о компании без передачи значения количества возвращаемых отзывов")
+    @DisplayName("[API] Получение отзывов о компании без передачи значения количества возвращаемых отзывов")
     @Test
     void gettingReviewsWithoutLimitValue() {
         step("Делаем запрос на получение отзывов о компании", () -> {

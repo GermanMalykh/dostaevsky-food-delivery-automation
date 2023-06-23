@@ -38,7 +38,7 @@ public class CartInfoTests extends PreRunConfig {
     ResponseValueExtractor responseExtractor = new ResponseValueExtractor();
 
     @Severity(NORMAL)
-    @DisplayName("Проверка отображения цены и количества товара в шапке страницы")
+    @DisplayName("[WEB] Проверка отображения цены и количества товара в шапке страницы")
     @Test
     void addItemToCartAndCheckValueInHeader() {
         main.openMainPage()
@@ -53,7 +53,7 @@ public class CartInfoTests extends PreRunConfig {
     }
 
     @Severity(BLOCKER)
-    @DisplayName("Проверка отображения цены, количества и наименования товара в корзине")
+    @DisplayName("[WEB] Проверка отображения цены, количества и наименования товара в корзине")
     @Test
     void checkAddedItemValueInCart() {
         RestAssured.baseURI = CityLinks.SPB_LINK.getValue();
@@ -85,7 +85,7 @@ public class CartInfoTests extends PreRunConfig {
     }
 
     @Severity(MINOR)
-    @DisplayName("Проверка отображения информации о пустой корзине")
+    @DisplayName("[WEB] Проверка отображения информации о пустой корзине")
     @Test
     void checkInfoInEmptyCart() {
         main.openMainPage();
@@ -95,7 +95,7 @@ public class CartInfoTests extends PreRunConfig {
     }
 
     @Severity(NORMAL)
-    @DisplayName("Проверка минимальной цены доставки. ")
+    @DisplayName("[WEB] Проверка минимальной цены доставки. ")
     @ParameterizedTest(name = "Минимальная цена доставки в городе \"{1}\" равна \"{3}\" ₽")
     @CsvFileSource(resources = "/csv/cityWebInfo.csv")
     void addItemToCartAndCheckMinimalPriceToDeliveryInfo(String link, String city, String phone, String minimalPrice) {

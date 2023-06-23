@@ -18,7 +18,7 @@ public class CityInfoTests extends PreRunConfig {
     HeaderComponents headerComponents = new HeaderComponents();
 
     @Severity(CRITICAL)
-    @DisplayName("Выбор и отображение информации города. ")
+    @DisplayName("[WEB] Выбор и отображение информации города. ")
     @ParameterizedTest(name = "Для города \"{1}\" отображается информация по ссылке \"{0}\" с контактным номером телефона \"{2}\"")
     @CsvFileSource(resources = "/csv/cityWebInfo.csv")
     void selectCityFromTheListAvailableAndCheckDisplayInfoTest(String link, String city, String phone) {

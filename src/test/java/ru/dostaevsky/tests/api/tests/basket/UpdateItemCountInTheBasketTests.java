@@ -29,7 +29,7 @@ public class UpdateItemCountInTheBasketTests extends ApiConfig {
     UpdateItemCountInBasketRequest updateCountInBasket = new UpdateItemCountInBasketRequest();
 
     @Severity(BLOCKER)
-    @DisplayName("Обновление количества товара в корзине")
+    @DisplayName("[API] Обновление количества товара в корзине")
     @Test
     void updateItemCountInTheBasket() {
         step("Делаем запрос на добавление товара в корзину", () -> {
@@ -71,7 +71,7 @@ public class UpdateItemCountInTheBasketTests extends ApiConfig {
     }
 
     @Severity(MINOR)
-    @DisplayName("Обновление количества товара в корзине без передачи идентификатора товара")
+    @DisplayName("[API] Обновление количества товара в корзине без передачи идентификатора товара")
     @Test
     void updateItemCountInTheBasketWithoutItemId() {
         step("Указываем \"itemId\" и \"quantity\" перед выполнением запроса", () -> {
@@ -92,7 +92,7 @@ public class UpdateItemCountInTheBasketTests extends ApiConfig {
     }
 
     @Severity(MINOR)
-    @DisplayName("Обновление количества товара в корзине без передачи значения количества товара")
+    @DisplayName("[API] Обновление количества товара в корзине без передачи значения количества товара")
     @Test
     void updateItemCountInTheBasketWithoutQuantity() {
         step("Указываем \"itemId\" и \"quantity\" перед выполнением запроса", () -> {
@@ -113,7 +113,7 @@ public class UpdateItemCountInTheBasketTests extends ApiConfig {
     }
 
     @Severity(MINOR)
-    @DisplayName("Обновление количества товара в корзине c передачей невалидного значения идентификатора товара")
+    @DisplayName("[API] Обновление количества товара в корзине c передачей невалидного значения идентификатора товара")
     @Test
     void updateItemCountInTheBasketWitMaxItemValue() {
         step("Указываем \"itemId\" и \"quantity\" перед выполнением запроса", () -> {
