@@ -31,5 +31,4 @@ public class JsonConverter {
 
         return deserialize(contents, expectedType);
     }
-
 }
