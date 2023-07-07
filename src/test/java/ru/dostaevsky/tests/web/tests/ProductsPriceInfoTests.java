@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 import ru.dostaevsky.tests.web.config.PreRunConfig;
-import ru.dostaevsky.enums.CityLinks;
+import ru.dostaevsky.enums.CityLink;
 import ru.dostaevsky.enums.CityName;
 import ru.dostaevsky.tests.web.pages.MainPage;
 import ru.dostaevsky.tests.web.pages.components.CatalogItemComponents;
@@ -14,7 +14,7 @@ import ru.dostaevsky.tests.web.pages.components.CatalogItemComponents;
 import java.util.*;
 
 import static io.qameta.allure.SeverityLevel.*;
-import static ru.dostaevsky.enums.Categories.*;
+import static ru.dostaevsky.enums.Category.*;
 
 @Tag("web")
 @DisplayName("Web Tests")
@@ -26,7 +26,7 @@ public class ProductsPriceInfoTests extends PreRunConfig {
     @DisplayName("[WEB] Отображение цен на завтрак. ")
     @ParameterizedTest(name = "В городе \"{0}\" отображаемые на странице цены на завтрак равны ценам из словаря")
     @MethodSource("ru.dostaevsky.tests.web.providers.BreakfastsPriceProvider#provide")
-    void breakfastPriceComparisonInSelectedCityTest(CityName name, CityLinks link, Map<String, Integer> expectedPrices) {
+    void breakfastPriceComparisonInSelectedCityTest(CityName name, CityLink link, Map<String, Integer> expectedPrices) {
         mainPage.openMainPage()
                 .hideConfirmCityMessage()
                 .selectCityFromList(link.getValue(), name.getDisplayName())
@@ -40,7 +40,7 @@ public class ProductsPriceInfoTests extends PreRunConfig {
     @DisplayName("[WEB] Отображение цен на боулы за пределами СПБ. ")
     @ParameterizedTest(name = "В городе \"{0}\" отображаемые на странице цены на боулы равны ценам из словаря")
     @MethodSource("ru.dostaevsky.tests.web.providers.BowlsPriceProvider#provide")
-    void bowlsPriceComparisonInSelectedCityTest(CityName name, CityLinks link, Map<String, Integer> expectedPrices) {
+    void bowlsPriceComparisonInSelectedCityTest(CityName name, CityLink link, Map<String, Integer> expectedPrices) {
         mainPage.openMainPage()
                 .hideConfirmCityMessage()
                 .selectCityFromList(link.getValue(), name.getDisplayName())

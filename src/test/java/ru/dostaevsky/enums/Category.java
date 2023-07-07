@@ -5,7 +5,7 @@ import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
-public enum Categories {
+public enum Category {
     BREAKFASTS("Завтраки"),
     BOWLS("Боулы"),
     WOKS("Wok"),

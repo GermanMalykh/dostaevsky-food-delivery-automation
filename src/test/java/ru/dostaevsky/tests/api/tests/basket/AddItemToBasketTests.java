@@ -13,7 +13,7 @@ import static io.qameta.allure.Allure.step;
 import static io.qameta.allure.SeverityLevel.*;
 import static org.assertj.core.api.Assertions.assertThat;
 import static ru.dostaevsky.data.AuthData.API_SPB_UNREGISTERED_USER_COOKIE;
-import static ru.dostaevsky.enums.BurgerIds.DOR_BLUE_BURGER_ID;
+import static ru.dostaevsky.enums.BurgerId.DOR_BLUE_BURGER_ID;
 import static ru.dostaevsky.tests.api.constants.ResponseData.ERROR_RESPONSE_BODY;
 import static ru.dostaevsky.tests.api.constants.ResponseData.SUCCESS_RESPONSE_BODY_WITH_ITEM;
 

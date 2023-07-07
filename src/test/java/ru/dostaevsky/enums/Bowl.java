@@ -5,7 +5,7 @@ import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
-public enum Bowls {
+public enum Bowl {
     SALMON_BOWL("Боул с лососем", 469, 499, 499, 499),
     VEGGIE_BOWL("Боул вегетарианский", 379, 399, 389, 369),
     BEEF_BOWL("Боул с говядиной", 429, 449, 465, 439),

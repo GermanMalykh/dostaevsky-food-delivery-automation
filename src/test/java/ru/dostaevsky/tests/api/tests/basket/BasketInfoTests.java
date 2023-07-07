@@ -14,7 +14,7 @@ import static io.qameta.allure.Allure.step;
 import static io.qameta.allure.SeverityLevel.BLOCKER;
 import static org.assertj.core.api.Assertions.assertThat;
 import static ru.dostaevsky.data.AuthData.API_SPB_UNREGISTERED_USER_COOKIE;
-import static ru.dostaevsky.enums.BurgerIds.DOR_BLUE_BURGER_ID;
+import static ru.dostaevsky.enums.BurgerId.DOR_BLUE_BURGER_ID;
 
 @Tag("api")
 @DisplayName("Rest API Tests")

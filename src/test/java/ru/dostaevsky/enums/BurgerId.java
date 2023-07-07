@@ -5,7 +5,7 @@ import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
-public enum BurgerIds {
+public enum BurgerId {
 
     /**
      * Дор Блю бургер

@@ -4,7 +4,7 @@ import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import org.openqa.selenium.Cookie;
-import ru.dostaevsky.enums.Categories;
+import ru.dostaevsky.enums.Category;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
@@ -13,7 +13,7 @@ import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static ru.dostaevsky.data.AttributeData.*;
 import static ru.dostaevsky.data.AuthData.WEB_SPB_UNREGISTERED_USER_COOKIE;
 import static ru.dostaevsky.data.AuthData.SPB_URL_FOR_ADDING_COOKIE;
-import static ru.dostaevsky.enums.CityLinks.*;
+import static ru.dostaevsky.enums.CityLink.*;
 
 public class MainPage {
     private final static ElementsCollection navigationMenu = $$(".main-nav__link");
@@ -49,7 +49,7 @@ public class MainPage {
     }
 
     @Step("Переходим в выбранную в меню категорию")
-    public MainPage navigateToCategory(Categories category) {
+    public MainPage navigateToCategory(Category category) {
         navigationMenu
                 .findBy(text(category.getValue())).click();
         return this;

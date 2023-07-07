@@ -3,13 +3,12 @@ package ru.dostaevsky.tests.web.tests;
 import io.qameta.allure.Severity;
 import io.restassured.RestAssured;
 import io.restassured.response.ValidatableResponse;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
-import ru.dostaevsky.enums.CityLinks;
+import ru.dostaevsky.enums.CityLink;
 import ru.dostaevsky.tests.api.client.DostaevskyApiClient;
 import ru.dostaevsky.tests.api.helpers.ResponseValueExtractor;
 import ru.dostaevsky.tests.api.models.BasketInfoResponse;
@@ -24,8 +23,8 @@ import static io.qameta.allure.SeverityLevel.*;
 import static ru.dostaevsky.data.AttributeData.*;
 import static ru.dostaevsky.data.CartData.SPB_CART_URL;
 import static ru.dostaevsky.data.AuthData.API_SPB_UNREGISTERED_USER_COOKIE;
-import static ru.dostaevsky.enums.BurgerIds.DOR_BLUE_BURGER_ID;
-import static ru.dostaevsky.enums.Categories.*;
+import static ru.dostaevsky.enums.BurgerId.DOR_BLUE_BURGER_ID;
+import static ru.dostaevsky.enums.Category.*;
 
 @Tag("web")
 @DisplayName("Web Tests")
@@ -57,7 +56,7 @@ public class CartInfoTests extends PreRunConfig {
     @DisplayName("[WEB] Проверка отображения цены, количества и наименования товара в корзине")
     @Test
     void checkAddedItemValueInCart() {
-        RestAssured.baseURI = CityLinks.SPB_LINK.getValue();
+        RestAssured.baseURI = CityLink.SPB_LINK.getValue();
         step("Делаем запрос на добавление товара в корзину", () -> {
             response = apiClient.addingItemToBasket(API_SPB_UNREGISTERED_USER_COOKIE,
                     DOR_BLUE_BURGER_ID.getValue()).statusCode(200);

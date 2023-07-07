@@ -5,7 +5,7 @@ import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
-public enum CityLinks {
+public enum CityLink {
     SPB_LINK("https://dostaevsky.ru/"),
     MSK_LINK("https://msk.dostaevsky.ru/"),
     SOCHI_LINK("https://sochi.dostaevsky.ru/"),

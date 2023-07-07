@@ -14,7 +14,7 @@ import ru.dostaevsky.tests.android.pages.components.NavigationComponents;
 import static io.qameta.allure.SeverityLevel.NORMAL;
 import static ru.dostaevsky.data.MenuItemsData.ADDITIONAL_INFO;
 import static ru.dostaevsky.data.MenuItemsData.FAVORITE;
-import static ru.dostaevsky.enums.Categories.ONIGIRI;
+import static ru.dostaevsky.enums.Category.ONIGIRI;
 import static ru.dostaevsky.enums.CityName.SPB;
 import static ru.dostaevsky.enums.Onigiri.SNOW_CRAB_ONIGIRI;
 
