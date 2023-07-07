@@ -14,7 +14,7 @@ import ru.dostaevsky.tests.android.pages.components.ItemComponents;
 
 import static io.qameta.allure.SeverityLevel.*;
 import static ru.dostaevsky.data.MenuItemsData.CART;
-import static ru.dostaevsky.enums.Categories.*;
+import static ru.dostaevsky.enums.Category.*;
 import static ru.dostaevsky.enums.CityName.SPB;
 
 @Tag("android")

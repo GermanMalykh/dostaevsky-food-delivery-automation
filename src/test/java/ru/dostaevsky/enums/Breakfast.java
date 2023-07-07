@@ -5,7 +5,7 @@ import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
-public enum Breakfasts {
+public enum Breakfast {
     SAUSAGES_SCRAMBLED_EGG("Скрэмбл с колбасками", 219, 239, 259, 225, 279),
     BACON_SCRAMBLED_EGG("Скрэмбл с беконом", 229, 249, 275, 269, 299),
     CHEESE_SCRAMBLED_EGG("Скрэмбл с сыром", 239, 259, 285, 269, 289),
