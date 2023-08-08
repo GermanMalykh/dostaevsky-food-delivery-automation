@@ -1,27 +1,25 @@
 package ru.dostaevsky.tests.web.pages.components;
 
+import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selenide.$;
-
 public class HeaderComponents {
-    private final static SelenideElement
-            price = $(".catalog-cart__price-count"),
-            count = $(".catalog-cart__count"),
-            cartIcon = $(".catalog-cart__icon"),
-            phoneInfo = $(".header__phone");
+    private final SelenideElement price = Selenide.$(".catalog-cart__price-count");
+    private final SelenideElement count = Selenide.$(".catalog-cart__count");
+    private final SelenideElement cartIcon = Selenide.$(".catalog-cart__icon");
+    private final SelenideElement phoneInfo = Selenide.$(".header__phone");
 
     @Step("Проверяем, что цена товара в корзине равна цене добавленного товара")
     public HeaderComponents checkItemPriceInHeaderCart(String itemPrice) {
-        price.shouldHave(text(itemPrice));
+        price.shouldHave(Condition.text(itemPrice));
         return this;
     }
 
     @Step("Проверяем, что количество товара в корзине равно количеству добавленного товара")
     public HeaderComponents checkItemCountInHeaderCart(String itemCount) {
-        count.shouldHave(text(itemCount));
+        count.shouldHave(Condition.text(itemCount));
         return this;
     }
 
@@ -33,7 +31,7 @@ public class HeaderComponents {
 
     @Step("Проверяем, что для выбранного города отображается правильный номер для связи")
     public HeaderComponents checkCityPhoneNumberOnPage(String phone) {
-        phoneInfo.shouldHave(text(phone));
+        phoneInfo.shouldHave(Condition.text(phone));
         return this;
     }
 

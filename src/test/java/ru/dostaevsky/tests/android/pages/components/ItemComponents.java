@@ -1,23 +1,19 @@
 package ru.dostaevsky.tests.android.pages.components;
 
+import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
+import io.appium.java_client.AppiumBy;
 import io.qameta.allure.Step;
 
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Condition.visible;
-import static com.codeborne.selenide.Selenide.$;
-import static io.appium.java_client.AppiumBy.accessibilityId;
-import static io.appium.java_client.AppiumBy.id;
-
 public class ItemComponents {
-    private final static SelenideElement
-            addProductButton = $(id("ru.dostaevsky.android:id/addButton")),
-            addMoreProductButton = $(id("ru.dostaevsky.android:id/buttonAddMoreProduct")),
-            productPrice = $(id("ru.dostaevsky.android:id/textCardProductPrice")),
-            productName = $(id("ru.dostaevsky.android:id/textProductName")),
-            productCount = $(id("ru.dostaevsky.android:id/textViewCount")),
-            bottomCart = $(id("ru.dostaevsky.android:id/bottomNavigationCartMenuId")),
-            addToFavorite = $(id(("ru.dostaevsky.android:id/imageFavorite")));
+    private final SelenideElement addProductButton = Selenide.$(AppiumBy.id("ru.dostaevsky.android:id/addButton"));
+    private final SelenideElement addMoreProductButton = Selenide.$(AppiumBy.id("ru.dostaevsky.android:id/buttonAddMoreProduct"));
+    private final SelenideElement productPrice = Selenide.$(AppiumBy.id("ru.dostaevsky.android:id/textCardProductPrice"));
+    private final SelenideElement productName = Selenide.$(AppiumBy.id("ru.dostaevsky.android:id/textProductName"));
+    private final SelenideElement productCount = Selenide.$(AppiumBy.id("ru.dostaevsky.android:id/textViewCount"));
+    private final SelenideElement bottomCart = Selenide.$(AppiumBy.id("ru.dostaevsky.android:id/bottomNavigationCartMenuId"));
+    private final SelenideElement addToFavorite = Selenide.$(AppiumBy.id(("ru.dostaevsky.android:id/imageFavorite")));
 
     @Step("Добавляем позицию в корзину")
     public ItemComponents addProductToCart() {
@@ -26,16 +22,13 @@ public class ItemComponents {
     }
 
     @Step("Добавляем дополнительную позицию в корзину")
-    public ItemComponents addMoreProductsToCart() {
+    public void addMoreProductsToCart() {
         addMoreProductButton.click();
-        return this;
     }
 
     @Step("Извлекаем стоимость товара")
     public int getProductPrice() {
-        return Integer.parseInt(
-                productPrice
-                        .getText().replace(" ₽", ""));
+        return Integer.parseInt(productPrice.getText().replace(" ₽", ""));
     }
 
     @Step("Извлекаем наименование товара")
@@ -44,9 +37,8 @@ public class ItemComponents {
     }
 
     @Step("Проверяем наименование товара \"{value}\"")
-    public ItemComponents checkProductName(String value) {
-        productName.shouldHave(text(value));
-        return this;
+    public void checkProductName(String value) {
+        productName.shouldHave(Condition.text(value));
     }
 
     @Step("Извлекаем количество добавленного товара")
@@ -55,17 +47,14 @@ public class ItemComponents {
     }
 
     @Step("Проверяем количество добавленных в корзину товаров в уведомлении")
-    public ItemComponents checkTotalItemsInCartNotification(String itemCount) {
-        bottomCart
-                .$(accessibilityId("Корзина, " + itemCount + " new notifications"))
-                .shouldBe(visible);
-        return this;
+    public void checkTotalItemsInCartNotification(String itemCount) {
+        bottomCart.$(AppiumBy.accessibilityId("Корзина, " + itemCount + " new notifications"))
+                .shouldBe(Condition.visible);
     }
 
     @Step("Добавляем позицию в избранное")
-    public ItemComponents addItemToFavorite() {
+    public void addItemToFavorite() {
         addToFavorite.click();
-        return this;
     }
 
 }

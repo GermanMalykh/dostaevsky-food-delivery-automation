@@ -1,62 +1,57 @@
 package ru.dostaevsky.tests.android.pages;
 
+import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
+import io.appium.java_client.AppiumBy;
 import io.qameta.allure.Step;
+import ru.dostaevsky.data.CartData;
 
-import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Selenide.$;
-import static io.appium.java_client.AppiumBy.id;
-import static java.time.Duration.*;
-import static ru.dostaevsky.data.CartData.*;
+import java.time.Duration;
 
 public class CartPage {
 
-    private final static SelenideElement
-            emptyCartInfo = $(id("ru.dostaevsky.android:id/textEmptyDescription")),
-            emptyCartImage = $(id("ru.dostaevsky.android:id/imageEmpty")),
-            minimalPriceErrorLayout = $(id("ru.dostaevsky.android:id/min_price_error_layout")),
-            minimalPriceErrorTitle = $(id("ru.dostaevsky.android:id/min_price_error_title")),
-            productTitle = $(id("ru.dostaevsky.android:id/textTitle")),
-            productPrice = $(id("ru.dostaevsky.android:id/textProductPrice")),
-            productCount = $(id("ru.dostaevsky.android:id/textProductCount"));
+    private final SelenideElement emptyCartInfo = Selenide.$(AppiumBy.id("ru.dostaevsky.android:id/textEmptyDescription"));
+    private final SelenideElement emptyCartImage = Selenide.$(AppiumBy.id("ru.dostaevsky.android:id/imageEmpty"));
+    private final SelenideElement minimalPriceErrorLayout = Selenide.$(AppiumBy.id("ru.dostaevsky.android:id/min_price_error_layout"));
+    private final SelenideElement productTitle = Selenide.$(AppiumBy.id("ru.dostaevsky.android:id/textTitle"));
+    private final SelenideElement productPrice = Selenide.$(AppiumBy.id("ru.dostaevsky.android:id/textProductPrice"));
+    private final SelenideElement productCount = Selenide.$(AppiumBy.id("ru.dostaevsky.android:id/textProductCount"));
 
     @Step("Проверяем наличие сообщения с предложением добавления товара в корзину")
     public CartPage checkCartEmptyInfo() {
-        emptyCartInfo.shouldHave(text(EMPTY_CART_INFO_TEXT));
+        emptyCartInfo.shouldHave(Condition.text(CartData.EMPTY_CART_INFO_TEXT));
         return this;
     }
 
     @Step("Проверяем наличие изображения пустой корзины")
-    public CartPage checkCartEmptyImage() {
-        emptyCartImage.shouldBe(visible);
-        return this;
+    public void checkCartEmptyImage() {
+        emptyCartImage.shouldBe(Condition.visible);
     }
 
     @Step("Проверяем наличие сообщения с текстом минимальной суммы заказа")
-    public CartPage checkMinimalPriceTitle(String minimalPrice) {
+    public void checkMinimalPriceTitle(String minimalPrice) {
         minimalPriceErrorLayout
-                .$(id("ru.dostaevsky.android:id/min_price_error_title"))
-                .shouldBe(visible, ofSeconds(10))
-                .shouldHave(text("Минимальная сумма заказа — " + minimalPrice + " ₽."));
-        return this;
+                .$(AppiumBy.id("ru.dostaevsky.android:id/min_price_error_title"))
+                .shouldBe(Condition.visible, Duration.ofSeconds(10))
+                .shouldHave(Condition.text("Минимальная сумма заказа — " + minimalPrice + " ₽."));
     }
 
     @Step("Проверяем отображение наименования товара \"{itemName}\" в корзине")
     public CartPage checkItemNameInTheCart(String itemName) {
-        productTitle.shouldHave(text(itemName));
+        productTitle.shouldHave(Condition.text(itemName));
         return this;
     }
 
     @Step("Проверяем отображение цены товара в корзине")
     public CartPage checkItemPriceInTheCart(int parsedPrice, int count) {
-        productPrice.shouldHave(text(String.valueOf(parsedPrice * count)));
+        productPrice.shouldHave(Condition.text(String.valueOf(parsedPrice * count)));
         return this;
     }
 
     @Step("Проверяем отображение количества товара \"{itemCount}\" в корзине")
-    public CartPage checkItemCountInTheCart(String itemCount) {
-        productCount.shouldHave(text(itemCount));
-        return this;
+    public void checkItemCountInTheCart(String itemCount) {
+        productCount.shouldHave(Condition.text(itemCount));
     }
 
 }

@@ -1,22 +1,18 @@
 package ru.dostaevsky.tests.android.pages;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
+import com.codeborne.selenide.appium.SelenideAppium;
+import io.appium.java_client.AppiumBy;
 import io.qameta.allure.Step;
-
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.appium.SelenideAppium.$;
-import static io.appium.java_client.AppiumBy.className;
-import static ru.dostaevsky.data.MenuItemsData.FAVORITE;
+import ru.dostaevsky.data.MenuItemsData;
 
 public class FavoritePage {
 
-    private final static SelenideElement
-            favoriteTitle = $(className(("android.widget.TextView")));
+    private final SelenideElement favoriteTitle = SelenideAppium.$(AppiumBy.className(("android.widget.TextView")));
 
     @Step("Проверяем наименование вкладки \"Избранное\"")
-    public FavoritePage checkFavoriteTitle() {
-        favoriteTitle
-                .shouldHave(text(FAVORITE));
-        return this;
+    public void checkFavoriteTitle() {
+        favoriteTitle.shouldHave(Condition.text(MenuItemsData.FAVORITE));
     }
 }

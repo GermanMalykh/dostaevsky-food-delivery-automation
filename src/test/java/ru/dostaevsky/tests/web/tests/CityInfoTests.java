@@ -1,6 +1,7 @@
 package ru.dostaevsky.tests.web.tests;
 
 import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -9,15 +10,13 @@ import ru.dostaevsky.tests.web.config.PreRunConfig;
 import ru.dostaevsky.tests.web.pages.MainPage;
 import ru.dostaevsky.tests.web.pages.components.HeaderComponents;
 
-import static io.qameta.allure.SeverityLevel.CRITICAL;
-
 @Tag("web")
 @DisplayName("Web Tests")
 public class CityInfoTests extends PreRunConfig {
     MainPage mainPage = new MainPage();
     HeaderComponents headerComponents = new HeaderComponents();
 
-    @Severity(CRITICAL)
+    @Severity(SeverityLevel.CRITICAL)
     @DisplayName("[WEB] Выбор и отображение информации города. ")
     @ParameterizedTest(name = "Для города \"{1}\" отображается информация по ссылке \"{0}\" с контактным номером телефона \"{2}\"")
     @CsvFileSource(resources = "/csv/cityWebInfo.csv")

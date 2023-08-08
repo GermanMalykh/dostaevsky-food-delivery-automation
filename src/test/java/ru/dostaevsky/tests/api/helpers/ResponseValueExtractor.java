@@ -8,15 +8,15 @@ public class ResponseValueExtractor {
 
     @Description("Извлекаем идентификатор продукции из ответа после добавления продукции в корзину")
     public String getItemUidAfterAddToBasket(String response) {
-        JSONObject json_data = new JSONObject(response);
-        JSONArray items = json_data.getJSONObject("cartStatus").getJSONArray("items");
+        JSONObject jsonData = new JSONObject(response);
+        JSONArray items = jsonData.getJSONObject("cartStatus").getJSONArray("items");
         return items.getJSONObject(0).getString("uid");
     }
 
     @Description("Извлекаем идентификатор продукции из ответа после получения информации о продукции в корзине")
     public String getItemUidAfterGettingBasketInfo(String response) {
-        JSONObject json_data = new JSONObject(response);
-        JSONArray items = json_data.getJSONArray("items");
+        JSONObject jsonData = new JSONObject(response);
+        JSONArray items = jsonData.getJSONArray("items");
         return items.getJSONObject(0).getString("uid");
     }
 

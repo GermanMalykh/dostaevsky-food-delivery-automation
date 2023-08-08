@@ -1,66 +1,54 @@
 package ru.dostaevsky.tests.web.pages;
 
+import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
+import ru.dostaevsky.data.AttributeData;
+import ru.dostaevsky.data.CartData;
 
-import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Selenide.*;
-import static java.time.Duration.ofSeconds;
-import static ru.dostaevsky.data.AttributeData.*;
-import static ru.dostaevsky.data.CartData.*;
+import java.time.Duration;
 
 public class CartPage {
-    private final static SelenideElement
-            emptyCartInfo = $(".basket-empty-blank"),
-            emptyCartImage = $(".basket-empty-blank__img"),
-            minimalPriceToDelivery = $(".basket-blank-limit__title"),
-            productPrice = $(".basket__product-price__value"),
-            productCount = $(".counter-buttons .counter-buttons__count"),
-            productName = $(".basket__product-title");
+    private final SelenideElement emptyCartInfo = Selenide.$(".basket-empty-blank");
+    private final SelenideElement emptyCartImage = Selenide.$(".basket-empty-blank__img");
+    private final SelenideElement minimalPriceToDelivery = Selenide.$(".basket-blank-limit__title");
+    private final SelenideElement productPrice = Selenide.$(".basket__product-price__value");
+    private final SelenideElement productCount = Selenide.$(".counter-buttons .counter-buttons__count");
+    private final SelenideElement productName = Selenide.$(".basket__product-title");
 
     @Step("Проверяем наличие сообщения с предложением добавления позиций в корзину")
     public CartPage checkCartEmptyInfo() {
-        emptyCartInfo
-                .shouldHave(text(EMPTY_CART_INFO_TEXT));
+        emptyCartInfo.shouldHave(Condition.text(CartData.EMPTY_CART_INFO_TEXT));
         return this;
     }
 
     @Step("Проверяем наличие изображения пустой корзины")
-    public CartPage checkCartEmptyImage() {
-        emptyCartImage
-                .shouldHave(attributeMatching(ATTRIBUTE_SRC, EMPTY_CART_IMAGE_PATH));
-        return this;
+    public void checkCartEmptyImage() {
+        emptyCartImage.shouldHave(Condition.attributeMatching(
+                AttributeData.ATTRIBUTE_SRC, CartData.EMPTY_CART_IMAGE_PATH));
     }
 
     @Step("Проверяем наличие сообщения с текстом минимальной суммы заказа")
-    public CartPage checkMinimalPriceTitle(String minimalPrice) {
-        minimalPriceToDelivery
-                .shouldBe(visible, ofSeconds(10))
-                .shouldHave(text("Минимальная сумма заказа " + minimalPrice + " ₽"));
-        return this;
+    public void checkMinimalPriceTitle(String minimalPrice) {
+        minimalPriceToDelivery.shouldBe(Condition.visible, Duration.ofSeconds(10))
+                .shouldHave(Condition.text("Минимальная сумма заказа " + minimalPrice + " ₽"));
     }
 
     @Step("Проверяем отображение цены товара в корзине")
     public CartPage checkItemPriceInTheCart(String itemPrice) {
-        productPrice
-                .shouldBe(visible)
-                .shouldHave(text(itemPrice));
+        productPrice.shouldBe(Condition.visible).shouldHave(Condition.text(itemPrice));
         return this;
     }
 
     @Step("Проверяем отображение количества товара в корзине")
-    public CartPage checkItemCountInTheCart(String itemCount) {
-        productCount
-                .shouldBe(visible)
-                .shouldHave(text(itemCount));
-        return this;
+    public void checkItemCountInTheCart(String itemCount) {
+        productCount.shouldBe(Condition.visible).shouldHave(Condition.text(itemCount));
     }
 
     @Step("Проверяем отображение наименования товара в корзине")
     public CartPage checkItemNameInTheCart(String itemName) {
-        productName
-                .shouldBe(visible)
-                .shouldHave(text(itemName));
+        productName.shouldBe(Condition.visible).shouldHave(Condition.text(itemName));
         return this;
     }
 
