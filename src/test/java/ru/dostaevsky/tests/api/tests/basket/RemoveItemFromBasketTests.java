@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import ru.dostaevsky.tests.api.client.DostaevskyApiClient;
 import ru.dostaevsky.tests.api.config.ApiConfig;
+import ru.dostaevsky.tests.api.constants.ResponseData;
 import ru.dostaevsky.tests.api.helpers.ResponseValueExtractor;
 import ru.dostaevsky.tests.api.models.BasketInfoResponse;
 
@@ -15,7 +16,6 @@ import static io.qameta.allure.SeverityLevel.BLOCKER;
 import static org.assertj.core.api.Assertions.assertThat;
 import static ru.dostaevsky.data.AuthData.API_SPB_UNREGISTERED_USER_COOKIE;
 import static ru.dostaevsky.enums.BurgerId.DOR_BLUE_BURGER_ID;
-import static ru.dostaevsky.tests.api.constants.ResponseData.SUCCESS_RESPONSE_BODY_WITHOUT_ITEM;
 
 @Tag("api")
 @DisplayName("Rest API Tests")
@@ -44,7 +44,7 @@ public class RemoveItemFromBasketTests extends ApiConfig {
         });
         step("Ответ не содержит информации о товарах", () -> {
             assertThat(response.extract().jsonPath().prettify())
-                    .contains(SUCCESS_RESPONSE_BODY_WITHOUT_ITEM);
+                    .contains(ResponseData.SUCCESS_RESPONSE_BODY_WITHOUT_ITEM);
         });
         step("Делаем запрос на получение информации о товарах в корзине", () -> {
             response = apiClient.gettingBasketInfo(API_SPB_UNREGISTERED_USER_COOKIE)

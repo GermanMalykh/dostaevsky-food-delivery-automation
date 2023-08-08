@@ -1,10 +1,12 @@
 package ru.dostaevsky.helpers;
 
 import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.WebDriverRunner;
 import io.qameta.allure.Attachment;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import ru.dostaevsky.tests.android.helpers.BrowserstackGetter;
 import ru.dostaevsky.tests.web.config.EnvConfig;
@@ -13,21 +15,18 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 
-import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
-import static org.openqa.selenium.logging.LogType.BROWSER;
-
 public class Attach {
 
     private static final EnvConfig config = ConfigFactory.create(EnvConfig.class, System.getProperties());
 
     @Attachment(value = "{attachName}", type = "image/png")
     public static byte[] screenshotAs(String attachName) {
-        return ((TakesScreenshot) getWebDriver()).getScreenshotAs(OutputType.BYTES);
+        return ((TakesScreenshot) WebDriverRunner.getWebDriver()).getScreenshotAs(OutputType.BYTES);
     }
 
     @Attachment(value = "Page source", type = "text/plain")
     public static byte[] pageSource() {
-        return getWebDriver().getPageSource().getBytes(StandardCharsets.UTF_8);
+        return WebDriverRunner.getWebDriver().getPageSource().getBytes(StandardCharsets.UTF_8);
     }
 
     @Attachment(value = "{attachName}", type = "text/plain")
@@ -38,7 +37,7 @@ public class Attach {
     public static void browserConsoleLogs() {
         attachAsText(
                 "Browser console logs",
-                String.join("\n", Selenide.getWebDriverLogs(BROWSER))
+                String.join("\n", Selenide.getWebDriverLogs(LogType.BROWSER))
         );
     }
 
@@ -65,7 +64,6 @@ public class Attach {
 
     public static URL getVideoUrl() {
         String videoUrl = config.selenoid_url() + "/video/" + getSessionId() + ".mp4";
-//        String videoUrl = "https://selenoid.autotests.cloud/video/" + getSessionId() + ".mp4";
         try {
             return new URL(videoUrl);
         } catch (MalformedURLException e) {
@@ -75,6 +73,6 @@ public class Attach {
     }
 
     public static String getSessionId() {
-        return ((RemoteWebDriver) getWebDriver()).getSessionId().toString();
+        return ((RemoteWebDriver) WebDriverRunner.getWebDriver()).getSessionId().toString();
     }
 }

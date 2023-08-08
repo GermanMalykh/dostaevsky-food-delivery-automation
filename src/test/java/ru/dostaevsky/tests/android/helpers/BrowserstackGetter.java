@@ -1,13 +1,11 @@
 package ru.dostaevsky.tests.android.helpers;
 
+import io.restassured.RestAssured;
 import io.restassured.response.ExtractableResponse;
 import io.restassured.response.Response;
 import org.aeonbits.owner.ConfigFactory;
 import ru.dostaevsky.helpers.CustomAllureListener;
 import ru.dostaevsky.tests.android.config.EnvConfig;
-
-import static io.restassured.RestAssured.given;
-import static java.lang.String.format;
 
 public class BrowserstackGetter {
     static EnvConfig env = ConfigFactory.create(EnvConfig.class, System.getProperties());
@@ -23,9 +21,9 @@ public class BrowserstackGetter {
     }
 
     public static ExtractableResponse<Response> getSessionInfo(String sessionId) {
-        String url = format("https://api.browserstack.com/app-automate/sessions/%s.json", sessionId);
+        String url = String.format("https://api.browserstack.com/app-automate/sessions/%s.json", sessionId);
 
-        return given()
+        return RestAssured.given()
                 .log().all()
                 .filter(CustomAllureListener.withCustomTemplates())
                 .auth().basic(env.user(), env.key())

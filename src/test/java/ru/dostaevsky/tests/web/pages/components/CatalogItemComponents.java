@@ -4,20 +4,17 @@ import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
+import org.assertj.core.api.Assertions;
+import ru.dostaevsky.data.AttributeData;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.$$;
-import static org.assertj.core.api.Assertions.assertThat;
-import static ru.dostaevsky.data.AttributeData.*;
-
 public class CatalogItemComponents {
-    private static final ElementsCollection items = $$(".catalog-list__item");
-    private static final SelenideElement itemCount = $(".counter-buttons__wrap[style*=flex]");
+    private static final ElementsCollection items = Selenide.$$(".catalog-list__item");
+    private static final SelenideElement itemCount = Selenide.$(".counter-buttons__wrap[style*=flex]");
     private static final List<SelenideElement> itemsList = items;
 
     @Step("Добавляем позицию в корзину")
@@ -42,7 +39,7 @@ public class CatalogItemComponents {
 
     @Step("Проверяем, что количество отображаемых на странице позиций равно количеству из словаря")
     public CatalogItemComponents checkSizeComponentsOnPage(Map<String, Integer> expectedPrices) {
-        assertThat(items).hasSize(expectedPrices.size());
+        Assertions.assertThat(items).hasSize(expectedPrices.size());
         return this;
     }
 
@@ -51,8 +48,8 @@ public class CatalogItemComponents {
         Map<String, Integer> actualPrices = new HashMap<>();
         for (SelenideElement item : itemsList) {
             actualPrices.put(
-                    item.getAttribute(ATTRIBUTE_ITEM_NAME),
-                    Integer.valueOf(Objects.requireNonNull(item.getAttribute(ATTRIBUTE_ITEM_PRICE)))
+                    item.getAttribute(AttributeData.ATTRIBUTE_ITEM_NAME),
+                    Integer.valueOf(Objects.requireNonNull(item.getAttribute(AttributeData.ATTRIBUTE_ITEM_PRICE)))
             );
         }
         return actualPrices;
@@ -60,7 +57,7 @@ public class CatalogItemComponents {
 
     @Step("Проверяем, что актуальная цена на странице равна цене из словаря")
     public CatalogItemComponents assertPrices(Map<String, Integer> expectedPrices, Map<String, Integer> actualPrices) {
-        assertThat(expectedPrices).containsAllEntriesOf(actualPrices);
+        Assertions.assertThat(expectedPrices).containsAllEntriesOf(actualPrices);
         return this;
     }
 
