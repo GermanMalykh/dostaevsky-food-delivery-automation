@@ -8,7 +8,7 @@ import lombok.Getter;
 public enum BurgerId {
 
     /**
-     * Дор Блю бургер ID.
+     * Дор Блю бургер
      */
     DOR_BLUE_BURGER_ID("13460");
 
