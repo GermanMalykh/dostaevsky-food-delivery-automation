@@ -3,8 +3,6 @@ package ru.dostaevsky.tests.android.drivers;
 import com.codeborne.selenide.WebDriverProvider;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
-import io.appium.java_client.remote.AutomationName;
-import io.appium.java_client.remote.MobilePlatform;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
@@ -15,6 +13,9 @@ import java.io.File;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+
+import static io.appium.java_client.remote.AutomationName.ANDROID_UIAUTOMATOR2;
+import static io.appium.java_client.remote.MobilePlatform.ANDROID;
 
 public class LocalMobileDriver implements WebDriverProvider {
     static EnvConfig env = ConfigFactory.create(EnvConfig.class, System.getProperties());
@@ -39,8 +40,8 @@ public class LocalMobileDriver implements WebDriverProvider {
         UiAutomator2Options options = new UiAutomator2Options();
         options.merge(capabilities);
 
-        options.setAutomationName(AutomationName.ANDROID_UIAUTOMATOR2)
-                .setPlatformName(MobilePlatform.ANDROID)
+        options.setAutomationName(ANDROID_UIAUTOMATOR2)
+                .setPlatformName(ANDROID)
                 .setDeviceName(env.device())
                 .setPlatformVersion(env.os_version())
                 .setApp(getAppPath())

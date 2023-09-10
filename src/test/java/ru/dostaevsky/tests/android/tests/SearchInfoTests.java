@@ -2,7 +2,6 @@ package ru.dostaevsky.tests.android.tests;
 
 import io.qameta.allure.Severity;
 
-import io.qameta.allure.SeverityLevel;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -11,6 +10,8 @@ import ru.dostaevsky.tests.android.config.PreRunConfig;
 import ru.dostaevsky.tests.android.pages.MainPage;
 import ru.dostaevsky.tests.android.pages.components.SearchComponents;
 
+import static io.qameta.allure.SeverityLevel.CRITICAL;
+
 @Tag("android")
 @DisplayName("Android Tests")
 public class SearchInfoTests extends PreRunConfig {
@@ -18,7 +19,7 @@ public class SearchInfoTests extends PreRunConfig {
     MainPage main = new MainPage();
     SearchComponents search = new SearchComponents();
 
-    @Severity(SeverityLevel.CRITICAL)
+    @Severity(CRITICAL)
     @DisplayName("[Android] Проверка результатов поиска. ")
     @ParameterizedTest(name = "Для города \"{0}\", результаты поиска по слову \"{1}\" не равны нулю")
     @CsvSource({"Санкт-Петербург, пицца", "Москва, пицца", "Сочи, пицца", "Краснодар, пицца", "Новосибирск, пицца"})
