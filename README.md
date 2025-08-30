@@ -61,6 +61,8 @@
 
 ## <a name="GradleCommand">Gradle команды</a>
 
+### Запуск отдельных типов тестов
+
 Для запуска локально и в Jenkins используется следующая команда:
 
 ```bash
@@ -68,13 +70,25 @@ gradle clean ${CATEGORY} -Denv=<env>
 ```
 
 В `CATEGORY` представлен список из тэгов для запуска определенного типа тестов:
-> - *api*
->- *web*
->- *android*
+> - *api* - API тесты
+>- *web* - Web тесты  
+>- *android* - Android тесты
 
-Дополнительно добавлена возможность запуска всех тестов локально и удаленно через задачи
-> - *allRemoteTests*
->- *allLocalTests*
+### Запуск всех тестов
+
+Дополнительно добавлена возможность запуска всех тестов локально и удаленно через задачи:
+
+```bash
+# Запуск всех тестов удаленно (параллельно)
+./gradlew runAllTestsRemote
+
+# Запуск всех тестов локально (последовательно)
+./gradlew runAllTestsLocal
+```
+
+**Описание задач:**
+> - *runAllTestsRemote* - запуск всех тестов удаленно (API + Web + Android) с настройкой `env=remote` **параллельно**
+>- *runAllTestsLocal* - запуск всех тестов локально (Android → Web → API) с настройкой `env=local` **последовательно**
 
 `env` - определяет среду для запуска тестов _(не относится к API)_:
 > - *local*
@@ -98,7 +112,7 @@ selenoid_url=...
 >- *browser_size* - Разрешение в котором будет запущен браузер
 >- *selenoid_url* - Ссылка для удалённого/локального запуска тестов в `Selenoid`
 
-## <a name="Запуск в Jenkins">Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/Students/job/14_gnmalykh_dostaevsky/)</a>
+## <a name="Запуск в Jenkins">Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/C14_gnmalykh_dostaevsky_java/)</a>
 
 > Ссылка доступна только авторизованным пользователям.
 
@@ -121,7 +135,7 @@ selenoid_url=...
 <img src="images/screens/js2.png" alt="jenkinsFinish" width="1575">
 </p>
 
-# <a name="AllureReport">Результаты автотестов в [Allure Report](https://jenkins.autotests.cloud/job/Students/job/14_gnmalykh_dostaevsky/allure/)</a>
+# <a name="AllureReport">Результаты автотестов в [Allure Report](https://jenkins.autotests.cloud/job/C14_gnmalykh_dostaevsky_java/allure/#)</a>
 
 > Ссылка доступна только авторизованным пользователям.
 
