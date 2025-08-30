@@ -13,10 +13,9 @@ import static java.time.Duration.*;
 
 public class SearchComponents {
     private static final ElementsCollection
-            searchResults = $$(id("ru.dostaevsky.android:id/rootProductView"));
+            searchResults = $$(id("ru.dostaevsky.android:id/recyclerViewResults"));
     private static final SelenideElement
-            searchField = $(id("ru.dostaevsky.android:id/search_button")),
-            searchInputField = $(id("ru.dostaevsky.android:id/search_src_text"));
+            searchField = $(id("ru.dostaevsky.android:id/search"));
 
     @Step("Переходим к поиску")
     public SearchComponents navigateToSearch() {
@@ -28,7 +27,7 @@ public class SearchComponents {
 
     @Step("Указываем параметры поиска")
     public SearchComponents inputSearchText(String product) {
-        searchInputField.sendKeys(product);
+        searchField.sendKeys(product);
         return this;
     }
 
