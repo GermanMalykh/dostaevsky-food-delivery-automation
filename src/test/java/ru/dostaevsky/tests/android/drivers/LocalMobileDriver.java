@@ -28,6 +28,7 @@ public class LocalMobileDriver implements WebDriverProvider {
         }
     }
 
+    //TODO: Перед прогоном тестов, необходимо распаковать  zip архив
     public String getAppPath() {
         String appPath = "src/test/resources/apps/ru.dostaevsky.android.apk";
         File app = new File(appPath);
