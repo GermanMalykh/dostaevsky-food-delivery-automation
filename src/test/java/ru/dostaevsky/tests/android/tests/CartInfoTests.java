@@ -28,8 +28,7 @@ public class CartInfoTests extends PreRunConfig {
     @DisplayName("[Android] Отображение информации в пустой корзине")
     @Test
     void checkInfoInEmptyCart() {
-        main.selectByText(SPB.getDisplayName())
-                .closingTechInfo();
+        main.selectByText(SPB.getDisplayName());
         main.selectByText(CART);
         cart.checkCartEmptyInfo()
                 .checkCartEmptyImage();
@@ -40,8 +39,8 @@ public class CartInfoTests extends PreRunConfig {
     @ParameterizedTest(name = "Минимальная цена доставки в городе \"{1}\" равна \"{3}\" ₽")
     @CsvFileSource(resources = "/csv/cityWebInfo.csv")
     void checkMinimalPriceToDeliveryInfo(String link, String city, String phone, String minimalPrice) {
-        main.selectByText(city).closingTechInfo();
-        main.selectByText(FAST_FOOD.getValue());
+        main.selectByText(city);
+        main.selectByText(NEW.getValue());
         item.addProductToCart();
         main.selectByText(CART);
         cart.checkMinimalPriceTitle(minimalPrice);
@@ -51,8 +50,7 @@ public class CartInfoTests extends PreRunConfig {
     @DisplayName("[Android] Добавление позиции в корзину и проверка отображения цены, количества и наименования товара в корзине")
     @Test
     void addItemToCartAndCheckValueInCartTest() {
-        main.selectByText(SPB.getDisplayName())
-                .closingTechInfo();
+        main.selectByText(SPB.getDisplayName());
         main.selectByText(NEW.getValue());
         item.addProductToCart()
                 .addMoreProductsToCart();
@@ -71,8 +69,7 @@ public class CartInfoTests extends PreRunConfig {
     @DisplayName("[Android] Добавление позиции в корзину и проверка отображения цены, количества и наименования товара в уведомлении")
     @Test
     void addItemToCartAndCheckValueInNotificationTest() {
-        main.selectByText(SPB.getDisplayName())
-                .closingTechInfo();
+        main.selectByText(SPB.getDisplayName());
         main.selectByText(NEW.getValue());
         item.addProductToCart()
                 .addMoreProductsToCart();
