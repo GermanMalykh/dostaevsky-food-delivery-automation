@@ -50,8 +50,10 @@ public class CatalogItemComponents {
     public Map<String, Integer> getActualPrices() {
         Map<String, Integer> actualPrices = new HashMap<>();
         for (SelenideElement item : itemsList) {
+            String rawName = item.getAttribute(ATTRIBUTE_ITEM_NAME);
+            String normalizedName = normalizeItemName(rawName);
             actualPrices.put(
-                    item.getAttribute(ATTRIBUTE_ITEM_NAME),
+                    normalizedName,
                     Integer.valueOf(Objects.requireNonNull(item.getAttribute(ATTRIBUTE_ITEM_PRICE)))
             );
         }
@@ -67,6 +69,27 @@ public class CatalogItemComponents {
     @Step("Извлекаем значение количества добавленного в корзину товара")
     public String getItemCount() {
         return itemCount.$(".counter-buttons__count").getText();
+    }
+
+    /**
+     * Нормализует наименование позиции, приведя его к единому виду для сравнения.
+     * <p>
+     * Выполняет следующие преобразования:
+     * <ul>
+     *   <li>Заменяет "Шаверма" на "Шаурма"</li>
+     *   <li>Заменяет латинскую {@code o} на кириллическую {@code о} (например, в слове "бoул")</li>
+     *   <li>Удаляет начальные и конечные пробелы</li>
+     * </ul>
+     *
+     * @param name исходное наименование позиции
+     * @return нормализованное наименование, либо {@code null}, если входное значение {@code null}
+     */
+    private String normalizeItemName(String name) {
+        if (name == null) return null;
+        return name
+                .replace("Шаверма", "Шаурма")
+                .replace("o", "о")
+                .trim();
     }
 
 }

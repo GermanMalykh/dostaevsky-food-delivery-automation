@@ -28,7 +28,6 @@ public class ProductsPriceInfoTests extends PreRunConfig {
     @MethodSource("ru.dostaevsky.tests.web.providers.BreakfastsPriceProvider#provide")
     void breakfastPriceComparisonInSelectedCityTest(CityName name, CityLink link, Map<String, Integer> expectedPrices) {
         mainPage.openMainPage()
-                .hideConfirmCityMessage()
                 .selectCityFromList(link.getValue(), name.getDisplayName())
                 .navigateToCategory(BREAKFASTS)
                 .removeInfoFromPage();
@@ -42,7 +41,6 @@ public class ProductsPriceInfoTests extends PreRunConfig {
     @MethodSource("ru.dostaevsky.tests.web.providers.BowlsPriceProvider#provide")
     void bowlsPriceComparisonInSelectedCityTest(CityName name, CityLink link, Map<String, Integer> expectedPrices) {
         mainPage.openMainPage()
-                .hideConfirmCityMessage()
                 .selectCityFromList(link.getValue(), name.getDisplayName())
                 .navigateToCategory(BOWLS)
                 .removeInfoFromPage();

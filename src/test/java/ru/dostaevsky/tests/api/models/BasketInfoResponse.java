@@ -12,6 +12,9 @@ public class BasketInfoResponse {
     @JsonProperty("price_wo_sale")
     private int priceWoSale;
 
+    @JsonProperty("delivery_price")
+    private int delivery_price;
+
     @JsonProperty("items")
     private BasketInfoItemsDetails[] items;
 
@@ -29,6 +32,9 @@ public class BasketInfoResponse {
 
     @JsonProperty("min_cart_price")
     private int minCartPrice;
+
+    @JsonProperty("progress_bar_gifts")
+    private Object[] progress_bar_gifts;
 
     @JsonProperty("status")
     private String status;

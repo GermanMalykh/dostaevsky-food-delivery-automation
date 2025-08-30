@@ -23,10 +23,8 @@ public class CityInfoTests extends PreRunConfig {
     @CsvFileSource(resources = "/csv/cityWebInfo.csv")
     void selectCityFromTheListAvailableAndCheckDisplayInfoTest(String link, String city, String phone) {
         mainPage.openMainPage()
-                .hideConfirmCityMessage()
                 .selectCityFromList(link, city)
                 .checkCityUrl(link)
-                .hideConfirmCityMessage()
                 .checkSelectedAttributeInCity(link);
         headerComponents.checkCityPhoneNumberOnPage(phone);
     }

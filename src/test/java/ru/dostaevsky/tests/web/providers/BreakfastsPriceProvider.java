@@ -14,10 +14,7 @@ public class BreakfastsPriceProvider {
     public static Stream<Arguments> provide() {
         return Stream.of(
                 Arguments.of(CityName.SPB, CityLink.SPB_LINK, getPriceMapForCity(CityName.SPB)),
-                Arguments.of(CityName.MSK, CityLink.MSK_LINK, getPriceMapForCity(CityName.MSK)),
-                Arguments.of(CityName.SOCHI, CityLink.SOCHI_LINK, getPriceMapForCity(CityName.SOCHI)),
-                Arguments.of(CityName.KRD, CityLink.KRD_LINK, getPriceMapForCity(CityName.KRD)),
-                Arguments.of(CityName.NSK, CityLink.NSK_LINK, getPriceMapForCity(CityName.NSK))
+                Arguments.of(CityName.MSK, CityLink.MSK_LINK, getPriceMapForCity(CityName.MSK))
         );
     }
 

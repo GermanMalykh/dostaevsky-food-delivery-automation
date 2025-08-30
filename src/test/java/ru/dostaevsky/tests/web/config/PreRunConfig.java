@@ -32,6 +32,8 @@ public class PreRunConfig {
         Configuration.browserVersion = config.browser_version();
         Configuration.browserSize = config.browser_size();
         Configuration.pageLoadTimeout = 60000;
+        Configuration.pageLoadStrategy = "eager";
+
         Configuration.browserCapabilities = capabilities;
     }
 

@@ -6,20 +6,21 @@ import lombok.Getter;
 @Getter
 @AllArgsConstructor
 public enum Breakfast {
-    SAUSAGES_SCRAMBLED_EGG("Скрэмбл с колбасками", 219, 239, 259, 225, 279),
-    BACON_SCRAMBLED_EGG("Скрэмбл с беконом", 229, 249, 275, 269, 299),
-    CHEESE_SCRAMBLED_EGG("Скрэмбл с сыром", 239, 259, 285, 269, 289),
-    SYRNIKI("Сырники со сметаной и малиновым сиропом", 269, 299, 299, 299, 289),
-    BANANA_SMOOTHIE("Смузи банан", 199, 219, 285, 259, 269),
-    MANGO_SMOOTHIE("Смузи манго", 209, 229, 330, 259, 299),
-    STRAWBERRY_SMOOTHIE("Смузи клубника", 209, 229, 299, 259, 279);
+    MANGO_OATMEAL_COCONUT_MILK("Овсяная каша с манго на кокосовом молоке", 259, 279),
+    BLUEBERRY_OATMEAL_COCONUT_MILK("Овсяная каша с черникой на кокосовом молоке", 259, 279),
+    CAESAR_SANDWICH("Цезарь Сэндвич", 249, 249),
+    PEPPERONI_SANDWICH("Пепперони Сэндвич", 249, 249),
+    HAM_CHEESE_SANDWICH("Ветчина-Сыр Сэндвич", 239, 249),
+    STRAWBERRY_PANCAKES("Блинчики сладкие с клубникой", 389, 409),
+    CHICKEN_PANCAKES("Блинчики сытные с курицей", 499, 509),
+    POTATO_PANCAKES("Драники", 319, 289),
+    SYRNIKI_CARAMEL_SYRUP("Сырники с карамельным сиропом", 339, 359),
+    SYRNIKI_CONDENSED_MILK("Сырники со сгущённым молоком", 339, 359),
+    HEARTY_BREAKFAST_SAUSAGES_TOMATOES("Сытный завтрак с колбасками и томатами", 419, 479);
 
     private final String name;
     private final int spbPrice;
     private final int mskPrice;
-    private final int sochiPrice;
-    private final int krdPrice;
-    private final int nskPrice;
 
     public int getPrice(CityName cityName) {
         switch (cityName) {
@@ -27,12 +28,6 @@ public enum Breakfast {
                 return spbPrice;
             case MSK:
                 return mskPrice;
-            case SOCHI:
-                return sochiPrice;
-            case KRD:
-                return krdPrice;
-            case NSK:
-                return nskPrice;
             default:
                 throw new IllegalArgumentException("Unknown city name");
         }

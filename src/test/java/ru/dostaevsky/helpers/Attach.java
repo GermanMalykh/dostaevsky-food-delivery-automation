@@ -42,14 +42,14 @@ public class Attach {
         );
     }
 
-    @Attachment(value = "Video", type = "text/html", fileExtension = ".html")
+    @Attachment(value = "Selenoid Video", type = "text/html", fileExtension = ".html")
     public static String addVideo() {
         return "<html><body><video width='100%' height='100%' controls autoplay><source src='"
                 + getVideoUrl()
                 + "' type='video/mp4'></video></body></html>";
     }
 
-    @Attachment(value = "Video", type = "text/html", fileExtension = ".html")
+    @Attachment(value = "BrowserStack Video", type = "text/html", fileExtension = ".html")
     public static String getVideoBrowserstack(String sessionId) {
         return "<html><body><video width='100%' height='100%' controls autoplay><source src='"
                 + BrowserstackGetter.videoUrl(sessionId)
@@ -65,7 +65,6 @@ public class Attach {
 
     public static URL getVideoUrl() {
         String videoUrl = config.selenoid_url() + "/video/" + getSessionId() + ".mp4";
-//        String videoUrl = "https://selenoid.autotests.cloud/video/" + getSessionId() + ".mp4";
         try {
             return new URL(videoUrl);
         } catch (MalformedURLException e) {

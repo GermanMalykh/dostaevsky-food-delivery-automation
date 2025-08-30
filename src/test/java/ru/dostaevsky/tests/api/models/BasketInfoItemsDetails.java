@@ -66,6 +66,9 @@ public class BasketInfoItemsDetails {
     @JsonProperty("dost_external_item_no")
     private String dostExternalItemNo;
 
+    @JsonProperty("is_available")
+    private boolean is_available;
+
     @JsonProperty("share_name")
     private String shareName;
 }
