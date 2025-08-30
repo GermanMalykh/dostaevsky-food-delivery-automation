@@ -95,14 +95,14 @@ public class DostaevskyApiClient {
     /**
      * Getting reviews.
      *
-     * @param token      X-Auth-Token
+     * @param cookie      user session_token=...
      * @param limitValue Minimal count returned reviews
      * @return All response
      */
     @Description("GET../reviews?limit=% - Getting reviews")
-    public ValidatableResponse gettingReviews(String token, Integer limitValue) {
+    public ValidatableResponse gettingReviews(String cookie, Integer limitValue) {
         Map<String, String> headers = new HashMap<>();
-        headers.put("X-Auth-Token", token);
+        headers.put("Cookie", cookie);
         Map<String, Integer> params = new HashMap<>();
         params.put("limit", limitValue);
         return RestAssured.given(RestSpecs.requestSpecification)

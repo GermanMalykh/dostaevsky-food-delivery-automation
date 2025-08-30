@@ -74,21 +74,9 @@ tasks.withType(Test) {
     }
 }
 
-task api(type: Test) {
-    useJUnitPlatform {
-        includeTags("api")
-    }
-}
-
 task android(type: Test) {
     useJUnitPlatform {
         includeTags("android")
-    }
-}
-
-task web(type: Test) {
-    useJUnitPlatform {
-        includeTags("web")
     }
 }
 
@@ -120,4 +108,11 @@ tasks.register('webLocalTests', Test) {
     }
     systemProperty "env", "local"
     description = 'Запускает все Web тесты локально'
+}
+
+tasks.register('apiTests', Test) {
+    useJUnitPlatform {
+        includeTags("api")
+    }
+    description = 'Запускает все API тесты'
 }
