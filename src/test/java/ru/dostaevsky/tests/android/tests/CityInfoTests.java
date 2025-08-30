@@ -24,7 +24,7 @@ public class CityInfoTests extends PreRunConfig {
     @ParameterizedTest(name = "Для города \"{0}\" отображается информация с контактным номером телефона \"{1}\"")
     @CsvFileSource(resources = "/csv/cityMobileInfo.csv")
     void selectingCityFromTheListAvailableAndCheckingDisplayInfoTest(String city, String phoneWithPlus) {
-        main.selectByText(city).closingTechInfo();
+        main.selectByText(city);
         main.selectByText(ADDITIONAL_INFO);
         infoPage.checkCityName(city)
                 .checkCityPhoneNumber(phoneWithPlus);
