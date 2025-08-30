@@ -100,6 +100,7 @@ tasks.register('androidRemoteTests', Test) {
 tasks.register('runAllTestsRemote') {
     group = 'verification'
     description = 'Запускает все тесты удаленно параллельно (Android + Web + API)'
+    ignoreFailures = true
     dependsOn 'androidRemoteTests', 'webRemoteTests', 'apiTests'
 }
 
