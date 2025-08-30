@@ -24,8 +24,7 @@ public class SearchInfoTests extends PreRunConfig {
     @ParameterizedTest(name = "Для города \"{0}\", результаты поиска по слову \"{1}\" не равны нулю")
     @CsvSource({"Санкт-Петербург, пицца", "Москва, пицца", "Сочи, пицца", "Краснодар, пицца", "Новосибирск, пицца"})
     void successfulProductSearchTest(String city, String product) {
-        main.selectByText(city)
-                .closingTechInfo();
+        main.selectByText(city);
         search.navigateToSearch()
                 .inputSearchText(product)
                 .inputSearchText(0);
