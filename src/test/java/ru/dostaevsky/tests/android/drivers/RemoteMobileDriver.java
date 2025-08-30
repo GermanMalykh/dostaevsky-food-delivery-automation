@@ -30,7 +30,8 @@ public class RemoteMobileDriver implements WebDriverProvider {
         mutableCapabilities.setCapability("os_version", env.os_version());
 
         mutableCapabilities.setCapability("project", "Dostaevsky Food Delivery");
-        mutableCapabilities.setCapability("build", "env-build-demo");
+        mutableCapabilities.setCapability("buildName", "Dostaevsky | BuildDateAndTime: " + getCurrentDateTime());
+        mutableCapabilities.setCapability("buildTag", "automated_tests");
         mutableCapabilities.setCapability("name", env.device() + "_" + env.os_version() + "_Dostaevsky_Test");
 
         try {
@@ -39,5 +40,9 @@ public class RemoteMobileDriver implements WebDriverProvider {
         } catch (MalformedURLException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    private String getCurrentDateTime() {
+        return java.time.LocalDateTime.now().format(java.time.format.DateTimeFormatter.ofPattern("dd.MM.yyyy_HH:mm:ss"));
     }
 }
