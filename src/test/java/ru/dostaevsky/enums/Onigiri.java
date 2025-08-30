@@ -5,9 +5,8 @@ import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
-public enum Onigiri {
-    SNOW_CRAB_ONIGIRI("Онигири со снежным крабом"),
-    ONIGIRI_KOMBO("Онигири комбо");
+public enum Desserts {
+    CARAMEL_CHEESECAKE("Карамельный чизкейк");
 
     private final String value;
 }
