@@ -9,9 +9,8 @@ public enum Category {
     BREAKFASTS("Завтраки"),
     BOWLS("Боулы"),
     WOKS("Wok"),
-    FAST_FOOD("Фастфуд"),
     NEW("Новинки"),
-    ONIGIRI("Онигири");
+    DESSERTS("Десерты");
 
     private final String value;
 }
