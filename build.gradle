@@ -74,24 +74,11 @@ tasks.withType(Test) {
     }
 }
 
-task android(type: Test) {
+tasks.register('apiTests', Test) {
     useJUnitPlatform {
-        includeTags("android")
+        includeTags("api")
     }
-}
-
-task allRemoteTests(type: Test) {
-    useJUnitPlatform {
-        includeTags("api", "web", "android")
-    }
-    systemProperty "env", "remote"
-}
-
-task allLocalTests(type: Test) {
-    useJUnitPlatform {
-        includeTags("api", "web", "android")
-    }
-    systemProperty "env", "local"
+    description = 'Запускает все API тесты'
 }
 
 tasks.register('webRemoteTests', Test) {
@@ -102,21 +89,6 @@ tasks.register('webRemoteTests', Test) {
     description = 'Запускает все Web тесты удаленно'
 }
 
-tasks.register('webLocalTests', Test) {
-    useJUnitPlatform {
-        includeTags("web")
-    }
-    systemProperty "env", "local"
-    description = 'Запускает все Web тесты локально'
-}
-
-tasks.register('apiTests', Test) {
-    useJUnitPlatform {
-        includeTags("api")
-    }
-    description = 'Запускает все API тесты'
-}
-
 tasks.register('androidRemoteTests', Test) {
     useJUnitPlatform {
         includeTags("android")
@@ -124,6 +96,20 @@ tasks.register('androidRemoteTests', Test) {
     }
     systemProperty "env", "remote"
     description = 'Запускает все Android тесты удаленно, исключая тесты с меткой only-local'
+}
+
+tasks.register('runAllTestsRemote') {
+    group = 'verification'
+    description = 'Запускает все тесты удаленно параллельно (Android + Web + API)'
+    dependsOn 'androidRemoteTests', 'webRemoteTests', 'apiTests'
+}
+
+tasks.register('webLocalTests', Test) {
+    useJUnitPlatform {
+        includeTags("web")
+    }
+    systemProperty "env", "local"
+    description = 'Запускает все Web тесты локально'
 }
 
 tasks.register('androidLocalTests', Test) {
