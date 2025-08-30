@@ -100,7 +100,6 @@ public class CartInfoTests extends PreRunConfig {
     @CsvFileSource(resources = "/csv/cityWebInfo.csv")
     void addItemToCartAndCheckMinimalPriceToDeliveryInfo(String link, String city, String phone, String minimalPrice) {
         main.openMainPage()
-                .hideConfirmCityMessage()
                 .selectCityFromList(link, city)
                 .navigateToCategory(WOKS);
         item.addItemToCart();

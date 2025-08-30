@@ -19,24 +19,14 @@ public class PreRunConfig {
     private static final EnvConfig config = ConfigFactory.create(EnvConfig.class, System.getProperties());
 
     @BeforeAll
-    public static void setup() throws Exception {
+    public static void setup() {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        switch (env) {
-            case "remote":
-                capabilities.setCapability("selenoid:options", Map.<String, Object>of(
-                        "enableVNC", true,
-                        "enableVideo", true
-                ));
-                Configuration.remote = config.selenoid_url() + "/wd/hub";
-                break;
-            case "local":
-                capabilities.setCapability("selenoid:options", Map.<String, Object>of(
-                        "enableVNC", true
-                ));
-                Configuration.remote = config.selenoid_url() + "/wd/hub";
-                break;
-            default:
-                throw new Exception("Unrecognised env");
+        if (env.equals("remote")) {
+            capabilities.setCapability("selenoid:options", Map.<String, Object>of(
+                    "enableVNC", true,
+                    "enableVideo", true
+            ));
+            Configuration.remote = config.selenoid_url() + "/wd/hub";
         }
         Configuration.browser = config.browser_name();
         Configuration.browserVersion = config.browser_version();
@@ -55,7 +45,7 @@ public class PreRunConfig {
         Attach.screenshotAs("Last screenshot");
         Attach.pageSource();
         Attach.browserConsoleLogs();
-        if (!env.equals("local")) {
+        if (env.equals("remote")) {
             Attach.addVideo();
         }
         Selenide.clearBrowserCookies();
