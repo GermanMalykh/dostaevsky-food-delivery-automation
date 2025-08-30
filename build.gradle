@@ -116,3 +116,37 @@ tasks.register('apiTests', Test) {
     }
     description = 'Запускает все API тесты'
 }
+
+tasks.register('androidRemoteTests', Test) {
+    useJUnitPlatform {
+        includeTags("android")
+        excludeTags("only-local")
+    }
+    systemProperty "env", "remote"
+    description = 'Запускает все Android тесты удаленно, исключая тесты с меткой only-local'
+}
+
+tasks.register('androidLocalTests', Test) {
+    useJUnitPlatform {
+        includeTags("android")
+    }
+    systemProperty "env", "local"
+    description = 'Запускает все Android тесты локально'
+}
+
+tasks.register('runAllTestsLocal') {
+    group = 'verification'
+    description = 'Запускает все тесты локально последовательно (Android → Web → API)'
+
+    doLast {
+        exec {
+            commandLine './gradlew', 'androidLocalTests'
+        }
+        exec {
+            commandLine './gradlew', 'webLocalTests'
+        }
+        exec {
+            commandLine './gradlew', 'apiTests'
+        }
+    }
+}
