@@ -62,15 +62,14 @@ allure {
     }
 }
 
-tasks.withType(Test) {
+tasks.withType(Test).configureEach {
     systemProperties(System.getProperties())
     useJUnitPlatform()
 
     testLogging {
-        lifecycle {
-            events "started", "skipped", "failed", "standard_error", "standard_out"
-            exceptionFormat "short"
-        }
+        events "started", "passed", "skipped", "failed", "standard_out", "standard_error"
+        showStandardStreams = true
+        exceptionFormat = 'full'
     }
 }
 
