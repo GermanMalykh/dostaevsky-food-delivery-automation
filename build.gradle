@@ -103,7 +103,7 @@ tasks.register('runAllTestsRemote', Test) {
         excludeTags("only-local")
     }
     systemProperty "env", "remote"
-    description = 'Запускает все тесты удаленно параллельно (Android + Web + API)'
+    description = 'Запускает все тесты удаленно (Android + Web + API)'
 }
 
 tasks.register('webLocalTests', Test) {
