@@ -97,11 +97,13 @@ tasks.register('androidRemoteTests', Test) {
     description = 'Запускает все Android тесты удаленно, исключая тесты с меткой only-local'
 }
 
-tasks.register('runAllTestsRemote') {
-    group = 'verification'
+tasks.register('runAllTestsRemote', Test) {
+    useJUnitPlatform {
+        includeTags("api", "web", "android")
+        excludeTags("only-local")
+    }
+    systemProperty "env", "remote"
     description = 'Запускает все тесты удаленно параллельно (Android + Web + API)'
-    ignoreFailures = true
-    dependsOn 'androidRemoteTests', 'webRemoteTests', 'apiTests'
 }
 
 tasks.register('webLocalTests', Test) {
