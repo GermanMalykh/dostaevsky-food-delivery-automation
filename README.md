@@ -139,6 +139,9 @@ selenoid_url=...
 
 > Ссылка доступна только авторизованным пользователям.
 
+# <a name="AllureReportAlternative">Альтернативная ссылка на пример [Allure отчета](https://germanmalykh.github.io/dostaevsky-food-delivery-automation/#)</a>
+> Доступно без авторазиции
+
 ## Главная страница
 
 Главная страница отчета Allure содержит следующие блоки:
