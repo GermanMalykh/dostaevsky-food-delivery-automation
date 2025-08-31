@@ -1,0 +1,974 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "ru.dostaevsky.tests",
+    "children" : [ {
+      "name" : "android.tests",
+      "children" : [ {
+        "name" : "CartInfoTests",
+        "children" : [ {
+          "name" : "addItemToCartAndCheckValueInNotificationTest",
+          "uid" : "6f3939e2dc8f6e9e",
+          "parentUid" : "73f7bb976b8e68cf533931bbe17d5cf3",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756584625261,
+            "stop" : 1756584668700,
+            "duration" : 43439
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "addItemToCartAndCheckValueInCartTest",
+          "uid" : "8489b03bf2f8da30",
+          "parentUid" : "73f7bb976b8e68cf533931bbe17d5cf3",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756584668794,
+            "stop" : 1756584708161,
+            "duration" : 39367
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "checkInfoInEmptyCart",
+          "uid" : "3e49d0c820e538bd",
+          "parentUid" : "73f7bb976b8e68cf533931bbe17d5cf3",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756584708165,
+            "stop" : 1756584740117,
+            "duration" : 31952
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "checkMinimalPriceToDeliveryInfo",
+          "uid" : "990fc2622e10aafb",
+          "parentUid" : "73f7bb976b8e68cf533931bbe17d5cf3",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756584740200,
+            "stop" : 1756584781629,
+            "duration" : 41429
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "https://dostaevsky.ru/", "Санкт-Петербург", "8 (812) 777-80-08", "500" ]
+        }, {
+          "name" : "checkMinimalPriceToDeliveryInfo",
+          "uid" : "5f40a2718a8fb8f4",
+          "parentUid" : "73f7bb976b8e68cf533931bbe17d5cf3",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756584781634,
+            "stop" : 1756584816300,
+            "duration" : 34666
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "https://msk.dostaevsky.ru/", "Москва", "8 (495) 788-78-78", "550" ]
+        }, {
+          "name" : "checkMinimalPriceToDeliveryInfo",
+          "uid" : "5fb3592a546f020",
+          "parentUid" : "73f7bb976b8e68cf533931bbe17d5cf3",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756584816303,
+            "stop" : 1756584850391,
+            "duration" : 34088
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "https://sochi.dostaevsky.ru/", "Сочи", "8 (862) 296-78-78", "900" ]
+        }, {
+          "name" : "checkMinimalPriceToDeliveryInfo",
+          "uid" : "2f2f20d73889676",
+          "parentUid" : "73f7bb976b8e68cf533931bbe17d5cf3",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756584850394,
+            "stop" : 1756584883736,
+            "duration" : 33342
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "https://krd.dostaevsky.ru/", "Краснодар", "8 (861) 205-88-77", "700" ]
+        }, {
+          "name" : "checkMinimalPriceToDeliveryInfo",
+          "uid" : "fd9309382c3f54df",
+          "parentUid" : "73f7bb976b8e68cf533931bbe17d5cf3",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756584883739,
+            "stop" : 1756584921063,
+            "duration" : 37324
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "https://nsk.dostaevsky.ru/", "Новосибирск", "8 (383) 207-87-78", "700" ]
+        } ],
+        "uid" : "73f7bb976b8e68cf533931bbe17d5cf3"
+      }, {
+        "name" : "CityInfoTests",
+        "children" : [ {
+          "name" : "selectingCityFromTheListAvailableAndCheckingDisplayInfoTest",
+          "uid" : "315d62277b57de09",
+          "parentUid" : "9d3ad4e4ecac1b4fc03446b36a17aa4c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756584921072,
+            "stop" : 1756584947051,
+            "duration" : 25979
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "Санкт-Петербург", "+7 (812) 777-80-08" ]
+        }, {
+          "name" : "selectingCityFromTheListAvailableAndCheckingDisplayInfoTest",
+          "uid" : "6e22e2ceb124246b",
+          "parentUid" : "9d3ad4e4ecac1b4fc03446b36a17aa4c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756584947053,
+            "stop" : 1756584980948,
+            "duration" : 33895
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "Москва", "+7 (495) 788-78-78" ]
+        }, {
+          "name" : "selectingCityFromTheListAvailableAndCheckingDisplayInfoTest",
+          "uid" : "5d65b5469a8e0aad",
+          "parentUid" : "9d3ad4e4ecac1b4fc03446b36a17aa4c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756584980951,
+            "stop" : 1756585012218,
+            "duration" : 31267
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "Сочи", "+7 (862) 296-78-78" ]
+        }, {
+          "name" : "selectingCityFromTheListAvailableAndCheckingDisplayInfoTest",
+          "uid" : "54075652fbc4a75",
+          "parentUid" : "9d3ad4e4ecac1b4fc03446b36a17aa4c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756585012220,
+            "stop" : 1756585038453,
+            "duration" : 26233
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "Краснодар", "+7 (861) 205-88-77" ]
+        }, {
+          "name" : "selectingCityFromTheListAvailableAndCheckingDisplayInfoTest",
+          "uid" : "9d5a2f4c1b08fa74",
+          "parentUid" : "9d3ad4e4ecac1b4fc03446b36a17aa4c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756585038455,
+            "stop" : 1756585066893,
+            "duration" : 28438
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "Новосибирск", "+7 (383) 207-87-78" ]
+        } ],
+        "uid" : "9d3ad4e4ecac1b4fc03446b36a17aa4c"
+      }, {
+        "name" : "SearchInfoTests",
+        "children" : [ {
+          "name" : "successfulProductSearchTest",
+          "uid" : "18f90df7cfbf69d7",
+          "parentUid" : "2b386dffcc76f8f69b20f0967833f274",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756585066905,
+            "stop" : 1756585099374,
+            "duration" : 32469
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "Санкт-Петербург", "пицца" ]
+        }, {
+          "name" : "successfulProductSearchTest",
+          "uid" : "9cc89ee0f3a04fc4",
+          "parentUid" : "2b386dffcc76f8f69b20f0967833f274",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756585099378,
+            "stop" : 1756585137155,
+            "duration" : 37777
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "Москва", "пицца" ]
+        }, {
+          "name" : "successfulProductSearchTest",
+          "uid" : "3b58526f8506f4ac",
+          "parentUid" : "2b386dffcc76f8f69b20f0967833f274",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756585137158,
+            "stop" : 1756585176627,
+            "duration" : 39469
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "Сочи", "пицца" ]
+        }, {
+          "name" : "successfulProductSearchTest",
+          "uid" : "924f74e444e7eb54",
+          "parentUid" : "2b386dffcc76f8f69b20f0967833f274",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756585176632,
+            "stop" : 1756585210474,
+            "duration" : 33842
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "Краснодар", "пицца" ]
+        }, {
+          "name" : "successfulProductSearchTest",
+          "uid" : "16efc3ea4970b570",
+          "parentUid" : "2b386dffcc76f8f69b20f0967833f274",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756585210476,
+            "stop" : 1756585261210,
+            "duration" : 50734
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "Новосибирск", "пицца" ]
+        } ],
+        "uid" : "2b386dffcc76f8f69b20f0967833f274"
+      } ],
+      "uid" : "android.tests"
+    }, {
+      "name" : "api.tests",
+      "children" : [ {
+        "name" : "auth.LoginTests",
+        "children" : [ {
+          "name" : "loginWithoutSmsCodeField",
+          "uid" : "1bda447a7acc86c6",
+          "parentUid" : "e8f9c14950f871fbc3ba8db158a27fc3",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756585261213,
+            "stop" : 1756585262102,
+            "duration" : 889
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "unregisteredUserLogin",
+          "uid" : "19b2be12bd27af65",
+          "parentUid" : "e8f9c14950f871fbc3ba8db158a27fc3",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756585262104,
+            "stop" : 1756585262416,
+            "duration" : 312
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "loginWithIncorrectPhoneNumber",
+          "uid" : "77b5bad4427dbc9",
+          "parentUid" : "e8f9c14950f871fbc3ba8db158a27fc3",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756585262417,
+            "stop" : 1756585262778,
+            "duration" : 361
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "auth.LoginTests"
+      }, {
+        "name" : "basket",
+        "children" : [ {
+          "name" : "AddItemToBasketTests",
+          "children" : [ {
+            "name" : "addingItemToBasketWithoutCookies",
+            "uid" : "835a40062c130d42",
+            "parentUid" : "1375ad3f04ba2ae8efc9087f707210cf",
+            "status" : "passed",
+            "time" : {
+              "start" : 1756585262782,
+              "stop" : 1756585263421,
+              "duration" : 639
+            },
+            "flaky" : false,
+            "newFailed" : false,
+            "newPassed" : false,
+            "newBroken" : false,
+            "retriesCount" : 0,
+            "retriesStatusChange" : false,
+            "parameters" : [ ]
+          }, {
+            "name" : "addingItemToBasketWithCookies",
+            "uid" : "52b5d6a7ecaf7ee",
+            "parentUid" : "1375ad3f04ba2ae8efc9087f707210cf",
+            "status" : "passed",
+            "time" : {
+              "start" : 1756585263423,
+              "stop" : 1756585264470,
+              "duration" : 1047
+            },
+            "flaky" : false,
+            "newFailed" : false,
+            "newPassed" : false,
+            "newBroken" : false,
+            "retriesCount" : 0,
+            "retriesStatusChange" : false,
+            "parameters" : [ ]
+          } ],
+          "uid" : "1375ad3f04ba2ae8efc9087f707210cf"
+        }, {
+          "name" : "BasketInfoTests",
+          "children" : [ {
+            "name" : "gettingEmptyBasketInfo",
+            "uid" : "57282f1fc7969edb",
+            "parentUid" : "691e5fb7d6c0494123d2d94c3620aeed",
+            "status" : "passed",
+            "time" : {
+              "start" : 1756585264473,
+              "stop" : 1756585265131,
+              "duration" : 658
+            },
+            "flaky" : false,
+            "newFailed" : false,
+            "newPassed" : false,
+            "newBroken" : false,
+            "retriesCount" : 0,
+            "retriesStatusChange" : false,
+            "parameters" : [ ]
+          }, {
+            "name" : "gettingFilledBasketInfo",
+            "uid" : "654003b7592b11fb",
+            "parentUid" : "691e5fb7d6c0494123d2d94c3620aeed",
+            "status" : "passed",
+            "time" : {
+              "start" : 1756585265133,
+              "stop" : 1756585266682,
+              "duration" : 1549
+            },
+            "flaky" : false,
+            "newFailed" : false,
+            "newPassed" : false,
+            "newBroken" : false,
+            "retriesCount" : 0,
+            "retriesStatusChange" : false,
+            "parameters" : [ ]
+          } ],
+          "uid" : "691e5fb7d6c0494123d2d94c3620aeed"
+        }, {
+          "name" : "RemoveItemFromBasketTests",
+          "children" : [ {
+            "name" : "removedItemFromBasket",
+            "uid" : "e27088d1487e0e30",
+            "parentUid" : "185fe5c020216de7fb0aef85c15abee8",
+            "status" : "passed",
+            "time" : {
+              "start" : 1756585266686,
+              "stop" : 1756585268234,
+              "duration" : 1548
+            },
+            "flaky" : false,
+            "newFailed" : false,
+            "newPassed" : false,
+            "newBroken" : false,
+            "retriesCount" : 0,
+            "retriesStatusChange" : false,
+            "parameters" : [ ]
+          } ],
+          "uid" : "185fe5c020216de7fb0aef85c15abee8"
+        }, {
+          "name" : "UpdateItemCountInBasketTests",
+          "children" : [ {
+            "name" : "updateItemCountInTheBasketWithoutItemId",
+            "uid" : "fee0b83e2500fcd4",
+            "parentUid" : "74b79295c36cc00fcc3c5f115ed68183",
+            "status" : "passed",
+            "time" : {
+              "start" : 1756585268245,
+              "stop" : 1756585268674,
+              "duration" : 429
+            },
+            "flaky" : false,
+            "newFailed" : false,
+            "newPassed" : false,
+            "newBroken" : false,
+            "retriesCount" : 0,
+            "retriesStatusChange" : false,
+            "parameters" : [ ]
+          }, {
+            "name" : "updateItemCountInTheBasketWitMaxItemValue",
+            "uid" : "a1cf881a1a98e78d",
+            "parentUid" : "74b79295c36cc00fcc3c5f115ed68183",
+            "status" : "passed",
+            "time" : {
+              "start" : 1756585268676,
+              "stop" : 1756585269052,
+              "duration" : 376
+            },
+            "flaky" : false,
+            "newFailed" : false,
+            "newPassed" : false,
+            "newBroken" : false,
+            "retriesCount" : 0,
+            "retriesStatusChange" : false,
+            "parameters" : [ ]
+          }, {
+            "name" : "updateItemCountInTheBasketWithoutQuantity",
+            "uid" : "ba64cf3eccbe8c9f",
+            "parentUid" : "74b79295c36cc00fcc3c5f115ed68183",
+            "status" : "passed",
+            "time" : {
+              "start" : 1756585269054,
+              "stop" : 1756585269411,
+              "duration" : 357
+            },
+            "flaky" : false,
+            "newFailed" : false,
+            "newPassed" : false,
+            "newBroken" : false,
+            "retriesCount" : 0,
+            "retriesStatusChange" : false,
+            "parameters" : [ ]
+          }, {
+            "name" : "updateItemCountInTheBasket",
+            "uid" : "7aaa72b862ed6095",
+            "parentUid" : "74b79295c36cc00fcc3c5f115ed68183",
+            "status" : "passed",
+            "time" : {
+              "start" : 1756585269414,
+              "stop" : 1756585272596,
+              "duration" : 3182
+            },
+            "flaky" : false,
+            "newFailed" : false,
+            "newPassed" : false,
+            "newBroken" : false,
+            "retriesCount" : 0,
+            "retriesStatusChange" : false,
+            "parameters" : [ ]
+          } ],
+          "uid" : "74b79295c36cc00fcc3c5f115ed68183"
+        } ],
+        "uid" : "cf866c5d9aebb69d028abe08592a1450"
+      }, {
+        "name" : "reviews.GettingReviewsTests",
+        "children" : [ {
+          "name" : "gettingReviewsWithExceedingLimit",
+          "uid" : "548c0f9025f05917",
+          "parentUid" : "a4acb8e78be64dc5ff221cad1d8b5879",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756585272599,
+            "stop" : 1756585272877,
+            "duration" : 278
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "gettingReviewsWithoutToken",
+          "uid" : "7ed07fbbb81e1f39",
+          "parentUid" : "a4acb8e78be64dc5ff221cad1d8b5879",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756585272878,
+            "stop" : 1756585273206,
+            "duration" : 328
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "gettingReviewsWithToken",
+          "uid" : "ece910f02688068f",
+          "parentUid" : "a4acb8e78be64dc5ff221cad1d8b5879",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756585273208,
+            "stop" : 1756585291571,
+            "duration" : 18363
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "gettingReviewsWithoutLimitValue",
+          "uid" : "70fcb1d566081314",
+          "parentUid" : "a4acb8e78be64dc5ff221cad1d8b5879",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756585291573,
+            "stop" : 1756585291966,
+            "duration" : 393
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "reviews.GettingReviewsTests"
+      } ],
+      "uid" : "api.tests"
+    }, {
+      "name" : "web.tests",
+      "children" : [ {
+        "name" : "CartInfoTests",
+        "children" : [ {
+          "name" : "addItemToCartAndCheckValueInHeader",
+          "uid" : "5c3e086ebc1de736",
+          "parentUid" : "60db7be5ce0bb0683228133e0d9e3ff7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756585291971,
+            "stop" : 1756585306880,
+            "duration" : 14909
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "checkInfoInEmptyCart",
+          "uid" : "8c99d39323493fc0",
+          "parentUid" : "60db7be5ce0bb0683228133e0d9e3ff7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756585306882,
+            "stop" : 1756585310988,
+            "duration" : 4106
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "addItemToCartAndCheckMinimalPriceToDeliveryInfo",
+          "uid" : "621f67b063a7b021",
+          "parentUid" : "60db7be5ce0bb0683228133e0d9e3ff7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756585310992,
+            "stop" : 1756585318601,
+            "duration" : 7609
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "https://dostaevsky.ru/", "Санкт-Петербург", "8 (812) 777-80-08", "500" ]
+        }, {
+          "name" : "addItemToCartAndCheckMinimalPriceToDeliveryInfo",
+          "uid" : "35db5ba0e2e55c13",
+          "parentUid" : "60db7be5ce0bb0683228133e0d9e3ff7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756585318603,
+            "stop" : 1756585327935,
+            "duration" : 9332
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "https://msk.dostaevsky.ru/", "Москва", "8 (495) 788-78-78", "550" ]
+        }, {
+          "name" : "addItemToCartAndCheckMinimalPriceToDeliveryInfo",
+          "uid" : "e3f3e3a35bd08856",
+          "parentUid" : "60db7be5ce0bb0683228133e0d9e3ff7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756585327936,
+            "stop" : 1756585336968,
+            "duration" : 9032
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "https://sochi.dostaevsky.ru/", "Сочи", "8 (862) 296-78-78", "900" ]
+        }, {
+          "name" : "addItemToCartAndCheckMinimalPriceToDeliveryInfo",
+          "uid" : "3c871d022cfc13f4",
+          "parentUid" : "60db7be5ce0bb0683228133e0d9e3ff7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756585336971,
+            "stop" : 1756585346613,
+            "duration" : 9642
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "https://krd.dostaevsky.ru/", "Краснодар", "8 (861) 205-88-77", "700" ]
+        }, {
+          "name" : "addItemToCartAndCheckMinimalPriceToDeliveryInfo",
+          "uid" : "7ec41ce911589c43",
+          "parentUid" : "60db7be5ce0bb0683228133e0d9e3ff7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756585346615,
+            "stop" : 1756585356068,
+            "duration" : 9453
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "https://nsk.dostaevsky.ru/", "Новосибирск", "8 (383) 207-87-78", "700" ]
+        }, {
+          "name" : "checkAddedItemValueInCart",
+          "uid" : "e69de2d42c2deaf0",
+          "parentUid" : "60db7be5ce0bb0683228133e0d9e3ff7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756585356071,
+            "stop" : 1756585362395,
+            "duration" : 6324
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "60db7be5ce0bb0683228133e0d9e3ff7"
+      }, {
+        "name" : "CityInfoTests",
+        "children" : [ {
+          "name" : "selectCityFromTheListAvailableAndCheckDisplayInfoTest",
+          "uid" : "2ea6fac3f5b97778",
+          "parentUid" : "23b07d52556894ef6babdf1b284c4284",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756585362401,
+            "stop" : 1756585368301,
+            "duration" : 5900
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "https://dostaevsky.ru/", "Санкт-Петербург", "8 (812) 777-80-08" ]
+        }, {
+          "name" : "selectCityFromTheListAvailableAndCheckDisplayInfoTest",
+          "uid" : "584b4cef55ba4890",
+          "parentUid" : "23b07d52556894ef6babdf1b284c4284",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756585368304,
+            "stop" : 1756585374349,
+            "duration" : 6045
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "https://msk.dostaevsky.ru/", "Москва", "8 (495) 788-78-78" ]
+        }, {
+          "name" : "selectCityFromTheListAvailableAndCheckDisplayInfoTest",
+          "uid" : "98b8ff26913bdf6d",
+          "parentUid" : "23b07d52556894ef6babdf1b284c4284",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756585374352,
+            "stop" : 1756585379717,
+            "duration" : 5365
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "https://sochi.dostaevsky.ru/", "Сочи", "8 (862) 296-78-78" ]
+        }, {
+          "name" : "selectCityFromTheListAvailableAndCheckDisplayInfoTest",
+          "uid" : "c421c3a54645516c",
+          "parentUid" : "23b07d52556894ef6babdf1b284c4284",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756585379720,
+            "stop" : 1756585385665,
+            "duration" : 5945
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "https://krd.dostaevsky.ru/", "Краснодар", "8 (861) 205-88-77" ]
+        }, {
+          "name" : "selectCityFromTheListAvailableAndCheckDisplayInfoTest",
+          "uid" : "2d743c9dc7649e03",
+          "parentUid" : "23b07d52556894ef6babdf1b284c4284",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756585385667,
+            "stop" : 1756585390998,
+            "duration" : 5331
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "https://nsk.dostaevsky.ru/", "Новосибирск", "8 (383) 207-87-78" ]
+        } ],
+        "uid" : "23b07d52556894ef6babdf1b284c4284"
+      }, {
+        "name" : "ProductsPriceInfoTests",
+        "children" : [ {
+          "name" : "bowlsPriceComparisonInSelectedCityTest",
+          "uid" : "4a7e7fd29adf80b",
+          "parentUid" : "07709e2a2b45d4ed3975ad1167bdc11e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756585391006,
+            "stop" : 1756585398573,
+            "duration" : 7567
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "Москва", "MSK_LINK", "{Боул с тунцом=569, Боул с курочкой=529, Боул с креветками Х2=1009, Боул с лососем=659, Боул вегетарианский=359, Шаурма-боул Х2=909, Шаурма-боул=469, Боул с курочкой Х2=1009, Боул с креветками=569, Боул с лососем Х2=1259}" ]
+        }, {
+          "name" : "bowlsPriceComparisonInSelectedCityTest",
+          "uid" : "fb1fdd469d38c4a",
+          "parentUid" : "07709e2a2b45d4ed3975ad1167bdc11e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756585398576,
+            "stop" : 1756585406380,
+            "duration" : 7804
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "Сочи", "SOCHI_LINK", "{Боул с тунцом=659, Боул с курочкой=599, Боул с креветками Х2=1099, Боул с лососем=679, Боул вегетарианский=549, Шаурма-боул Х2=899, Шаурма-боул=479, Боул с курочкой Х2=1099, Боул с креветками=619, Боул с лососем Х2=1259}" ]
+        }, {
+          "name" : "bowlsPriceComparisonInSelectedCityTest",
+          "uid" : "b9a054e9e67b1aff",
+          "parentUid" : "07709e2a2b45d4ed3975ad1167bdc11e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756585406383,
+            "stop" : 1756585414420,
+            "duration" : 8037
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "Краснодар", "KRD_LINK", "{Боул с тунцом=529, Боул с курочкой=499, Боул с креветками Х2=1079, Боул с лососем=629, Боул вегетарианский=369, Шаурма-боул Х2=879, Шаурма-боул=459, Боул с курочкой Х2=959, Боул с креветками=559, Боул с лососем Х2=1199}" ]
+        }, {
+          "name" : "bowlsPriceComparisonInSelectedCityTest",
+          "uid" : "d1269e7a4ac3d56c",
+          "parentUid" : "07709e2a2b45d4ed3975ad1167bdc11e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756585414422,
+            "stop" : 1756585422086,
+            "duration" : 7664
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "Новосибирск", "NSK_LINK", "{Боул с тунцом=549, Боул с курочкой=489, Боул с креветками Х2=1049, Боул с лососем=649, Боул вегетарианский=459, Шаурма-боул Х2=949, Шаурма-боул=519, Боул с курочкой Х2=949, Боул с креветками=569, Боул с лососем Х2=1199}" ]
+        }, {
+          "name" : "breakfastPriceComparisonInSelectedCityTest",
+          "uid" : "c0f92c6c2ada3c28",
+          "parentUid" : "07709e2a2b45d4ed3975ad1167bdc11e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756585422090,
+            "stop" : 1756585430333,
+            "duration" : 8243
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "Санкт-Петербург", "SPB_LINK", "{Ветчина-Сыр Сэндвич=239, Цезарь Сэндвич=249, Пепперони Сэндвич=249, Сырники со сгущённым молоком=339, Сытный завтрак с колбасками и томатами=419, Овсяная каша с черникой на кокосовом молоке=259, Блинчики сытные с курицей=499, Сырники с карамельным сиропом=339, Овсяная каша с манго на кокосовом молоке=259, Блинчики сладкие с клубникой=389, Драники=319}" ]
+        }, {
+          "name" : "breakfastPriceComparisonInSelectedCityTest",
+          "uid" : "d6cd4d4d6d3d6a45",
+          "parentUid" : "07709e2a2b45d4ed3975ad1167bdc11e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1756585430335,
+            "stop" : 1756585438136,
+            "duration" : 7801
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "Москва", "MSK_LINK", "{Ветчина-Сыр Сэндвич=249, Цезарь Сэндвич=249, Пепперони Сэндвич=249, Сырники со сгущённым молоком=359, Сытный завтрак с колбасками и томатами=479, Овсяная каша с черникой на кокосовом молоке=279, Блинчики сытные с курицей=509, Сырники с карамельным сиропом=359, Овсяная каша с манго на кокосовом молоке=279, Блинчики сладкие с клубникой=409, Драники=289}" ]
+        } ],
+        "uid" : "07709e2a2b45d4ed3975ad1167bdc11e"
+      } ],
+      "uid" : "web.tests"
+    } ],
+    "uid" : "ru.dostaevsky.tests"
+  } ],
+  "name" : "packages"
+}

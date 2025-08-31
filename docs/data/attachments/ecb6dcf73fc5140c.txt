@@ -1,0 +1,13 @@
+[2025-08-30T20:21:49.363Z] [SEVERE] https://dostaevsky.ru/js/main.js?1754565934 5:86565 "LiveTex script loaded two or more times. Load the script only once, please."
+[2025-08-30T20:21:51.368Z] [SEVERE] https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+[2025-08-30T20:21:51.369Z] [SEVERE] https://dostaevsky.ru/ 30:251631 Uncaught SyntaxError: Unexpected token ':'
+[2025-08-30T20:21:51.385Z] [SEVERE] https://dostaevsky.ru/js/main.js?1754565934 5:50220 "yaMetrikaCheck func: Check failed due to lack of analytics object."
+[2025-08-30T20:21:52.063Z] [SEVERE] https://dostaevsky.ru/api/v4/last-payment-status - Failed to load resource: the server responded with a status of 401 (Unauthorized)
+[2025-08-30T20:21:52.965Z] [SEVERE] https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+[2025-08-30T20:21:52.965Z] [SEVERE] https://dostaevsky.ru/ 30:251631 Uncaught SyntaxError: Unexpected token ':'
+[2025-08-30T20:21:52.982Z] [SEVERE] https://dostaevsky.ru/js/main.js?1754565934 5:50220 "yaMetrikaCheck func: Check failed due to lack of analytics object."
+[2025-08-30T20:21:53.602Z] [SEVERE] https://dostaevsky.ru/api/v4/last-payment-status - Failed to load resource: the server responded with a status of 401 (Unauthorized)
+[2025-08-30T20:21:54.612Z] [SEVERE] https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+[2025-08-30T20:21:54.629Z] [SEVERE] https://dostaevsky.ru/woks 31:251556 Uncaught SyntaxError: Unexpected token ':'
+[2025-08-30T20:21:54.651Z] [SEVERE] https://dostaevsky.ru/js/main.js?1754565934 5:50220 "yaMetrikaCheck func: Check failed due to lack of analytics object."
+[2025-08-30T20:21:55.771Z] [SEVERE] https://dostaevsky.ru/js/main.js?1754565934 5:86565 "Error, itemId is 10385 "

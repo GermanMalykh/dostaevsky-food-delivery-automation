@@ -1,0 +1,354 @@
+{
+  "uid" : "3e49d0c820e538bd",
+  "name" : "[Android] Отображение информации в пустой корзине",
+  "fullName" : "ru.dostaevsky.tests.android.tests.CartInfoTests.checkInfoInEmptyCart",
+  "historyId" : "37d46ebe1a5ab01de18097161452e86f",
+  "time" : {
+    "start" : 1756584708165,
+    "stop" : 1756584740117,
+    "duration" : 31952
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1756584624177,
+      "stop" : 1756584624207,
+      "duration" : 30
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "addListener",
+    "time" : {
+      "start" : 1756584708166,
+      "stop" : 1756584728319,
+      "duration" : 20153
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "$(\"open\") ",
+      "time" : {
+        "start" : 1756584708166,
+        "stop" : 1756584728319,
+        "duration" : 20153
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"webdriver\") create()",
+        "time" : {
+          "start" : 1756584708166,
+          "stop" : 1756584728319,
+          "duration" : 20153
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Выбираем элемент с наименованием \"Санкт-Петербург\"",
+      "time" : {
+        "start" : 1756584728319,
+        "stop" : 1756584732197,
+        "duration" : 3878
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"by tag: *; by attribute: text; by value: Санкт-Петербург\") should be([visible, 90 s.])",
+        "time" : {
+          "start" : 1756584728320,
+          "stop" : 1756584731712,
+          "duration" : 3392
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"by tag: *; by attribute: text; by value: Санкт-Петербург\") click()",
+        "time" : {
+          "start" : 1756584731712,
+          "stop" : 1756584732197,
+          "duration" : 485
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "value",
+        "value" : "Санкт-Петербург"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Выбираем элемент с наименованием \"Корзина\"",
+      "time" : {
+        "start" : 1756584732198,
+        "stop" : 1756584736284,
+        "duration" : 4086
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"by tag: *; by attribute: text; by value: Корзина\") should be([visible, 90 s.])",
+        "time" : {
+          "start" : 1756584732198,
+          "stop" : 1756584734548,
+          "duration" : 2350
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"by tag: *; by attribute: text; by value: Корзина\") click()",
+        "time" : {
+          "start" : 1756584734548,
+          "stop" : 1756584736284,
+          "duration" : 1736
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "value",
+        "value" : "Корзина"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Проверяем наличие сообщения с предложением добавления товара в корзину",
+      "time" : {
+        "start" : 1756584736284,
+        "stop" : 1756584737648,
+        "duration" : 1364
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"AppiumBy.id: ru.dostaevsky.android:id/textEmptyDescription\") should have(text \"Добавьте что-нибудь в корзину\")",
+        "time" : {
+          "start" : 1756584736284,
+          "stop" : 1756584737648,
+          "duration" : 1364
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Проверяем наличие изображения пустой корзины",
+      "time" : {
+        "start" : 1756584737649,
+        "stop" : 1756584737887,
+        "duration" : 238
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"AppiumBy.id: ru.dostaevsky.android:id/imageEmpty\") should be(visible)",
+        "time" : {
+          "start" : 1756584737649,
+          "stop" : 1756584737887,
+          "duration" : 238
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 10,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "addAttachments",
+    "time" : {
+      "start" : 1756584737888,
+      "stop" : 1756584740117,
+      "duration" : 2229
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "23c80e38e41574f3",
+      "name" : "Page source",
+      "source" : "23c80e38e41574f3.xml",
+      "type" : "text/plain",
+      "size" : 19320
+    }, {
+      "uid" : "a0a78dc53e100054",
+      "name" : "Request",
+      "source" : "a0a78dc53e100054.html",
+      "type" : "text/html",
+      "size" : 1625
+    }, {
+      "uid" : "4c344ed22383b852",
+      "name" : "HTTP/1.1 200 OK",
+      "source" : "4c344ed22383b852.html",
+      "type" : "text/html",
+      "size" : 6760
+    }, {
+      "uid" : "8a226ea0a6a09ef1",
+      "name" : "BrowserStack Video",
+      "source" : "8a226ea0a6a09ef1.html",
+      "type" : "text/html",
+      "size" : 445
+    }, {
+      "uid" : "78c50d61d3d7893b",
+      "name" : "Request",
+      "source" : "78c50d61d3d7893b.html",
+      "type" : "text/html",
+      "size" : 1625
+    }, {
+      "uid" : "2eb46df439fc3403",
+      "name" : "HTTP/1.1 200 OK",
+      "source" : "2eb46df439fc3403.html",
+      "type" : "text/html",
+      "size" : 6760
+    }, {
+      "uid" : "5021e6dad4770913",
+      "name" : "Browserstack full info link",
+      "source" : "5021e6dad4770913.html",
+      "type" : "text/html",
+      "size" : 266
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "android"
+  }, {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:ru.dostaevsky.tests.android.tests.CartInfoTests]/[method:checkInfoInEmptyCart()]"
+  }, {
+    "name" : "host",
+    "value" : "319ab4d25e4d"
+  }, {
+    "name" : "thread",
+    "value" : "8606@319ab4d25e4d.Test worker(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "ru.dostaevsky.tests.android.tests.CartInfoTests"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.dostaevsky.tests.android.tests.CartInfoTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkInfoInEmptyCart"
+  }, {
+    "name" : "suite",
+    "value" : "Android Tests"
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "minor",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "android" ]
+  },
+  "source" : "3e49d0c820e538bd.json",
+  "parameterValues" : [ ]
+}

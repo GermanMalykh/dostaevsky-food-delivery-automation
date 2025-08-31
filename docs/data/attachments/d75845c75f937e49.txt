@@ -1,0 +1,13 @@
+[2025-08-30T20:23:19.076Z] [SEVERE] https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+[2025-08-30T20:23:19.078Z] [SEVERE] https://dostaevsky.ru/ 30:251631 Uncaught SyntaxError: Unexpected token ':'
+[2025-08-30T20:23:19.209Z] [SEVERE] https://dostaevsky.ru/js/main.js?1754565934 5:50220 "yaMetrikaCheck func: Check failed due to lack of analytics object."
+[2025-08-30T20:23:19.772Z] [SEVERE] https://dostaevsky.ru/api/v4/last-payment-status - Failed to load resource: the server responded with a status of 401 (Unauthorized)
+[2025-08-30T20:23:20.823Z] [SEVERE] https://sochi.dostaevsky.ru/ 30:251536 Uncaught SyntaxError: Unexpected token ':'
+[2025-08-30T20:23:20.830Z] [SEVERE] https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+[2025-08-30T20:23:21.244Z] [SEVERE] security - [Report Only] Refused to frame 'https://www.google.com/' because an ancestor violates the following Content Security Policy directive: "frame-ancestors 'self'".
+
+[2025-08-30T20:23:21.301Z] [SEVERE] https://balancer-cloud.livetex.ru/get-client/?site_id=168830&version=23.29.1876-0a5aa07&target=path&rnd=nrrp0rlr02h 0:143001 Uncaught TypeError: Cannot read properties of undefined (reading 'LTX_URL')
+[2025-08-30T20:23:21.566Z] [SEVERE] https://sochi.dostaevsky.ru/api/v4/last-payment-status - Failed to load resource: the server responded with a status of 401 (Unauthorized)
+[2025-08-30T20:23:22.895Z] [SEVERE] https://sochi.dostaevsky.ru/bowls 31:251533 Uncaught SyntaxError: Unexpected token ':'
+[2025-08-30T20:23:22.909Z] [SEVERE] https://sochi.dostaevsky.ru/js/main.js?1754565934 5:50220 "yaMetrikaCheck func: Check failed due to lack of analytics object."
+[2025-08-30T20:23:22.946Z] [SEVERE] https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch - Failed to load resource: net::ERR_NAME_NOT_RESOLVED

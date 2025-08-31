@@ -1,0 +1,366 @@
+{
+  "uid" : "6e22e2ceb124246b",
+  "name" : "[Android] Выбор и отображение информации города. Для города \"Москва\" отображается информация с контактным номером телефона \"+7 (495) 788-78-78\"",
+  "fullName" : "ru.dostaevsky.tests.android.tests.CityInfoTests.selectingCityFromTheListAvailableAndCheckingDisplayInfoTest",
+  "historyId" : "2df9ebde35e4b1ff4047ba6e63e0a8ea",
+  "time" : {
+    "start" : 1756584947053,
+    "stop" : 1756584980948,
+    "duration" : 33895
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1756584921068,
+      "stop" : 1756584921068,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "addListener",
+    "time" : {
+      "start" : 1756584947054,
+      "stop" : 1756584968628,
+      "duration" : 21574
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "$(\"open\") ",
+      "time" : {
+        "start" : 1756584947054,
+        "stop" : 1756584968628,
+        "duration" : 21574
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"webdriver\") create()",
+        "time" : {
+          "start" : 1756584947055,
+          "stop" : 1756584968628,
+          "duration" : 21573
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Выбираем элемент с наименованием \"Москва\"",
+      "time" : {
+        "start" : 1756584968628,
+        "stop" : 1756584972214,
+        "duration" : 3586
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"by tag: *; by attribute: text; by value: Москва\") should be([visible, 90 s.])",
+        "time" : {
+          "start" : 1756584968628,
+          "stop" : 1756584971789,
+          "duration" : 3161
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"by tag: *; by attribute: text; by value: Москва\") click()",
+        "time" : {
+          "start" : 1756584971789,
+          "stop" : 1756584972214,
+          "duration" : 425
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "value",
+        "value" : "Москва"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Выбираем элемент с наименованием \"Еще\"",
+      "time" : {
+        "start" : 1756584972214,
+        "stop" : 1756584976961,
+        "duration" : 4747
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"by tag: *; by attribute: text; by value: Еще\") should be([visible, 90 s.])",
+        "time" : {
+          "start" : 1756584972215,
+          "stop" : 1756584976262,
+          "duration" : 4047
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"by tag: *; by attribute: text; by value: Еще\") click()",
+        "time" : {
+          "start" : 1756584976262,
+          "stop" : 1756584976961,
+          "duration" : 699
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "value",
+        "value" : "Еще"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Проверяем, что наименование выбранного города \"Москва\" отображается на экране",
+      "time" : {
+        "start" : 1756584976961,
+        "stop" : 1756584978590,
+        "duration" : 1629
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"AppiumBy.id: ru.dostaevsky.android:id/cityTextView\") should have(text \"Москва\")",
+        "time" : {
+          "start" : 1756584976961,
+          "stop" : 1756584978590,
+          "duration" : 1629
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "city",
+        "value" : "Москва"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Проверяем, что для выбранного города отображается контактный номер телефона \"+7 (495) 788-78-78\"",
+      "time" : {
+        "start" : 1756584978590,
+        "stop" : 1756584978938,
+        "duration" : 348
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"AppiumBy.id: ru.dostaevsky.android:id/call_text\") should have(text \"+7 (495) 788-78-78\")",
+        "time" : {
+          "start" : 1756584978590,
+          "stop" : 1756584978938,
+          "duration" : 348
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneWithPlus",
+        "value" : "+7 (495) 788-78-78"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 10,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "addAttachments",
+    "time" : {
+      "start" : 1756584978938,
+      "stop" : 1756584980948,
+      "duration" : 2010
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b43be2ceec98d21",
+      "name" : "Page source",
+      "source" : "b43be2ceec98d21.xml",
+      "type" : "text/plain",
+      "size" : 39891
+    }, {
+      "uid" : "e370d14c82dac35d",
+      "name" : "Request",
+      "source" : "e370d14c82dac35d.html",
+      "type" : "text/html",
+      "size" : 1625
+    }, {
+      "uid" : "a48c6ee9617436cb",
+      "name" : "HTTP/1.1 200 OK",
+      "source" : "a48c6ee9617436cb.html",
+      "type" : "text/html",
+      "size" : 6760
+    }, {
+      "uid" : "596d149d637deebd",
+      "name" : "BrowserStack Video",
+      "source" : "596d149d637deebd.html",
+      "type" : "text/html",
+      "size" : 445
+    }, {
+      "uid" : "6c0e9e05be47f108",
+      "name" : "Request",
+      "source" : "6c0e9e05be47f108.html",
+      "type" : "text/html",
+      "size" : 1625
+    }, {
+      "uid" : "7c73a59e6ae098ff",
+      "name" : "HTTP/1.1 200 OK",
+      "source" : "7c73a59e6ae098ff.html",
+      "type" : "text/html",
+      "size" : 6760
+    }, {
+      "uid" : "b5ea996718d92655",
+      "name" : "Browserstack full info link",
+      "source" : "b5ea996718d92655.html",
+      "type" : "text/html",
+      "size" : 266
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "android"
+  }, {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:ru.dostaevsky.tests.android.tests.CityInfoTests]/[test-template:selectingCityFromTheListAvailableAndCheckingDisplayInfoTest(java.lang.String, java.lang.String)]/[test-template-invocation:#2]"
+  }, {
+    "name" : "host",
+    "value" : "319ab4d25e4d"
+  }, {
+    "name" : "thread",
+    "value" : "8606@319ab4d25e4d.Test worker(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "ru.dostaevsky.tests.android.tests.CityInfoTests"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.dostaevsky.tests.android.tests.CityInfoTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "selectingCityFromTheListAvailableAndCheckingDisplayInfoTest"
+  }, {
+    "name" : "suite",
+    "value" : "Android Tests"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "Москва"
+  }, {
+    "name" : "arg1",
+    "value" : "+7 (495) 788-78-78"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "android" ]
+  },
+  "source" : "6e22e2ceb124246b.json",
+  "parameterValues" : [ "Москва", "+7 (495) 788-78-78" ]
+}

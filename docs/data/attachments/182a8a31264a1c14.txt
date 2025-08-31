@@ -1,0 +1,5 @@
+[2025-08-30T20:22:37.729Z] [SEVERE] https://dostaevsky.ru/favicon.ico - Failed to load resource: the server responded with a status of 404 (Not Found)
+[2025-08-30T20:22:37.891Z] [SEVERE] https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+[2025-08-30T20:22:37.891Z] [SEVERE] https://dostaevsky.ru/cart 30:251631 Uncaught SyntaxError: Unexpected token ':'
+[2025-08-30T20:22:38.033Z] [SEVERE] https://dostaevsky.ru/js/main.js?1754565934 5:50220 "yaMetrikaCheck func: Check failed due to lack of analytics object."
+[2025-08-30T20:22:38.828Z] [SEVERE] https://dostaevsky.ru/js/main.js?1754565934 5:86565 "LiveTex script loaded two or more times. Load the script only once, please."

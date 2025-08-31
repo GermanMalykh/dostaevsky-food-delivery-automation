@@ -1,0 +1,10 @@
+[2025-08-30T20:22:43.070Z] [SEVERE] https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+[2025-08-30T20:22:43.072Z] [SEVERE] https://dostaevsky.ru/ 30:251631 Uncaught SyntaxError: Unexpected token ':'
+[2025-08-30T20:22:43.421Z] [SEVERE] https://balancer-cloud.livetex.ru/get-client/?site_id=153553&version=23.29.1876-0a5aa07&target=path&rnd=23m30dgnplgi 0:143001 Uncaught TypeError: Cannot read properties of undefined (reading 'LTX_URL')
+[2025-08-30T20:22:43.632Z] [SEVERE] https://dostaevsky.ru/api/v4/last-payment-status - Failed to load resource: the server responded with a status of 401 (Unauthorized)
+[2025-08-30T20:22:44.764Z] [SEVERE] https://dostaevsky.ru/ 30:251631 Uncaught SyntaxError: Unexpected token ':'
+[2025-08-30T20:22:44.782Z] [SEVERE] https://dostaevsky.ru/js/main.js?1754565934 5:50220 "yaMetrikaCheck func: Check failed due to lack of analytics object."
+[2025-08-30T20:22:44.883Z] [SEVERE] https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+[2025-08-30T20:22:45.087Z] [SEVERE] https://balancer-cloud.livetex.ru/get-client/?site_id=153553&version=23.29.1876-0a5aa07&target=path&rnd=25rwsh6rt7o 0:143001 Uncaught TypeError: Cannot read properties of undefined (reading 'LTX_URL')
+[2025-08-30T20:22:45.611Z] [SEVERE] https://dostaevsky.ru/api/v4/last-payment-status - Failed to load resource: the server responded with a status of 401 (Unauthorized)
+[2025-08-30T20:22:45.635Z] [WARNING] https://widgets-04.livetex.me/js/ui.25.32.5929-3299235.js 0 Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://widgets-04.livetex.me') does not match the recipient window's origin ('https://dostaevsky.ru').

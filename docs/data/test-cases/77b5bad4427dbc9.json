@@ -1,0 +1,153 @@
+{
+  "uid" : "77b5bad4427dbc9",
+  "name" : "[API] Авторизация в системе с передачей некорректного номера телефона",
+  "fullName" : "ru.dostaevsky.tests.api.tests.auth.LoginTests.loginWithIncorrectPhoneNumber",
+  "historyId" : "86064637a3b0e68473cfe5448a713b51",
+  "time" : {
+    "start" : 1756585262417,
+    "stop" : 1756585262778,
+    "duration" : 361
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1756585261212,
+      "stop" : 1756585261212,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Делаем запрос на авторизацию в системе",
+      "time" : {
+        "start" : 1756585262418,
+        "stop" : 1756585262774,
+        "duration" : 356
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "28a260e95ab99ff4",
+        "name" : "Request",
+        "source" : "28a260e95ab99ff4.html",
+        "type" : "text/html",
+        "size" : 1656
+      }, {
+        "uid" : "1af440487148722c",
+        "name" : "HTTP/1.1 400 Bad Request",
+        "source" : "1af440487148722c.html",
+        "type" : "text/html",
+        "size" : 2951
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Ответ содержит статус код: \"400\"",
+      "time" : {
+        "start" : 1756585262774,
+        "stop" : 1756585262774,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Ответ содержит сообщение об ошибке",
+      "time" : {
+        "start" : 1756585262775,
+        "stop" : 1756585262778,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "api"
+  }, {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:ru.dostaevsky.tests.api.tests.auth.LoginTests]/[method:loginWithIncorrectPhoneNumber()]"
+  }, {
+    "name" : "host",
+    "value" : "319ab4d25e4d"
+  }, {
+    "name" : "thread",
+    "value" : "8606@319ab4d25e4d.Test worker(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "ru.dostaevsky.tests.api.tests.auth.LoginTests"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.dostaevsky.tests.api.tests.auth.LoginTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "loginWithIncorrectPhoneNumber"
+  }, {
+    "name" : "suite",
+    "value" : "Rest API Tests"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "api" ]
+  },
+  "source" : "77b5bad4427dbc9.json",
+  "parameterValues" : [ ]
+}

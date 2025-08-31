@@ -1,0 +1,489 @@
+{
+  "uid" : "2d743c9dc7649e03",
+  "name" : "[WEB] Выбор и отображение информации города. Для города \"Новосибирск\" отображается информация по ссылке \"https://nsk.dostaevsky.ru/\" с контактным номером телефона \"8 (383) 207-87-78\"",
+  "fullName" : "ru.dostaevsky.tests.web.tests.CityInfoTests.selectCityFromTheListAvailableAndCheckDisplayInfoTest",
+  "historyId" : "70bc1447804c2542a00b8db633f7689e",
+  "time" : {
+    "start" : 1756585385667,
+    "stop" : 1756585390998,
+    "duration" : 5331
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1756585362397,
+      "stop" : 1756585362398,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "addListener",
+    "time" : {
+      "start" : 1756585385667,
+      "stop" : 1756585385668,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Переходим на главную страницу",
+      "time" : {
+        "start" : 1756585385668,
+        "stop" : 1756585386328,
+        "duration" : 660
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"open\") https://dostaevsky.ru/",
+        "time" : {
+          "start" : 1756585385668,
+          "stop" : 1756585386328,
+          "duration" : 660
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"open\") https://dostaevsky.ru/",
+          "time" : {
+            "start" : 1756585385668,
+            "stop" : 1756585386328,
+            "duration" : 660
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Выбираем город",
+      "time" : {
+        "start" : 1756585386328,
+        "stop" : 1756585388299,
+        "duration" : 1971
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\".main-nav__city\") hover()",
+        "time" : {
+          "start" : 1756585386328,
+          "stop" : 1756585387147,
+          "duration" : 819
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".main-nav__city\") hover()",
+          "time" : {
+            "start" : 1756585386328,
+            "stop" : 1756585387147,
+            "duration" : 819
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\".main-nav__city/a[href*='https://nsk.dostaevsky.ru/']\") should have(text \"Новосибирск\")",
+        "time" : {
+          "start" : 1756585387148,
+          "stop" : 1756585387232,
+          "duration" : 84
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".main-nav__city/a[href*='https://nsk.dostaevsky.ru/']\") should have(text \"Новосибирск\")",
+          "time" : {
+            "start" : 1756585387148,
+            "stop" : 1756585387232,
+            "duration" : 84
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\".main-nav__city/a[href*='https://nsk.dostaevsky.ru/']\") click()",
+        "time" : {
+          "start" : 1756585387232,
+          "stop" : 1756585388299,
+          "duration" : 1067
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".main-nav__city/a[href*='https://nsk.dostaevsky.ru/']\") click()",
+          "time" : {
+            "start" : 1756585387232,
+            "stop" : 1756585388299,
+            "duration" : 1067
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "link",
+        "value" : "https://nsk.dostaevsky.ru/"
+      }, {
+        "name" : "city",
+        "value" : "Новосибирск"
+      } ],
+      "stepsCount" : 6,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Проверяем, что для выбранного города отображается его ссылка",
+      "time" : {
+        "start" : 1756585388300,
+        "stop" : 1756585388327,
+        "duration" : 27
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"webdriver\") should have url https://nsk.dostaevsky.ru/",
+        "time" : {
+          "start" : 1756585388300,
+          "stop" : 1756585388327,
+          "duration" : 27
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"webdriver\") should have url https://nsk.dostaevsky.ru/",
+          "time" : {
+            "start" : 1756585388300,
+            "stop" : 1756585388327,
+            "duration" : 27
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "link",
+        "value" : "https://nsk.dostaevsky.ru/"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Проверяем, что у выбранного города отображается аттрибут выбора",
+      "time" : {
+        "start" : 1756585388327,
+        "stop" : 1756585388504,
+        "duration" : 177
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"a[href*='https://nsk.dostaevsky.ru/']\") should have(attribute data-city=\"selected\")",
+        "time" : {
+          "start" : 1756585388327,
+          "stop" : 1756585388504,
+          "duration" : 177
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"a[href*='https://nsk.dostaevsky.ru/']\") should have(attribute data-city=\"selected\")",
+          "time" : {
+            "start" : 1756585388327,
+            "stop" : 1756585388504,
+            "duration" : 177
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "link",
+        "value" : "https://nsk.dostaevsky.ru/"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Проверяем, что для выбранного города отображается правильный номер для связи",
+      "time" : {
+        "start" : 1756585388504,
+        "stop" : 1756585388528,
+        "duration" : 24
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\".header__phone\") should have(text \"8 (383) 207-87-78\")",
+        "time" : {
+          "start" : 1756585388504,
+          "stop" : 1756585388528,
+          "duration" : 24
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".header__phone\") should have(text \"8 (383) 207-87-78\")",
+          "time" : {
+            "start" : 1756585388504,
+            "stop" : 1756585388528,
+            "duration" : 24
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phone",
+        "value" : "8 (383) 207-87-78"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 19,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "addAttachments",
+    "time" : {
+      "start" : 1756585388529,
+      "stop" : 1756585390998,
+      "duration" : 2469
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "$(\"clearCookies\") ",
+      "time" : {
+        "start" : 1756585388979,
+        "stop" : 1756585390993,
+        "duration" : 2014
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"clearCookies\") ",
+        "time" : {
+          "start" : 1756585388979,
+          "stop" : 1756585390993,
+          "duration" : 2014
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "ff59c6fff1f98086",
+      "name" : "Last screenshot",
+      "source" : "ff59c6fff1f98086.png",
+      "type" : "image/png",
+      "size" : 439951
+    }, {
+      "uid" : "7173d5e7b35e55dc",
+      "name" : "Page source",
+      "source" : "7173d5e7b35e55dc.html",
+      "type" : "text/plain",
+      "size" : 401101
+    }, {
+      "uid" : "c6b9208420fe59f",
+      "name" : "Browser console logs",
+      "source" : "c6b9208420fe59f.txt",
+      "type" : "text/plain",
+      "size" : 1440
+    }, {
+      "uid" : "d13b30f1617e5bac",
+      "name" : "Selenoid Video",
+      "source" : "d13b30f1617e5bac.html",
+      "type" : "text/html",
+      "size" : 204
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "web"
+  }, {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:ru.dostaevsky.tests.web.tests.CityInfoTests]/[test-template:selectCityFromTheListAvailableAndCheckDisplayInfoTest(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#5]"
+  }, {
+    "name" : "host",
+    "value" : "319ab4d25e4d"
+  }, {
+    "name" : "thread",
+    "value" : "8606@319ab4d25e4d.Test worker(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "ru.dostaevsky.tests.web.tests.CityInfoTests"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.dostaevsky.tests.web.tests.CityInfoTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "selectCityFromTheListAvailableAndCheckDisplayInfoTest"
+  }, {
+    "name" : "suite",
+    "value" : "Web Tests"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "https://nsk.dostaevsky.ru/"
+  }, {
+    "name" : "arg1",
+    "value" : "Новосибирск"
+  }, {
+    "name" : "arg2",
+    "value" : "8 (383) 207-87-78"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "web" ]
+  },
+  "source" : "2d743c9dc7649e03.json",
+  "parameterValues" : [ "https://nsk.dostaevsky.ru/", "Новосибирск", "8 (383) 207-87-78" ]
+}

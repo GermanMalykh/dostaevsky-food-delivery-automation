@@ -1,0 +1,489 @@
+{
+  "uid" : "c421c3a54645516c",
+  "name" : "[WEB] Выбор и отображение информации города. Для города \"Краснодар\" отображается информация по ссылке \"https://krd.dostaevsky.ru/\" с контактным номером телефона \"8 (861) 205-88-77\"",
+  "fullName" : "ru.dostaevsky.tests.web.tests.CityInfoTests.selectCityFromTheListAvailableAndCheckDisplayInfoTest",
+  "historyId" : "44bbe9f1fb839265b4511983c7cf9a70",
+  "time" : {
+    "start" : 1756585379720,
+    "stop" : 1756585385665,
+    "duration" : 5945
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1756585362397,
+      "stop" : 1756585362398,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "addListener",
+    "time" : {
+      "start" : 1756585379721,
+      "stop" : 1756585379721,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Переходим на главную страницу",
+      "time" : {
+        "start" : 1756585379721,
+        "stop" : 1756585380397,
+        "duration" : 676
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"open\") https://dostaevsky.ru/",
+        "time" : {
+          "start" : 1756585379721,
+          "stop" : 1756585380397,
+          "duration" : 676
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"open\") https://dostaevsky.ru/",
+          "time" : {
+            "start" : 1756585379721,
+            "stop" : 1756585380397,
+            "duration" : 676
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Выбираем город",
+      "time" : {
+        "start" : 1756585380397,
+        "stop" : 1756585382310,
+        "duration" : 1913
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\".main-nav__city\") hover()",
+        "time" : {
+          "start" : 1756585380397,
+          "stop" : 1756585381218,
+          "duration" : 821
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".main-nav__city\") hover()",
+          "time" : {
+            "start" : 1756585380397,
+            "stop" : 1756585381218,
+            "duration" : 821
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\".main-nav__city/a[href*='https://krd.dostaevsky.ru/']\") should have(text \"Краснодар\")",
+        "time" : {
+          "start" : 1756585381218,
+          "stop" : 1756585381260,
+          "duration" : 42
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".main-nav__city/a[href*='https://krd.dostaevsky.ru/']\") should have(text \"Краснодар\")",
+          "time" : {
+            "start" : 1756585381218,
+            "stop" : 1756585381260,
+            "duration" : 42
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\".main-nav__city/a[href*='https://krd.dostaevsky.ru/']\") click()",
+        "time" : {
+          "start" : 1756585381260,
+          "stop" : 1756585382310,
+          "duration" : 1050
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".main-nav__city/a[href*='https://krd.dostaevsky.ru/']\") click()",
+          "time" : {
+            "start" : 1756585381260,
+            "stop" : 1756585382310,
+            "duration" : 1050
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "link",
+        "value" : "https://krd.dostaevsky.ru/"
+      }, {
+        "name" : "city",
+        "value" : "Краснодар"
+      } ],
+      "stepsCount" : 6,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Проверяем, что для выбранного города отображается его ссылка",
+      "time" : {
+        "start" : 1756585382310,
+        "stop" : 1756585382375,
+        "duration" : 65
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"webdriver\") should have url https://krd.dostaevsky.ru/",
+        "time" : {
+          "start" : 1756585382310,
+          "stop" : 1756585382375,
+          "duration" : 65
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"webdriver\") should have url https://krd.dostaevsky.ru/",
+          "time" : {
+            "start" : 1756585382310,
+            "stop" : 1756585382375,
+            "duration" : 65
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "link",
+        "value" : "https://krd.dostaevsky.ru/"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Проверяем, что у выбранного города отображается аттрибут выбора",
+      "time" : {
+        "start" : 1756585382375,
+        "stop" : 1756585382581,
+        "duration" : 206
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"a[href*='https://krd.dostaevsky.ru/']\") should have(attribute data-city=\"selected\")",
+        "time" : {
+          "start" : 1756585382375,
+          "stop" : 1756585382581,
+          "duration" : 206
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"a[href*='https://krd.dostaevsky.ru/']\") should have(attribute data-city=\"selected\")",
+          "time" : {
+            "start" : 1756585382375,
+            "stop" : 1756585382581,
+            "duration" : 206
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "link",
+        "value" : "https://krd.dostaevsky.ru/"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Проверяем, что для выбранного города отображается правильный номер для связи",
+      "time" : {
+        "start" : 1756585382581,
+        "stop" : 1756585383081,
+        "duration" : 500
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\".header__phone\") should have(text \"8 (861) 205-88-77\")",
+        "time" : {
+          "start" : 1756585382581,
+          "stop" : 1756585383081,
+          "duration" : 500
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".header__phone\") should have(text \"8 (861) 205-88-77\")",
+          "time" : {
+            "start" : 1756585382581,
+            "stop" : 1756585383081,
+            "duration" : 500
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phone",
+        "value" : "8 (861) 205-88-77"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 19,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "addAttachments",
+    "time" : {
+      "start" : 1756585383081,
+      "stop" : 1756585385665,
+      "duration" : 2584
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "$(\"clearCookies\") ",
+      "time" : {
+        "start" : 1756585383546,
+        "stop" : 1756585385660,
+        "duration" : 2114
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"clearCookies\") ",
+        "time" : {
+          "start" : 1756585383546,
+          "stop" : 1756585385660,
+          "duration" : 2114
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "e60ec58980811406",
+      "name" : "Last screenshot",
+      "source" : "e60ec58980811406.png",
+      "type" : "image/png",
+      "size" : 975268
+    }, {
+      "uid" : "66b32fd506a7119",
+      "name" : "Page source",
+      "source" : "66b32fd506a7119.html",
+      "type" : "text/plain",
+      "size" : 772630
+    }, {
+      "uid" : "d3de13f529b78535",
+      "name" : "Browser console logs",
+      "source" : "d3de13f529b78535.txt",
+      "type" : "text/plain",
+      "size" : 1441
+    }, {
+      "uid" : "15abf6b3eb114dcf",
+      "name" : "Selenoid Video",
+      "source" : "15abf6b3eb114dcf.html",
+      "type" : "text/html",
+      "size" : 204
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "web"
+  }, {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:ru.dostaevsky.tests.web.tests.CityInfoTests]/[test-template:selectCityFromTheListAvailableAndCheckDisplayInfoTest(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#4]"
+  }, {
+    "name" : "host",
+    "value" : "319ab4d25e4d"
+  }, {
+    "name" : "thread",
+    "value" : "8606@319ab4d25e4d.Test worker(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "ru.dostaevsky.tests.web.tests.CityInfoTests"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.dostaevsky.tests.web.tests.CityInfoTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "selectCityFromTheListAvailableAndCheckDisplayInfoTest"
+  }, {
+    "name" : "suite",
+    "value" : "Web Tests"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "https://krd.dostaevsky.ru/"
+  }, {
+    "name" : "arg1",
+    "value" : "Краснодар"
+  }, {
+    "name" : "arg2",
+    "value" : "8 (861) 205-88-77"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "web" ]
+  },
+  "source" : "c421c3a54645516c.json",
+  "parameterValues" : [ "https://krd.dostaevsky.ru/", "Краснодар", "8 (861) 205-88-77" ]
+}

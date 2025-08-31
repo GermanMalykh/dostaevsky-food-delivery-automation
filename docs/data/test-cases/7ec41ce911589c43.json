@@ -1,0 +1,564 @@
+{
+  "uid" : "7ec41ce911589c43",
+  "name" : "[WEB] Проверка минимальной цены доставки. Минимальная цена доставки в городе \"Новосибирск\" равна \"700\" ₽",
+  "fullName" : "ru.dostaevsky.tests.web.tests.CartInfoTests.addItemToCartAndCheckMinimalPriceToDeliveryInfo",
+  "historyId" : "7525c89a7fdb15dfc391b76a8abbe61f",
+  "time" : {
+    "start" : 1756585346615,
+    "stop" : 1756585356068,
+    "duration" : 9453
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1756585291968,
+      "stop" : 1756585291970,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "addListener",
+    "time" : {
+      "start" : 1756585346615,
+      "stop" : 1756585346616,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Переходим на главную страницу",
+      "time" : {
+        "start" : 1756585346616,
+        "stop" : 1756585347476,
+        "duration" : 860
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"open\") https://dostaevsky.ru/",
+        "time" : {
+          "start" : 1756585346616,
+          "stop" : 1756585347476,
+          "duration" : 860
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"open\") https://dostaevsky.ru/",
+          "time" : {
+            "start" : 1756585346616,
+            "stop" : 1756585347476,
+            "duration" : 860
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Выбираем город",
+      "time" : {
+        "start" : 1756585347477,
+        "stop" : 1756585350067,
+        "duration" : 2590
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\".main-nav__city\") hover()",
+        "time" : {
+          "start" : 1756585347477,
+          "stop" : 1756585348253,
+          "duration" : 776
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".main-nav__city\") hover()",
+          "time" : {
+            "start" : 1756585347477,
+            "stop" : 1756585348253,
+            "duration" : 776
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\".main-nav__city/a[href*='https://nsk.dostaevsky.ru/']\") should have(text \"Новосибирск\")",
+        "time" : {
+          "start" : 1756585348253,
+          "stop" : 1756585348337,
+          "duration" : 84
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".main-nav__city/a[href*='https://nsk.dostaevsky.ru/']\") should have(text \"Новосибирск\")",
+          "time" : {
+            "start" : 1756585348253,
+            "stop" : 1756585348337,
+            "duration" : 84
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\".main-nav__city/a[href*='https://nsk.dostaevsky.ru/']\") click()",
+        "time" : {
+          "start" : 1756585348337,
+          "stop" : 1756585350067,
+          "duration" : 1730
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".main-nav__city/a[href*='https://nsk.dostaevsky.ru/']\") click()",
+          "time" : {
+            "start" : 1756585348337,
+            "stop" : 1756585350067,
+            "duration" : 1730
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "link",
+        "value" : "https://nsk.dostaevsky.ru/"
+      }, {
+        "name" : "city",
+        "value" : "Новосибирск"
+      } ],
+      "stepsCount" : 6,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Переходим в выбранную в меню категорию",
+      "time" : {
+        "start" : 1756585350068,
+        "stop" : 1756585351607,
+        "duration" : 1539
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\".main-nav__link.findBy(text \"Wok\")\") click()",
+        "time" : {
+          "start" : 1756585350068,
+          "stop" : 1756585351607,
+          "duration" : 1539
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".main-nav__link.findBy(text \"Wok\")\") click()",
+          "time" : {
+            "start" : 1756585350068,
+            "stop" : 1756585351607,
+            "duration" : 1539
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "category",
+        "value" : "WOKS"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Добавляем позицию в корзину",
+      "time" : {
+        "start" : 1756585351607,
+        "stop" : 1756585351898,
+        "duration" : 291
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\".catalog-list__item[0]/[type='button']\") click()",
+        "time" : {
+          "start" : 1756585351607,
+          "stop" : 1756585351898,
+          "duration" : 291
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".catalog-list__item[0]/[type='button']\") click()",
+          "time" : {
+            "start" : 1756585351607,
+            "stop" : 1756585351898,
+            "duration" : 291
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Переходим в корзину",
+      "time" : {
+        "start" : 1756585351898,
+        "stop" : 1756585352012,
+        "duration" : 114
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\".catalog-cart__icon\") click()",
+        "time" : {
+          "start" : 1756585351898,
+          "stop" : 1756585352012,
+          "duration" : 114
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".catalog-cart__icon\") click()",
+          "time" : {
+            "start" : 1756585351898,
+            "stop" : 1756585352012,
+            "duration" : 114
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Проверяем наличие сообщения с текстом минимальной суммы заказа",
+      "time" : {
+        "start" : 1756585352013,
+        "stop" : 1756585353510,
+        "duration" : 1497
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\".basket-blank-limit__title\") should be([visible, 10 s.])",
+        "time" : {
+          "start" : 1756585352013,
+          "stop" : 1756585353489,
+          "duration" : 1476
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".basket-blank-limit__title\") should be([visible, 10 s.])",
+          "time" : {
+            "start" : 1756585352013,
+            "stop" : 1756585353489,
+            "duration" : 1476
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\".basket-blank-limit__title\") should have(text \"Минимальная сумма заказа 700 ₽\")",
+        "time" : {
+          "start" : 1756585353490,
+          "stop" : 1756585353510,
+          "duration" : 20
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".basket-blank-limit__title\") should have(text \"Минимальная сумма заказа 700 ₽\")",
+          "time" : {
+            "start" : 1756585353490,
+            "stop" : 1756585353510,
+            "duration" : 20
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "minimalPrice",
+        "value" : "700"
+      } ],
+      "stepsCount" : 4,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 24,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "addAttachments",
+    "time" : {
+      "start" : 1756585353510,
+      "stop" : 1756585356068,
+      "duration" : 2558
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "$(\"clearCookies\") ",
+      "time" : {
+        "start" : 1756585353764,
+        "stop" : 1756585356063,
+        "duration" : 2299
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"clearCookies\") ",
+        "time" : {
+          "start" : 1756585353764,
+          "stop" : 1756585356063,
+          "duration" : 2299
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "82c91002f91146bb",
+      "name" : "Last screenshot",
+      "source" : "82c91002f91146bb.png",
+      "type" : "image/png",
+      "size" : 184618
+    }, {
+      "uid" : "68fd974a03a8616",
+      "name" : "Page source",
+      "source" : "68fd974a03a8616.html",
+      "type" : "text/plain",
+      "size" : 896205
+    }, {
+      "uid" : "e0df0409158814d9",
+      "name" : "Browser console logs",
+      "source" : "e0df0409158814d9.txt",
+      "type" : "text/plain",
+      "size" : 2382
+    }, {
+      "uid" : "7c7ba7d4f7f8c9a7",
+      "name" : "Selenoid Video",
+      "source" : "7c7ba7d4f7f8c9a7.html",
+      "type" : "text/html",
+      "size" : 204
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "web"
+  }, {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:ru.dostaevsky.tests.web.tests.CartInfoTests]/[test-template:addItemToCartAndCheckMinimalPriceToDeliveryInfo(java.lang.String, java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#5]"
+  }, {
+    "name" : "host",
+    "value" : "319ab4d25e4d"
+  }, {
+    "name" : "thread",
+    "value" : "8606@319ab4d25e4d.Test worker(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "ru.dostaevsky.tests.web.tests.CartInfoTests"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.dostaevsky.tests.web.tests.CartInfoTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "addItemToCartAndCheckMinimalPriceToDeliveryInfo"
+  }, {
+    "name" : "suite",
+    "value" : "Web Tests"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "https://nsk.dostaevsky.ru/"
+  }, {
+    "name" : "arg1",
+    "value" : "Новосибирск"
+  }, {
+    "name" : "arg2",
+    "value" : "8 (383) 207-87-78"
+  }, {
+    "name" : "arg3",
+    "value" : "700"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "web" ]
+  },
+  "source" : "7ec41ce911589c43.json",
+  "parameterValues" : [ "https://nsk.dostaevsky.ru/", "Новосибирск", "8 (383) 207-87-78", "700" ]
+}

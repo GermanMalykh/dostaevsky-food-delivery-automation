@@ -1,0 +1,15 @@
+[2025-08-30T20:22:27.106Z] [SEVERE] https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+[2025-08-30T20:22:27.107Z] [SEVERE] https://dostaevsky.ru/ 30:251631 Uncaught SyntaxError: Unexpected token ':'
+[2025-08-30T20:22:27.250Z] [SEVERE] https://dostaevsky.ru/js/main.js?1754565934 5:50220 "yaMetrikaCheck func: Check failed due to lack of analytics object."
+[2025-08-30T20:22:27.874Z] [SEVERE] https://dostaevsky.ru/api/v4/last-payment-status - Failed to load resource: the server responded with a status of 401 (Unauthorized)
+[2025-08-30T20:22:29.229Z] [SEVERE] https://nsk.dostaevsky.ru/ 30:251563 Uncaught SyntaxError: Unexpected token ':'
+[2025-08-30T20:22:29.270Z] [SEVERE] https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+[2025-08-30T20:22:29.533Z] [WARNING] https://widgets-04.livetex.me/js/ui.25.32.5929-3299235.js 0 Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://widgets-04.livetex.me') does not match the recipient window's origin ('https://nsk.dostaevsky.ru').
+[2025-08-30T20:22:30.217Z] [SEVERE] https://widgets-04.livetex.me/js/ui.25.32.5929-3299235.js 0:991586 Uncaught TypeError: Cannot read properties of undefined (reading 'length')
+[2025-08-30T20:22:30.217Z] [SEVERE] https://widgets-04.livetex.me/js/ui.25.32.5929-3299235.js 0:991586 Uncaught TypeError: Cannot read properties of undefined (reading 'length')
+[2025-08-30T20:22:30.220Z] [SEVERE] https://nsk.dostaevsky.ru/js/bundle.js?1754565877 3:28543 Uncaught TypeError: this.hideChatLabel is not a function
+[2025-08-30T20:22:30.505Z] [SEVERE] https://nsk.dostaevsky.ru/api/v4/last-payment-status - Failed to load resource: the server responded with a status of 401 (Unauthorized)
+[2025-08-30T20:22:31.288Z] [SEVERE] https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+[2025-08-30T20:22:31.288Z] [SEVERE] https://nsk.dostaevsky.ru/woks 31:251608 Uncaught SyntaxError: Unexpected token ':'
+[2025-08-30T20:22:31.305Z] [SEVERE] https://nsk.dostaevsky.ru/js/main.js?1754565934 5:50220 "yaMetrikaCheck func: Check failed due to lack of analytics object."
+[2025-08-30T20:22:32.374Z] [SEVERE] https://nsk.dostaevsky.ru/js/main.js?1754565934 5:86565 "Error, itemId is 12339 "

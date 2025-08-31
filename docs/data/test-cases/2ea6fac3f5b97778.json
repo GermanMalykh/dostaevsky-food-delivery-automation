@@ -1,0 +1,489 @@
+{
+  "uid" : "2ea6fac3f5b97778",
+  "name" : "[WEB] Выбор и отображение информации города. Для города \"Санкт-Петербург\" отображается информация по ссылке \"https://dostaevsky.ru/\" с контактным номером телефона \"8 (812) 777-80-08\"",
+  "fullName" : "ru.dostaevsky.tests.web.tests.CityInfoTests.selectCityFromTheListAvailableAndCheckDisplayInfoTest",
+  "historyId" : "daee070950543cedcd7518a4c22d596",
+  "time" : {
+    "start" : 1756585362401,
+    "stop" : 1756585368301,
+    "duration" : 5900
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1756585362397,
+      "stop" : 1756585362398,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "addListener",
+    "time" : {
+      "start" : 1756585362402,
+      "stop" : 1756585362402,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Переходим на главную страницу",
+      "time" : {
+        "start" : 1756585362402,
+        "stop" : 1756585363258,
+        "duration" : 856
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"open\") https://dostaevsky.ru/",
+        "time" : {
+          "start" : 1756585362402,
+          "stop" : 1756585363258,
+          "duration" : 856
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"open\") https://dostaevsky.ru/",
+          "time" : {
+            "start" : 1756585362402,
+            "stop" : 1756585363258,
+            "duration" : 856
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Выбираем город",
+      "time" : {
+        "start" : 1756585363258,
+        "stop" : 1756585365014,
+        "duration" : 1756
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\".main-nav__city\") hover()",
+        "time" : {
+          "start" : 1756585363258,
+          "stop" : 1756585363429,
+          "duration" : 171
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".main-nav__city\") hover()",
+          "time" : {
+            "start" : 1756585363258,
+            "stop" : 1756585363429,
+            "duration" : 171
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\".main-nav__city/a[href*='https://dostaevsky.ru/']\") should have(text \"Санкт-Петербург\")",
+        "time" : {
+          "start" : 1756585363429,
+          "stop" : 1756585363526,
+          "duration" : 97
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".main-nav__city/a[href*='https://dostaevsky.ru/']\") should have(text \"Санкт-Петербург\")",
+          "time" : {
+            "start" : 1756585363429,
+            "stop" : 1756585363526,
+            "duration" : 97
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\".main-nav__city/a[href*='https://dostaevsky.ru/']\") click()",
+        "time" : {
+          "start" : 1756585363526,
+          "stop" : 1756585365014,
+          "duration" : 1488
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".main-nav__city/a[href*='https://dostaevsky.ru/']\") click()",
+          "time" : {
+            "start" : 1756585363526,
+            "stop" : 1756585365014,
+            "duration" : 1488
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "link",
+        "value" : "https://dostaevsky.ru/"
+      }, {
+        "name" : "city",
+        "value" : "Санкт-Петербург"
+      } ],
+      "stepsCount" : 6,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Проверяем, что для выбранного города отображается его ссылка",
+      "time" : {
+        "start" : 1756585365014,
+        "stop" : 1756585365041,
+        "duration" : 27
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"webdriver\") should have url https://dostaevsky.ru/",
+        "time" : {
+          "start" : 1756585365017,
+          "stop" : 1756585365041,
+          "duration" : 24
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"webdriver\") should have url https://dostaevsky.ru/",
+          "time" : {
+            "start" : 1756585365017,
+            "stop" : 1756585365041,
+            "duration" : 24
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "link",
+        "value" : "https://dostaevsky.ru/"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Проверяем, что у выбранного города отображается аттрибут выбора",
+      "time" : {
+        "start" : 1756585365041,
+        "stop" : 1756585365167,
+        "duration" : 126
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"a[href*='https://dostaevsky.ru/']\") should have(attribute data-city=\"selected\")",
+        "time" : {
+          "start" : 1756585365041,
+          "stop" : 1756585365167,
+          "duration" : 126
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"a[href*='https://dostaevsky.ru/']\") should have(attribute data-city=\"selected\")",
+          "time" : {
+            "start" : 1756585365041,
+            "stop" : 1756585365167,
+            "duration" : 126
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "link",
+        "value" : "https://dostaevsky.ru/"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Проверяем, что для выбранного города отображается правильный номер для связи",
+      "time" : {
+        "start" : 1756585365168,
+        "stop" : 1756585365207,
+        "duration" : 39
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\".header__phone\") should have(text \"8 (812) 777-80-08\")",
+        "time" : {
+          "start" : 1756585365168,
+          "stop" : 1756585365207,
+          "duration" : 39
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".header__phone\") should have(text \"8 (812) 777-80-08\")",
+          "time" : {
+            "start" : 1756585365168,
+            "stop" : 1756585365207,
+            "duration" : 39
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phone",
+        "value" : "8 (812) 777-80-08"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 19,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "addAttachments",
+    "time" : {
+      "start" : 1756585365207,
+      "stop" : 1756585368301,
+      "duration" : 3094
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "$(\"clearCookies\") ",
+      "time" : {
+        "start" : 1756585365833,
+        "stop" : 1756585368294,
+        "duration" : 2461
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"clearCookies\") ",
+        "time" : {
+          "start" : 1756585365833,
+          "stop" : 1756585368294,
+          "duration" : 2461
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "f75bf15edf0a6220",
+      "name" : "Last screenshot",
+      "source" : "f75bf15edf0a6220.png",
+      "type" : "image/png",
+      "size" : 442207
+    }, {
+      "uid" : "444d99f771a6c4dd",
+      "name" : "Page source",
+      "source" : "444d99f771a6c4dd.html",
+      "type" : "text/plain",
+      "size" : 443102
+    }, {
+      "uid" : "4c5da52b89a5f9dc",
+      "name" : "Browser console logs",
+      "source" : "4c5da52b89a5f9dc.txt",
+      "type" : "text/plain",
+      "size" : 1783
+    }, {
+      "uid" : "a3487a76b7a76c0f",
+      "name" : "Selenoid Video",
+      "source" : "a3487a76b7a76c0f.html",
+      "type" : "text/html",
+      "size" : 204
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "web"
+  }, {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:ru.dostaevsky.tests.web.tests.CityInfoTests]/[test-template:selectCityFromTheListAvailableAndCheckDisplayInfoTest(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#1]"
+  }, {
+    "name" : "host",
+    "value" : "319ab4d25e4d"
+  }, {
+    "name" : "thread",
+    "value" : "8606@319ab4d25e4d.Test worker(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "ru.dostaevsky.tests.web.tests.CityInfoTests"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.dostaevsky.tests.web.tests.CityInfoTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "selectCityFromTheListAvailableAndCheckDisplayInfoTest"
+  }, {
+    "name" : "suite",
+    "value" : "Web Tests"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "https://dostaevsky.ru/"
+  }, {
+    "name" : "arg1",
+    "value" : "Санкт-Петербург"
+  }, {
+    "name" : "arg2",
+    "value" : "8 (812) 777-80-08"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "web" ]
+  },
+  "source" : "2ea6fac3f5b97778.json",
+  "parameterValues" : [ "https://dostaevsky.ru/", "Санкт-Петербург", "8 (812) 777-80-08" ]
+}

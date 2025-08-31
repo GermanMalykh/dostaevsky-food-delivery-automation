@@ -1,0 +1,366 @@
+{
+  "uid" : "9d5a2f4c1b08fa74",
+  "name" : "[Android] Выбор и отображение информации города. Для города \"Новосибирск\" отображается информация с контактным номером телефона \"+7 (383) 207-87-78\"",
+  "fullName" : "ru.dostaevsky.tests.android.tests.CityInfoTests.selectingCityFromTheListAvailableAndCheckingDisplayInfoTest",
+  "historyId" : "5c44f1a63dbc9394379c77ddc5323738",
+  "time" : {
+    "start" : 1756585038455,
+    "stop" : 1756585066893,
+    "duration" : 28438
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1756584921068,
+      "stop" : 1756584921068,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "addListener",
+    "time" : {
+      "start" : 1756585038455,
+      "stop" : 1756585054437,
+      "duration" : 15982
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "$(\"open\") ",
+      "time" : {
+        "start" : 1756585038455,
+        "stop" : 1756585054437,
+        "duration" : 15982
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"webdriver\") create()",
+        "time" : {
+          "start" : 1756585038455,
+          "stop" : 1756585054437,
+          "duration" : 15982
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Выбираем элемент с наименованием \"Новосибирск\"",
+      "time" : {
+        "start" : 1756585054438,
+        "stop" : 1756585061239,
+        "duration" : 6801
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"by tag: *; by attribute: text; by value: Новосибирск\") should be([visible, 90 s.])",
+        "time" : {
+          "start" : 1756585054438,
+          "stop" : 1756585057683,
+          "duration" : 3245
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"by tag: *; by attribute: text; by value: Новосибирск\") click()",
+        "time" : {
+          "start" : 1756585057683,
+          "stop" : 1756585061239,
+          "duration" : 3556
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "value",
+        "value" : "Новосибирск"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Выбираем элемент с наименованием \"Еще\"",
+      "time" : {
+        "start" : 1756585061239,
+        "stop" : 1756585062420,
+        "duration" : 1181
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"by tag: *; by attribute: text; by value: Еще\") should be([visible, 90 s.])",
+        "time" : {
+          "start" : 1756585061240,
+          "stop" : 1756585061636,
+          "duration" : 396
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"by tag: *; by attribute: text; by value: Еще\") click()",
+        "time" : {
+          "start" : 1756585061636,
+          "stop" : 1756585062419,
+          "duration" : 783
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "value",
+        "value" : "Еще"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Проверяем, что наименование выбранного города \"Новосибирск\" отображается на экране",
+      "time" : {
+        "start" : 1756585062420,
+        "stop" : 1756585064331,
+        "duration" : 1911
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"AppiumBy.id: ru.dostaevsky.android:id/cityTextView\") should have(text \"Новосибирск\")",
+        "time" : {
+          "start" : 1756585062420,
+          "stop" : 1756585064331,
+          "duration" : 1911
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "city",
+        "value" : "Новосибирск"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Проверяем, что для выбранного города отображается контактный номер телефона \"+7 (383) 207-87-78\"",
+      "time" : {
+        "start" : 1756585064331,
+        "stop" : 1756585064678,
+        "duration" : 347
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"AppiumBy.id: ru.dostaevsky.android:id/call_text\") should have(text \"+7 (383) 207-87-78\")",
+        "time" : {
+          "start" : 1756585064331,
+          "stop" : 1756585064678,
+          "duration" : 347
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "phoneWithPlus",
+        "value" : "+7 (383) 207-87-78"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 10,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "addAttachments",
+    "time" : {
+      "start" : 1756585064678,
+      "stop" : 1756585066892,
+      "duration" : 2214
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "91cfb1c77a3b06bb",
+      "name" : "Page source",
+      "source" : "91cfb1c77a3b06bb.xml",
+      "type" : "text/plain",
+      "size" : 39911
+    }, {
+      "uid" : "fe1eaabf8cdcc9d9",
+      "name" : "Request",
+      "source" : "fe1eaabf8cdcc9d9.html",
+      "type" : "text/html",
+      "size" : 1625
+    }, {
+      "uid" : "42227ab79a81af17",
+      "name" : "HTTP/1.1 200 OK",
+      "source" : "42227ab79a81af17.html",
+      "type" : "text/html",
+      "size" : 6760
+    }, {
+      "uid" : "d2fa60f77d271ba2",
+      "name" : "BrowserStack Video",
+      "source" : "d2fa60f77d271ba2.html",
+      "type" : "text/html",
+      "size" : 445
+    }, {
+      "uid" : "b13129f6ff40443b",
+      "name" : "Request",
+      "source" : "b13129f6ff40443b.html",
+      "type" : "text/html",
+      "size" : 1625
+    }, {
+      "uid" : "81374e7400ba3124",
+      "name" : "HTTP/1.1 200 OK",
+      "source" : "81374e7400ba3124.html",
+      "type" : "text/html",
+      "size" : 6760
+    }, {
+      "uid" : "42392392b2d7856",
+      "name" : "Browserstack full info link",
+      "source" : "42392392b2d7856.html",
+      "type" : "text/html",
+      "size" : 266
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "android"
+  }, {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:ru.dostaevsky.tests.android.tests.CityInfoTests]/[test-template:selectingCityFromTheListAvailableAndCheckingDisplayInfoTest(java.lang.String, java.lang.String)]/[test-template-invocation:#5]"
+  }, {
+    "name" : "host",
+    "value" : "319ab4d25e4d"
+  }, {
+    "name" : "thread",
+    "value" : "8606@319ab4d25e4d.Test worker(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "ru.dostaevsky.tests.android.tests.CityInfoTests"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.dostaevsky.tests.android.tests.CityInfoTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "selectingCityFromTheListAvailableAndCheckingDisplayInfoTest"
+  }, {
+    "name" : "suite",
+    "value" : "Android Tests"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "Новосибирск"
+  }, {
+    "name" : "arg1",
+    "value" : "+7 (383) 207-87-78"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "android" ]
+  },
+  "source" : "9d5a2f4c1b08fa74.json",
+  "parameterValues" : [ "Новосибирск", "+7 (383) 207-87-78" ]
+}

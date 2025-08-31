@@ -1,0 +1,588 @@
+{
+  "uid" : "e69de2d42c2deaf0",
+  "name" : "[WEB] Проверка отображения цены, количества и наименования товара в корзине",
+  "fullName" : "ru.dostaevsky.tests.web.tests.CartInfoTests.checkAddedItemValueInCart",
+  "historyId" : "63caece5254abdea42517d8faf15c37b",
+  "time" : {
+    "start" : 1756585356071,
+    "stop" : 1756585362395,
+    "duration" : 6324
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1756585291968,
+      "stop" : 1756585291970,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "addListener",
+    "time" : {
+      "start" : 1756585356071,
+      "stop" : 1756585356071,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Делаем запрос на добавление товара в корзину",
+      "time" : {
+        "start" : 1756585356072,
+        "stop" : 1756585356514,
+        "duration" : 442
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "caf6a4f6787fdf98",
+        "name" : "Request",
+        "source" : "caf6a4f6787fdf98.html",
+        "type" : "text/html",
+        "size" : 2129
+      }, {
+        "uid" : "42fe1175bfa88f99",
+        "name" : "HTTP/1.1 200 OK",
+        "source" : "42fe1175bfa88f99.html",
+        "type" : "text/html",
+        "size" : 54395
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Делаем запрос на получение информации о товарах в корзине",
+      "time" : {
+        "start" : 1756585356514,
+        "stop" : 1756585357081,
+        "duration" : 567
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "846bbadb463502ad",
+        "name" : "Request",
+        "source" : "846bbadb463502ad.html",
+        "type" : "text/html",
+        "size" : 2228
+      }, {
+        "uid" : "1e8dd86b7ea3b0db",
+        "name" : "HTTP/1.1 200 OK",
+        "source" : "1e8dd86b7ea3b0db.html",
+        "type" : "text/html",
+        "size" : 110149
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Добавляем куку пользователя",
+      "time" : {
+        "start" : 1756585357089,
+        "stop" : 1756585357400,
+        "duration" : 311
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"open\") https://dostaevsky.ru/upload/iblock/271/271e8fce54eb65f815b37bc958d1ea97.png",
+        "time" : {
+          "start" : 1756585357089,
+          "stop" : 1756585357391,
+          "duration" : 302
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"open\") https://dostaevsky.ru/upload/iblock/271/271e8fce54eb65f815b37bc958d1ea97.png",
+          "time" : {
+            "start" : 1756585357089,
+            "stop" : 1756585357391,
+            "duration" : 302
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Переходим на \"https://dostaevsky.ru/cart\"",
+      "time" : {
+        "start" : 1756585357401,
+        "stop" : 1756585358196,
+        "duration" : 795
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"open\") https://dostaevsky.ru/cart",
+        "time" : {
+          "start" : 1756585357401,
+          "stop" : 1756585358196,
+          "duration" : 795
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"open\") https://dostaevsky.ru/cart",
+          "time" : {
+            "start" : 1756585357401,
+            "stop" : 1756585358196,
+            "duration" : 795
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "https://dostaevsky.ru/cart"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Проверяем отображение цены товара в корзине",
+      "time" : {
+        "start" : 1756585358196,
+        "stop" : 1756585359131,
+        "duration" : 935
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\".basket__product-price__value\") should be(visible)",
+        "time" : {
+          "start" : 1756585358196,
+          "stop" : 1756585359103,
+          "duration" : 907
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".basket__product-price__value\") should be(visible)",
+          "time" : {
+            "start" : 1756585358196,
+            "stop" : 1756585359103,
+            "duration" : 907
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\".basket__product-price__value\") should have(text \"439\")",
+        "time" : {
+          "start" : 1756585359103,
+          "stop" : 1756585359131,
+          "duration" : 28
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".basket__product-price__value\") should have(text \"439\")",
+          "time" : {
+            "start" : 1756585359103,
+            "stop" : 1756585359131,
+            "duration" : 28
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "itemPrice",
+        "value" : "439"
+      } ],
+      "stepsCount" : 4,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Проверяем отображение наименования товара в корзине",
+      "time" : {
+        "start" : 1756585359131,
+        "stop" : 1756585359175,
+        "duration" : 44
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\".basket__product-title\") should be(visible)",
+        "time" : {
+          "start" : 1756585359131,
+          "stop" : 1756585359153,
+          "duration" : 22
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".basket__product-title\") should be(visible)",
+          "time" : {
+            "start" : 1756585359131,
+            "stop" : 1756585359153,
+            "duration" : 22
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\".basket__product-title\") should have(text \"Дор Блю бургер\")",
+        "time" : {
+          "start" : 1756585359153,
+          "stop" : 1756585359175,
+          "duration" : 22
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".basket__product-title\") should have(text \"Дор Блю бургер\")",
+          "time" : {
+            "start" : 1756585359153,
+            "stop" : 1756585359175,
+            "duration" : 22
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "itemName",
+        "value" : "Дор Блю бургер"
+      } ],
+      "stepsCount" : 4,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Проверяем отображение количества товара в корзине",
+      "time" : {
+        "start" : 1756585359175,
+        "stop" : 1756585359223,
+        "duration" : 48
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\".counter-buttons .counter-buttons__count\") should be(visible)",
+        "time" : {
+          "start" : 1756585359176,
+          "stop" : 1756585359197,
+          "duration" : 21
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".counter-buttons .counter-buttons__count\") should be(visible)",
+          "time" : {
+            "start" : 1756585359176,
+            "stop" : 1756585359197,
+            "duration" : 21
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\".counter-buttons .counter-buttons__count\") should have(text \"1\")",
+        "time" : {
+          "start" : 1756585359197,
+          "stop" : 1756585359223,
+          "duration" : 26
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".counter-buttons .counter-buttons__count\") should have(text \"1\")",
+          "time" : {
+            "start" : 1756585359197,
+            "stop" : 1756585359223,
+            "duration" : 26
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "itemCount",
+        "value" : "1"
+      } ],
+      "stepsCount" : 4,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Делаем запрос на удаление товара из корзины",
+      "time" : {
+        "start" : 1756585359224,
+        "stop" : 1756585359746,
+        "duration" : 522
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c1a32a02a5b3d809",
+        "name" : "Request",
+        "source" : "c1a32a02a5b3d809.html",
+        "type" : "text/html",
+        "size" : 2269
+      }, {
+        "uid" : "1faca3c016b6e709",
+        "name" : "HTTP/1.1 200 OK",
+        "source" : "1faca3c016b6e709.html",
+        "type" : "text/html",
+        "size" : 57832
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 24,
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "addAttachments",
+    "time" : {
+      "start" : 1756585359746,
+      "stop" : 1756585362395,
+      "duration" : 2649
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "$(\"clearCookies\") ",
+      "time" : {
+        "start" : 1756585360012,
+        "stop" : 1756585362389,
+        "duration" : 2377
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"clearCookies\") ",
+        "time" : {
+          "start" : 1756585360012,
+          "stop" : 1756585362389,
+          "duration" : 2377
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "c3771c9563c17129",
+      "name" : "Last screenshot",
+      "source" : "c3771c9563c17129.png",
+      "type" : "image/png",
+      "size" : 178332
+    }, {
+      "uid" : "95185e1c7c5c1baa",
+      "name" : "Page source",
+      "source" : "95185e1c7c5c1baa.html",
+      "type" : "text/plain",
+      "size" : 916885
+    }, {
+      "uid" : "182a8a31264a1c14",
+      "name" : "Browser console logs",
+      "source" : "182a8a31264a1c14.txt",
+      "type" : "text/plain",
+      "size" : 745
+    }, {
+      "uid" : "4fc3200246551d93",
+      "name" : "Selenoid Video",
+      "source" : "4fc3200246551d93.html",
+      "type" : "text/html",
+      "size" : 204
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "web"
+  }, {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:ru.dostaevsky.tests.web.tests.CartInfoTests]/[method:checkAddedItemValueInCart()]"
+  }, {
+    "name" : "host",
+    "value" : "319ab4d25e4d"
+  }, {
+    "name" : "thread",
+    "value" : "8606@319ab4d25e4d.Test worker(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "ru.dostaevsky.tests.web.tests.CartInfoTests"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.dostaevsky.tests.web.tests.CartInfoTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkAddedItemValueInCart"
+  }, {
+    "name" : "suite",
+    "value" : "Web Tests"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "web" ]
+  },
+  "source" : "e69de2d42c2deaf0.json",
+  "parameterValues" : [ ]
+}

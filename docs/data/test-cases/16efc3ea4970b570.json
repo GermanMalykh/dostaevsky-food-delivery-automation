@@ -1,0 +1,363 @@
+{
+  "uid" : "16efc3ea4970b570",
+  "name" : "[Android] Проверка результатов поиска. Для города \"Новосибирск\", результаты поиска по слову \"пицца\" не равны нулю",
+  "fullName" : "ru.dostaevsky.tests.android.tests.SearchInfoTests.successfulProductSearchTest",
+  "historyId" : "dfdd03160f32d7c041d6c97a2eb2c07c",
+  "time" : {
+    "start" : 1756585210476,
+    "stop" : 1756585261210,
+    "duration" : 50734
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1756585066897,
+      "stop" : 1756585066897,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "addListener",
+    "time" : {
+      "start" : 1756585210477,
+      "stop" : 1756585244987,
+      "duration" : 34510
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "$(\"open\") ",
+      "time" : {
+        "start" : 1756585210477,
+        "stop" : 1756585244987,
+        "duration" : 34510
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"webdriver\") create()",
+        "time" : {
+          "start" : 1756585210477,
+          "stop" : 1756585244987,
+          "duration" : 34510
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Выбираем элемент с наименованием \"Новосибирск\"",
+      "time" : {
+        "start" : 1756585244987,
+        "stop" : 1756585248651,
+        "duration" : 3664
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"by tag: *; by attribute: text; by value: Новосибирск\") should be([visible, 90 s.])",
+        "time" : {
+          "start" : 1756585244988,
+          "stop" : 1756585248084,
+          "duration" : 3096
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"by tag: *; by attribute: text; by value: Новосибирск\") click()",
+        "time" : {
+          "start" : 1756585248084,
+          "stop" : 1756585248651,
+          "duration" : 567
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "value",
+        "value" : "Новосибирск"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Переходим к поиску",
+      "time" : {
+        "start" : 1756585248651,
+        "stop" : 1756585254720,
+        "duration" : 6069
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"AppiumBy.id: ru.dostaevsky.android:id/search\") should be([visible, 10 s.])",
+        "time" : {
+          "start" : 1756585248652,
+          "stop" : 1756585252067,
+          "duration" : 3415
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"AppiumBy.id: ru.dostaevsky.android:id/search\") click()",
+        "time" : {
+          "start" : 1756585252067,
+          "stop" : 1756585254720,
+          "duration" : 2653
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Указываем параметры поиска",
+      "time" : {
+        "start" : 1756585254721,
+        "stop" : 1756585256281,
+        "duration" : 1560
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"AppiumBy.id: ru.dostaevsky.android:id/search\") send keys(пицца)",
+        "time" : {
+          "start" : 1756585254721,
+          "stop" : 1756585256281,
+          "duration" : 1560
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "product",
+        "value" : "пицца"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Проверяем, что результаты поиска не меньше чем \"0\"",
+      "time" : {
+        "start" : 1756585256281,
+        "stop" : 1756585258474,
+        "duration" : 2193
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"AppiumBy.id: ru.dostaevsky.android:id/recyclerViewResults\") should have(size > 0)",
+        "time" : {
+          "start" : 1756585256282,
+          "stop" : 1756585258474,
+          "duration" : 2192
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "size",
+        "value" : "0"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 10,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "addAttachments",
+    "time" : {
+      "start" : 1756585258475,
+      "stop" : 1756585261210,
+      "duration" : 2735
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "281e7d12a864916d",
+      "name" : "Page source",
+      "source" : "281e7d12a864916d.xml",
+      "type" : "text/plain",
+      "size" : 25736
+    }, {
+      "uid" : "3e6d54ffb573b66b",
+      "name" : "Request",
+      "source" : "3e6d54ffb573b66b.html",
+      "type" : "text/html",
+      "size" : 1625
+    }, {
+      "uid" : "a4a094534af99996",
+      "name" : "HTTP/1.1 200 OK",
+      "source" : "a4a094534af99996.html",
+      "type" : "text/html",
+      "size" : 6760
+    }, {
+      "uid" : "e2465fbf5afb4191",
+      "name" : "BrowserStack Video",
+      "source" : "e2465fbf5afb4191.html",
+      "type" : "text/html",
+      "size" : 445
+    }, {
+      "uid" : "fd9d1be2eda2a8d9",
+      "name" : "Request",
+      "source" : "fd9d1be2eda2a8d9.html",
+      "type" : "text/html",
+      "size" : 1625
+    }, {
+      "uid" : "4791978fde77390d",
+      "name" : "HTTP/1.1 200 OK",
+      "source" : "4791978fde77390d.html",
+      "type" : "text/html",
+      "size" : 6760
+    }, {
+      "uid" : "dd1b5e6c7c40a978",
+      "name" : "Browserstack full info link",
+      "source" : "dd1b5e6c7c40a978.html",
+      "type" : "text/html",
+      "size" : 266
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "android"
+  }, {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:ru.dostaevsky.tests.android.tests.SearchInfoTests]/[test-template:successfulProductSearchTest(java.lang.String, java.lang.String)]/[test-template-invocation:#5]"
+  }, {
+    "name" : "host",
+    "value" : "319ab4d25e4d"
+  }, {
+    "name" : "thread",
+    "value" : "8606@319ab4d25e4d.Test worker(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "ru.dostaevsky.tests.android.tests.SearchInfoTests"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.dostaevsky.tests.android.tests.SearchInfoTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "successfulProductSearchTest"
+  }, {
+    "name" : "suite",
+    "value" : "Android Tests"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "Новосибирск"
+  }, {
+    "name" : "arg1",
+    "value" : "пицца"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "android" ]
+  },
+  "source" : "16efc3ea4970b570.json",
+  "parameterValues" : [ "Новосибирск", "пицца" ]
+}

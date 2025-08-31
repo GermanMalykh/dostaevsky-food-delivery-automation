@@ -1,0 +1,153 @@
+{
+  "uid" : "548c0f9025f05917",
+  "name" : "[API] Получение отзывов о компании с превышением лимита по отзывам в запросе",
+  "fullName" : "ru.dostaevsky.tests.api.tests.reviews.GettingReviewsTests.gettingReviewsWithExceedingLimit",
+  "historyId" : "68891089d5eadaec92defe3506dbee6e",
+  "time" : {
+    "start" : 1756585272599,
+    "stop" : 1756585272877,
+    "duration" : 278
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1756585272598,
+      "stop" : 1756585272598,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Делаем запрос на получение отзывов о компании",
+      "time" : {
+        "start" : 1756585272599,
+        "stop" : 1756585272875,
+        "duration" : 276
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a219bd02b79e9175",
+        "name" : "Request",
+        "source" : "a219bd02b79e9175.html",
+        "type" : "text/html",
+        "size" : 1885
+      }, {
+        "uid" : "74c28875b0106303",
+        "name" : "HTTP/1.1 400 Bad Request",
+        "source" : "74c28875b0106303.html",
+        "type" : "text/html",
+        "size" : 2980
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Ответ содержит статус код: \"400\"",
+      "time" : {
+        "start" : 1756585272875,
+        "stop" : 1756585272875,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Ответ содержит сообщение об ошибке",
+      "time" : {
+        "start" : 1756585272875,
+        "stop" : 1756585272877,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "api"
+  }, {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:ru.dostaevsky.tests.api.tests.reviews.GettingReviewsTests]/[method:gettingReviewsWithExceedingLimit()]"
+  }, {
+    "name" : "host",
+    "value" : "319ab4d25e4d"
+  }, {
+    "name" : "thread",
+    "value" : "8606@319ab4d25e4d.Test worker(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "ru.dostaevsky.tests.api.tests.reviews.GettingReviewsTests"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.dostaevsky.tests.api.tests.reviews.GettingReviewsTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "gettingReviewsWithExceedingLimit"
+  }, {
+    "name" : "suite",
+    "value" : "Rest API Tests"
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "minor",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "api" ]
+  },
+  "source" : "548c0f9025f05917.json",
+  "parameterValues" : [ ]
+}

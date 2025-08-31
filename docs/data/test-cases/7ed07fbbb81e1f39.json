@@ -1,0 +1,153 @@
+{
+  "uid" : "7ed07fbbb81e1f39",
+  "name" : "[API] Получение отзывов о компании без передачи авторизационного токена",
+  "fullName" : "ru.dostaevsky.tests.api.tests.reviews.GettingReviewsTests.gettingReviewsWithoutToken",
+  "historyId" : "e8cf5d1f661b6bcefbcefffa22758083",
+  "time" : {
+    "start" : 1756585272878,
+    "stop" : 1756585273206,
+    "duration" : 328
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1756585272598,
+      "stop" : 1756585272598,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Делаем запрос на получение отзывов о компании",
+      "time" : {
+        "start" : 1756585272879,
+        "stop" : 1756585273203,
+        "duration" : 324
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e8b75c7a0185d785",
+        "name" : "Request",
+        "source" : "e8b75c7a0185d785.html",
+        "type" : "text/html",
+        "size" : 1789
+      }, {
+        "uid" : "24124ae2a080d32",
+        "name" : "HTTP/1.1 401 Unauthorized",
+        "source" : "24124ae2a080d32.html",
+        "type" : "text/html",
+        "size" : 2814
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Ответ содержит статус код: \"401\"",
+      "time" : {
+        "start" : 1756585273204,
+        "stop" : 1756585273204,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Ответ содержит сообщение об ошибке",
+      "time" : {
+        "start" : 1756585273204,
+        "stop" : 1756585273206,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "api"
+  }, {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:ru.dostaevsky.tests.api.tests.reviews.GettingReviewsTests]/[method:gettingReviewsWithoutToken()]"
+  }, {
+    "name" : "host",
+    "value" : "319ab4d25e4d"
+  }, {
+    "name" : "thread",
+    "value" : "8606@319ab4d25e4d.Test worker(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "ru.dostaevsky.tests.api.tests.reviews.GettingReviewsTests"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.dostaevsky.tests.api.tests.reviews.GettingReviewsTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "gettingReviewsWithoutToken"
+  }, {
+    "name" : "suite",
+    "value" : "Rest API Tests"
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "minor",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "api" ]
+  },
+  "source" : "7ed07fbbb81e1f39.json",
+  "parameterValues" : [ ]
+}

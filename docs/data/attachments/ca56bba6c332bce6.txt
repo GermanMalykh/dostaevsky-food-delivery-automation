@@ -1,0 +1,12 @@
+[2025-08-30T20:23:50.826Z] [SEVERE] https://dostaevsky.ru/ 30:251631 Uncaught SyntaxError: Unexpected token ':'
+[2025-08-30T20:23:50.989Z] [SEVERE] https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+[2025-08-30T20:23:51.140Z] [SEVERE] https://balancer-cloud.livetex.ru/get-client/?site_id=153553&version=23.29.1876-0a5aa07&target=path&rnd=p6jb5nzggte 0:143001 Uncaught TypeError: Cannot read properties of undefined (reading 'LTX_URL')
+[2025-08-30T20:23:51.508Z] [SEVERE] https://dostaevsky.ru/api/v4/last-payment-status - Failed to load resource: the server responded with a status of 401 (Unauthorized)
+[2025-08-30T20:23:52.663Z] [SEVERE] https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+[2025-08-30T20:23:52.691Z] [SEVERE] https://msk.dostaevsky.ru/ 30:251630 Uncaught SyntaxError: Unexpected token ':'
+[2025-08-30T20:23:53.155Z] [SEVERE] https://balancer-cloud.livetex.ru/get-client/?site_id=153554&version=23.29.1876-0a5aa07&target=path&rnd=myfj069on0c 0:143001 Uncaught TypeError: Cannot read properties of undefined (reading 'LTX_URL')
+[2025-08-30T20:23:53.556Z] [SEVERE] https://msk.dostaevsky.ru/api/v4/last-payment-status - Failed to load resource: the server responded with a status of 401 (Unauthorized)
+[2025-08-30T20:23:54.988Z] [SEVERE] https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+[2025-08-30T20:23:54.997Z] [SEVERE] https://msk.dostaevsky.ru/breakfast 31:251573 Uncaught SyntaxError: Unexpected token ':'
+[2025-08-30T20:23:55.016Z] [SEVERE] https://msk.dostaevsky.ru/js/main.js?1754565934 5:50220 "yaMetrikaCheck func: Check failed due to lack of analytics object."
+[2025-08-30T20:23:55.359Z] [SEVERE] https://balancer-cloud.livetex.ru/get-client/?site_id=153554&version=23.29.1876-0a5aa07&target=path&rnd=icx3mvp4i6f 0:143001 Uncaught TypeError: Cannot read properties of undefined (reading 'LTX_URL')

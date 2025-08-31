@@ -1,0 +1,6 @@
+[ {
+  "buildOrder" : 1,
+  "reportUrl" : "https://jenkins.autotests.cloud/job/C14_gnmalykh_dostaevsky_java/1/allure",
+  "reportName" : "AllureReport",
+  "data" : { }
+} ]

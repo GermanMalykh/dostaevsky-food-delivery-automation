@@ -1,0 +1,9 @@
+[2025-08-30T20:22:54.812Z] [SEVERE] https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+[2025-08-30T20:22:54.813Z] [SEVERE] https://dostaevsky.ru/ 30:251631 Uncaught SyntaxError: Unexpected token ':'
+[2025-08-30T20:22:54.835Z] [SEVERE] https://dostaevsky.ru/js/main.js?1754565934 5:50220 "yaMetrikaCheck func: Check failed due to lack of analytics object."
+[2025-08-30T20:22:55.365Z] [SEVERE] https://dostaevsky.ru/api/v4/last-payment-status - Failed to load resource: the server responded with a status of 401 (Unauthorized)
+[2025-08-30T20:22:55.913Z] [SEVERE] https://dostaevsky.ru/js/main.js?1754565934 5:86565 "LiveTex script loaded two or more times. Load the script only once, please."
+[2025-08-30T20:22:56.515Z] [SEVERE] https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+[2025-08-30T20:22:56.529Z] [SEVERE] https://sochi.dostaevsky.ru/ 30:251536 Uncaught SyntaxError: Unexpected token ':'
+[2025-08-30T20:22:57.014Z] [SEVERE] https://balancer-cloud.livetex.ru/get-client/?site_id=168830&version=23.29.1876-0a5aa07&target=path&rnd=33p6ueov3zf 0:143001 Uncaught TypeError: Cannot read properties of undefined (reading 'LTX_URL')
+[2025-08-30T20:22:57.346Z] [SEVERE] https://sochi.dostaevsky.ru/api/v4/last-payment-status - Failed to load resource: the server responded with a status of 401 (Unauthorized)

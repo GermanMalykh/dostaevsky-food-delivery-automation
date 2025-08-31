@@ -1,0 +1,20 @@
+[2025-08-30T20:22:17.461Z] [SEVERE] https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+[2025-08-30T20:22:17.462Z] [SEVERE] https://dostaevsky.ru/ 30:251631 Uncaught SyntaxError: Unexpected token ':'
+[2025-08-30T20:22:17.484Z] [SEVERE] https://dostaevsky.ru/js/main.js?1754565934 5:50220 "yaMetrikaCheck func: Check failed due to lack of analytics object."
+[2025-08-30T20:22:18.090Z] [SEVERE] https://dostaevsky.ru/api/v4/last-payment-status - Failed to load resource: the server responded with a status of 401 (Unauthorized)
+[2025-08-30T20:22:19.023Z] [SEVERE] https://dostaevsky.ru/js/main.js?1754565934 5:86565 TypeError: Failed to fetch
+    at e (https://dostaevsky.ru/js/main.js?1754565934:6:89207)
+    at o (https://dostaevsky.ru/js/bundle.js?1754565877:2:24661)
+    at https://dostaevsky.ru/js/bundle.js?1754565877:2:25864
+[2025-08-30T20:22:19.340Z] [SEVERE] https://krd.dostaevsky.ru/ 30:251436 Uncaught SyntaxError: Unexpected token ':'
+[2025-08-30T20:22:19.377Z] [SEVERE] https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+[2025-08-30T20:22:19.666Z] [WARNING] https://widgets-04.livetex.me/js/ui.25.32.5929-3299235.js 0 Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://widgets-04.livetex.me') does not match the recipient window's origin ('https://krd.dostaevsky.ru').
+[2025-08-30T20:22:20.604Z] [SEVERE] https://krd.dostaevsky.ru/api/v4/last-payment-status - Failed to load resource: the server responded with a status of 401 (Unauthorized)
+[2025-08-30T20:22:20.704Z] [SEVERE] https://widgets-04.livetex.me/js/ui.25.32.5929-3299235.js 0:991586 Uncaught TypeError: Cannot read properties of undefined (reading 'length')
+[2025-08-30T20:22:20.704Z] [SEVERE] https://widgets-04.livetex.me/js/ui.25.32.5929-3299235.js 0:991586 Uncaught TypeError: Cannot read properties of undefined (reading 'length')
+[2025-08-30T20:22:20.710Z] [SEVERE] https://krd.dostaevsky.ru/js/bundle.js?1754565877 3:28543 Uncaught TypeError: this.hideChatLabel is not a function
+[2025-08-30T20:22:21.952Z] [SEVERE] https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+[2025-08-30T20:22:21.956Z] [SEVERE] https://krd.dostaevsky.ru/woks 31:251435 Uncaught SyntaxError: Unexpected token ':'
+[2025-08-30T20:22:21.973Z] [SEVERE] https://krd.dostaevsky.ru/js/main.js?1754565934 5:50220 "yaMetrikaCheck func: Check failed due to lack of analytics object."
+[2025-08-30T20:22:22.839Z] [SEVERE] https://krd.dostaevsky.ru/js/main.js?1754565934 5:86565 "LiveTex script loaded two or more times. Load the script only once, please."
+[2025-08-30T20:22:23.059Z] [SEVERE] https://krd.dostaevsky.ru/js/main.js?1754565934 5:86565 "Error, itemId is 11872 "

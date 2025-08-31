@@ -1,0 +1,432 @@
+{
+  "uid" : "990fc2622e10aafb",
+  "name" : "[Android] Проверка минимальной цены доставки. Минимальная цена доставки в городе \"Санкт-Петербург\" равна \"500\" ₽",
+  "fullName" : "ru.dostaevsky.tests.android.tests.CartInfoTests.checkMinimalPriceToDeliveryInfo",
+  "historyId" : "19e2ea97b6afaa63533ea30f0c23b012",
+  "time" : {
+    "start" : 1756584740200,
+    "stop" : 1756584781629,
+    "duration" : 41429
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1756584624177,
+      "stop" : 1756584624207,
+      "duration" : 30
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "addListener",
+    "time" : {
+      "start" : 1756584740200,
+      "stop" : 1756584766365,
+      "duration" : 26165
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "$(\"open\") ",
+      "time" : {
+        "start" : 1756584740200,
+        "stop" : 1756584766365,
+        "duration" : 26165
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"webdriver\") create()",
+        "time" : {
+          "start" : 1756584740201,
+          "stop" : 1756584766365,
+          "duration" : 26164
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Выбираем элемент с наименованием \"Санкт-Петербург\"",
+      "time" : {
+        "start" : 1756584766395,
+        "stop" : 1756584770055,
+        "duration" : 3660
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"by tag: *; by attribute: text; by value: Санкт-Петербург\") should be([visible, 90 s.])",
+        "time" : {
+          "start" : 1756584766396,
+          "stop" : 1756584769675,
+          "duration" : 3279
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"by tag: *; by attribute: text; by value: Санкт-Петербург\") click()",
+        "time" : {
+          "start" : 1756584769675,
+          "stop" : 1756584770055,
+          "duration" : 380
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "value",
+        "value" : "Санкт-Петербург"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Выбираем элемент с наименованием \"Новинки\"",
+      "time" : {
+        "start" : 1756584770056,
+        "stop" : 1756584774124,
+        "duration" : 4068
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"by tag: *; by attribute: text; by value: Новинки\") should be([visible, 90 s.])",
+        "time" : {
+          "start" : 1756584770056,
+          "stop" : 1756584772246,
+          "duration" : 2190
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"by tag: *; by attribute: text; by value: Новинки\") click()",
+        "time" : {
+          "start" : 1756584772246,
+          "stop" : 1756584774124,
+          "duration" : 1878
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "value",
+        "value" : "Новинки"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Добавляем позицию в корзину",
+      "time" : {
+        "start" : 1756584774124,
+        "stop" : 1756584776431,
+        "duration" : 2307
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"AppiumBy.id: ru.dostaevsky.android:id/addButton\") click()",
+        "time" : {
+          "start" : 1756584775625,
+          "stop" : 1756584776431,
+          "duration" : 806
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Выбираем элемент с наименованием \"Корзина\"",
+      "time" : {
+        "start" : 1756584776432,
+        "stop" : 1756584777717,
+        "duration" : 1285
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"by tag: *; by attribute: text; by value: Корзина\") should be([visible, 90 s.])",
+        "time" : {
+          "start" : 1756584776432,
+          "stop" : 1756584777081,
+          "duration" : 649
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"by tag: *; by attribute: text; by value: Корзина\") click()",
+        "time" : {
+          "start" : 1756584777081,
+          "stop" : 1756584777717,
+          "duration" : 636
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "value",
+        "value" : "Корзина"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Проверяем наличие сообщения с текстом минимальной суммы заказа",
+      "time" : {
+        "start" : 1756584777718,
+        "stop" : 1756584779760,
+        "duration" : 2042
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"AppiumBy.id: ru.dostaevsky.android:id/min_price_error_layout/AppiumBy.id: ru.dostaevsky.android:id/min_price_error_title\") should be([visible, 10 s.])",
+        "time" : {
+          "start" : 1756584777719,
+          "stop" : 1756584779326,
+          "duration" : 1607
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"AppiumBy.id: ru.dostaevsky.android:id/min_price_error_layout/AppiumBy.id: ru.dostaevsky.android:id/min_price_error_title\") should have(text \"Минимальная сумма заказа — 500 ₽.\")",
+        "time" : {
+          "start" : 1756584779327,
+          "stop" : 1756584779760,
+          "duration" : 433
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "minimalPrice",
+        "value" : "500"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 14,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "addAttachments",
+    "time" : {
+      "start" : 1756584779764,
+      "stop" : 1756584781629,
+      "duration" : 1865
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "2e025d290bcf5545",
+      "name" : "Page source",
+      "source" : "2e025d290bcf5545.xml",
+      "type" : "text/plain",
+      "size" : 31164
+    }, {
+      "uid" : "48c47b16806cc5da",
+      "name" : "Request",
+      "source" : "48c47b16806cc5da.html",
+      "type" : "text/html",
+      "size" : 1625
+    }, {
+      "uid" : "af28a7fa59c696cb",
+      "name" : "HTTP/1.1 200 OK",
+      "source" : "af28a7fa59c696cb.html",
+      "type" : "text/html",
+      "size" : 6760
+    }, {
+      "uid" : "c71610df0a20c25a",
+      "name" : "BrowserStack Video",
+      "source" : "c71610df0a20c25a.html",
+      "type" : "text/html",
+      "size" : 445
+    }, {
+      "uid" : "bf5b82303a7948fb",
+      "name" : "Request",
+      "source" : "bf5b82303a7948fb.html",
+      "type" : "text/html",
+      "size" : 1625
+    }, {
+      "uid" : "3e5baee67f20ec89",
+      "name" : "HTTP/1.1 200 OK",
+      "source" : "3e5baee67f20ec89.html",
+      "type" : "text/html",
+      "size" : 6760
+    }, {
+      "uid" : "dcf5f08fd09ae755",
+      "name" : "Browserstack full info link",
+      "source" : "dcf5f08fd09ae755.html",
+      "type" : "text/html",
+      "size" : 266
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "android"
+  }, {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:ru.dostaevsky.tests.android.tests.CartInfoTests]/[test-template:checkMinimalPriceToDeliveryInfo(java.lang.String, java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#1]"
+  }, {
+    "name" : "host",
+    "value" : "319ab4d25e4d"
+  }, {
+    "name" : "thread",
+    "value" : "8606@319ab4d25e4d.Test worker(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "ru.dostaevsky.tests.android.tests.CartInfoTests"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.dostaevsky.tests.android.tests.CartInfoTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkMinimalPriceToDeliveryInfo"
+  }, {
+    "name" : "suite",
+    "value" : "Android Tests"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "https://dostaevsky.ru/"
+  }, {
+    "name" : "arg1",
+    "value" : "Санкт-Петербург"
+  }, {
+    "name" : "arg2",
+    "value" : "8 (812) 777-80-08"
+  }, {
+    "name" : "arg3",
+    "value" : "500"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "android" ]
+  },
+  "source" : "990fc2622e10aafb.json",
+  "parameterValues" : [ "https://dostaevsky.ru/", "Санкт-Петербург", "8 (812) 777-80-08", "500" ]
+}

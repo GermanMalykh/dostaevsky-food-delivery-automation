@@ -1,0 +1,1062 @@
+{
+  "uid" : "b9a054e9e67b1aff",
+  "name" : "[WEB] Отображение цен на боулы за пределами СПБ. В городе \"Краснодар\" отображаемые на странице цены на боулы равны ценам из словаря",
+  "fullName" : "ru.dostaevsky.tests.web.tests.ProductsPriceInfoTests.bowlsPriceComparisonInSelectedCityTest",
+  "historyId" : "e9c62c2392e29e767b384c014bd4d8c2",
+  "time" : {
+    "start" : 1756585406383,
+    "stop" : 1756585414420,
+    "duration" : 8037
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1756585391000,
+      "stop" : 1756585391000,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "addListener",
+    "time" : {
+      "start" : 1756585406384,
+      "stop" : 1756585406384,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Переходим на главную страницу",
+      "time" : {
+        "start" : 1756585406385,
+        "stop" : 1756585407143,
+        "duration" : 758
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"open\") https://dostaevsky.ru/",
+        "time" : {
+          "start" : 1756585406385,
+          "stop" : 1756585407143,
+          "duration" : 758
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"open\") https://dostaevsky.ru/",
+          "time" : {
+            "start" : 1756585406385,
+            "stop" : 1756585407143,
+            "duration" : 758
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Выбираем город",
+      "time" : {
+        "start" : 1756585407143,
+        "stop" : 1756585409029,
+        "duration" : 1886
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\".main-nav__city\") hover()",
+        "time" : {
+          "start" : 1756585407143,
+          "stop" : 1756585408000,
+          "duration" : 857
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".main-nav__city\") hover()",
+          "time" : {
+            "start" : 1756585407143,
+            "stop" : 1756585408000,
+            "duration" : 857
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\".main-nav__city/a[href*='https://krd.dostaevsky.ru/']\") should have(text \"Краснодар\")",
+        "time" : {
+          "start" : 1756585408001,
+          "stop" : 1756585408064,
+          "duration" : 63
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".main-nav__city/a[href*='https://krd.dostaevsky.ru/']\") should have(text \"Краснодар\")",
+          "time" : {
+            "start" : 1756585408001,
+            "stop" : 1756585408064,
+            "duration" : 63
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\".main-nav__city/a[href*='https://krd.dostaevsky.ru/']\") click()",
+        "time" : {
+          "start" : 1756585408064,
+          "stop" : 1756585409029,
+          "duration" : 965
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".main-nav__city/a[href*='https://krd.dostaevsky.ru/']\") click()",
+          "time" : {
+            "start" : 1756585408064,
+            "stop" : 1756585409029,
+            "duration" : 965
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "link",
+        "value" : "https://krd.dostaevsky.ru/"
+      }, {
+        "name" : "city",
+        "value" : "Краснодар"
+      } ],
+      "stepsCount" : 6,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Переходим в выбранную в меню категорию",
+      "time" : {
+        "start" : 1756585409029,
+        "stop" : 1756585411778,
+        "duration" : 2749
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\".main-nav__link.findBy(text \"Боулы\")\") click()",
+        "time" : {
+          "start" : 1756585409029,
+          "stop" : 1756585411778,
+          "duration" : 2749
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".main-nav__link.findBy(text \"Боулы\")\") click()",
+          "time" : {
+            "start" : 1756585409029,
+            "stop" : 1756585411778,
+            "duration" : 2749
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "category",
+        "value" : "BOWLS"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Удаляем информационную панель со страницы",
+      "time" : {
+        "start" : 1756585411778,
+        "stop" : 1756585411833,
+        "duration" : 55
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Проверяем, что количество отображаемых на странице позиций равно количеству из словаря",
+      "time" : {
+        "start" : 1756585411833,
+        "stop" : 1756585411842,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "expectedPrices",
+        "value" : "{Боул с тунцом=529, Боул с курочкой=499, Боул с креветками Х2=1079, Боул с лососем=629, Боул вегетарианский=369, Шаурма-боул Х2=879, Шаурма-боул=459, Боул с курочкой Х2=959, Боул с креветками=559, Боул с лососем Х2=1199}"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Извлекаем и сохраняем значения наименования, цены позиций",
+      "time" : {
+        "start" : 1756585411842,
+        "stop" : 1756585412428,
+        "duration" : 586
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\".catalog-list__item.snapshot(10 elements)[0]\") get attribute(data-name)",
+        "time" : {
+          "start" : 1756585411857,
+          "stop" : 1756585412043,
+          "duration" : 186
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".catalog-list__item.snapshot(10 elements)[0]\") get attribute(data-name)",
+          "time" : {
+            "start" : 1756585411857,
+            "stop" : 1756585412043,
+            "duration" : 186
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\".catalog-list__item.snapshot(10 elements)[0]\") get attribute(data-price)",
+        "time" : {
+          "start" : 1756585412043,
+          "stop" : 1756585412054,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".catalog-list__item.snapshot(10 elements)[0]\") get attribute(data-price)",
+          "time" : {
+            "start" : 1756585412043,
+            "stop" : 1756585412054,
+            "duration" : 11
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\".catalog-list__item.snapshot(10 elements)[1]\") get attribute(data-name)",
+        "time" : {
+          "start" : 1756585412054,
+          "stop" : 1756585412065,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".catalog-list__item.snapshot(10 elements)[1]\") get attribute(data-name)",
+          "time" : {
+            "start" : 1756585412054,
+            "stop" : 1756585412064,
+            "duration" : 10
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\".catalog-list__item.snapshot(10 elements)[1]\") get attribute(data-price)",
+        "time" : {
+          "start" : 1756585412065,
+          "stop" : 1756585412075,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".catalog-list__item.snapshot(10 elements)[1]\") get attribute(data-price)",
+          "time" : {
+            "start" : 1756585412065,
+            "stop" : 1756585412075,
+            "duration" : 10
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\".catalog-list__item.snapshot(10 elements)[2]\") get attribute(data-name)",
+        "time" : {
+          "start" : 1756585412075,
+          "stop" : 1756585412085,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".catalog-list__item.snapshot(10 elements)[2]\") get attribute(data-name)",
+          "time" : {
+            "start" : 1756585412075,
+            "stop" : 1756585412085,
+            "duration" : 10
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\".catalog-list__item.snapshot(10 elements)[2]\") get attribute(data-price)",
+        "time" : {
+          "start" : 1756585412085,
+          "stop" : 1756585412094,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".catalog-list__item.snapshot(10 elements)[2]\") get attribute(data-price)",
+          "time" : {
+            "start" : 1756585412085,
+            "stop" : 1756585412094,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\".catalog-list__item.snapshot(10 elements)[3]\") get attribute(data-name)",
+        "time" : {
+          "start" : 1756585412094,
+          "stop" : 1756585412103,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".catalog-list__item.snapshot(10 elements)[3]\") get attribute(data-name)",
+          "time" : {
+            "start" : 1756585412094,
+            "stop" : 1756585412103,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\".catalog-list__item.snapshot(10 elements)[3]\") get attribute(data-price)",
+        "time" : {
+          "start" : 1756585412103,
+          "stop" : 1756585412112,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".catalog-list__item.snapshot(10 elements)[3]\") get attribute(data-price)",
+          "time" : {
+            "start" : 1756585412103,
+            "stop" : 1756585412112,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\".catalog-list__item.snapshot(10 elements)[4]\") get attribute(data-name)",
+        "time" : {
+          "start" : 1756585412113,
+          "stop" : 1756585412122,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".catalog-list__item.snapshot(10 elements)[4]\") get attribute(data-name)",
+          "time" : {
+            "start" : 1756585412113,
+            "stop" : 1756585412122,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\".catalog-list__item.snapshot(10 elements)[4]\") get attribute(data-price)",
+        "time" : {
+          "start" : 1756585412123,
+          "stop" : 1756585412133,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".catalog-list__item.snapshot(10 elements)[4]\") get attribute(data-price)",
+          "time" : {
+            "start" : 1756585412123,
+            "stop" : 1756585412133,
+            "duration" : 10
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\".catalog-list__item.snapshot(10 elements)[5]\") get attribute(data-name)",
+        "time" : {
+          "start" : 1756585412133,
+          "stop" : 1756585412143,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".catalog-list__item.snapshot(10 elements)[5]\") get attribute(data-name)",
+          "time" : {
+            "start" : 1756585412133,
+            "stop" : 1756585412143,
+            "duration" : 10
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\".catalog-list__item.snapshot(10 elements)[5]\") get attribute(data-price)",
+        "time" : {
+          "start" : 1756585412143,
+          "stop" : 1756585412175,
+          "duration" : 32
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".catalog-list__item.snapshot(10 elements)[5]\") get attribute(data-price)",
+          "time" : {
+            "start" : 1756585412143,
+            "stop" : 1756585412175,
+            "duration" : 32
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\".catalog-list__item.snapshot(10 elements)[6]\") get attribute(data-name)",
+        "time" : {
+          "start" : 1756585412175,
+          "stop" : 1756585412354,
+          "duration" : 179
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".catalog-list__item.snapshot(10 elements)[6]\") get attribute(data-name)",
+          "time" : {
+            "start" : 1756585412175,
+            "stop" : 1756585412354,
+            "duration" : 179
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\".catalog-list__item.snapshot(10 elements)[6]\") get attribute(data-price)",
+        "time" : {
+          "start" : 1756585412355,
+          "stop" : 1756585412366,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".catalog-list__item.snapshot(10 elements)[6]\") get attribute(data-price)",
+          "time" : {
+            "start" : 1756585412355,
+            "stop" : 1756585412366,
+            "duration" : 11
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\".catalog-list__item.snapshot(10 elements)[7]\") get attribute(data-name)",
+        "time" : {
+          "start" : 1756585412366,
+          "stop" : 1756585412376,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".catalog-list__item.snapshot(10 elements)[7]\") get attribute(data-name)",
+          "time" : {
+            "start" : 1756585412366,
+            "stop" : 1756585412376,
+            "duration" : 10
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\".catalog-list__item.snapshot(10 elements)[7]\") get attribute(data-price)",
+        "time" : {
+          "start" : 1756585412376,
+          "stop" : 1756585412387,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".catalog-list__item.snapshot(10 elements)[7]\") get attribute(data-price)",
+          "time" : {
+            "start" : 1756585412376,
+            "stop" : 1756585412387,
+            "duration" : 11
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\".catalog-list__item.snapshot(10 elements)[8]\") get attribute(data-name)",
+        "time" : {
+          "start" : 1756585412387,
+          "stop" : 1756585412398,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".catalog-list__item.snapshot(10 elements)[8]\") get attribute(data-name)",
+          "time" : {
+            "start" : 1756585412387,
+            "stop" : 1756585412398,
+            "duration" : 11
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\".catalog-list__item.snapshot(10 elements)[8]\") get attribute(data-price)",
+        "time" : {
+          "start" : 1756585412398,
+          "stop" : 1756585412409,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".catalog-list__item.snapshot(10 elements)[8]\") get attribute(data-price)",
+          "time" : {
+            "start" : 1756585412398,
+            "stop" : 1756585412409,
+            "duration" : 11
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\".catalog-list__item.snapshot(10 elements)[9]\") get attribute(data-name)",
+        "time" : {
+          "start" : 1756585412409,
+          "stop" : 1756585412419,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".catalog-list__item.snapshot(10 elements)[9]\") get attribute(data-name)",
+          "time" : {
+            "start" : 1756585412409,
+            "stop" : 1756585412419,
+            "duration" : 10
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\".catalog-list__item.snapshot(10 elements)[9]\") get attribute(data-price)",
+        "time" : {
+          "start" : 1756585412420,
+          "stop" : 1756585412428,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\".catalog-list__item.snapshot(10 elements)[9]\") get attribute(data-price)",
+          "time" : {
+            "start" : 1756585412420,
+            "stop" : 1756585412428,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 40,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Проверяем, что актуальная цена на странице равна цене из словаря",
+      "time" : {
+        "start" : 1756585412428,
+        "stop" : 1756585412429,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "expectedPrices",
+        "value" : "{Боул с тунцом=529, Боул с курочкой=499, Боул с креветками Х2=1079, Боул с лососем=629, Боул вегетарианский=369, Шаурма-боул Х2=879, Шаурма-боул=459, Боул с курочкой Х2=959, Боул с креветками=559, Боул с лососем Х2=1199}"
+      }, {
+        "name" : "actualPrices",
+        "value" : "{Боул с тунцом=529, Боул с курочкой=499, Боул с креветками Х2=1079, Боул с лососем=629, Боул вегетарианский=369, Шаурма-боул Х2=879, Шаурма-боул=459, Боул с курочкой Х2=959, Боул с креветками=559, Боул с лососем Х2=1199}"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 57,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "addAttachments",
+    "time" : {
+      "start" : 1756585412429,
+      "stop" : 1756585414420,
+      "duration" : 1991
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "$(\"clearCookies\") ",
+      "time" : {
+        "start" : 1756585412816,
+        "stop" : 1756585414415,
+        "duration" : 1599
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"clearCookies\") ",
+        "time" : {
+          "start" : 1756585412816,
+          "stop" : 1756585414415,
+          "duration" : 1599
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "320ba9d36a231048",
+      "name" : "Last screenshot",
+      "source" : "320ba9d36a231048.png",
+      "type" : "image/png",
+      "size" : 910181
+    }, {
+      "uid" : "3ee8748063f8e86",
+      "name" : "Page source",
+      "source" : "3ee8748063f8e86.html",
+      "type" : "text/plain",
+      "size" : 1343540
+    }, {
+      "uid" : "89e35c87615f6212",
+      "name" : "Browser console logs",
+      "source" : "89e35c87615f6212.txt",
+      "type" : "text/plain",
+      "size" : 1476
+    }, {
+      "uid" : "b766eaa455caf6be",
+      "name" : "Selenoid Video",
+      "source" : "b766eaa455caf6be.html",
+      "type" : "text/html",
+      "size" : 204
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "web"
+  }, {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:ru.dostaevsky.tests.web.tests.ProductsPriceInfoTests]/[test-template:bowlsPriceComparisonInSelectedCityTest(ru.dostaevsky.enums.CityName, ru.dostaevsky.enums.CityLink, java.util.Map)]/[test-template-invocation:#3]"
+  }, {
+    "name" : "host",
+    "value" : "319ab4d25e4d"
+  }, {
+    "name" : "thread",
+    "value" : "8606@319ab4d25e4d.Test worker(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "ru.dostaevsky.tests.web.tests.ProductsPriceInfoTests"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.dostaevsky.tests.web.tests.ProductsPriceInfoTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "bowlsPriceComparisonInSelectedCityTest"
+  }, {
+    "name" : "suite",
+    "value" : "Web Tests"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "Краснодар"
+  }, {
+    "name" : "arg1",
+    "value" : "KRD_LINK"
+  }, {
+    "name" : "arg2",
+    "value" : "{Боул с тунцом=529, Боул с курочкой=499, Боул с креветками Х2=1079, Боул с лососем=629, Боул вегетарианский=369, Шаурма-боул Х2=879, Шаурма-боул=459, Боул с курочкой Х2=959, Боул с креветками=559, Боул с лососем Х2=1199}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "web" ]
+  },
+  "source" : "b9a054e9e67b1aff.json",
+  "parameterValues" : [ "Краснодар", "KRD_LINK", "{Боул с тунцом=529, Боул с курочкой=499, Боул с креветками Х2=1079, Боул с лососем=629, Боул вегетарианский=369, Шаурма-боул Х2=879, Шаурма-боул=459, Боул с курочкой Х2=959, Боул с креветками=559, Боул с лососем Х2=1199}" ]
+}
